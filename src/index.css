@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  background: #111318;
+  color: #ece7dc;
+}
+
+.elo-range {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  margin: 0;
+  background: none;
+  appearance: none;
+}
+
+.elo-range::-webkit-slider-thumb {
+  pointer-events: auto;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  border: 2px solid #fde68a;
+  background: #111318;
+  cursor: pointer;
+}
+
+.elo-range::-moz-range-thumb {
+  pointer-events: auto;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  border: 2px solid #fde68a;
+  background: #111318;
+  cursor: pointer;
+}
+
+.elo-range::-webkit-slider-runnable-track {
+  background: transparent;
+  height: 6px;
+}
+
+.elo-range::-moz-range-track {
+  background: transparent;
+  height: 6px;
+  border: none;
+}
+
+.elo-range::-moz-range-progress {
+  background: transparent;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(1200px 600px at 10% -10%, #2a2438 0%, transparent 50%),
+    radial-gradient(900px 500px at 110% 0%, #1b2a28 0%, transparent 45%),
+    #111318;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.cube-info-print-root {
+  display: none;
+}
+
+@media print {
+  @page {
+    size: 2.5in 3.5in;
+    margin: 0;
+  }
+
+  body.printing-cube-info {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #fff !important;
+    min-height: 0 !important;
+    width: 2.5in;
+    height: 3.5in;
+  }
+
+  body.printing-cube-info * {
+    visibility: hidden;
+  }
+
+  body.printing-cube-info .cube-info-print-root,
+  body.printing-cube-info .cube-info-print-root * {
+    visibility: visible;
+  }
+
+  body.printing-cube-info .cube-info-print-root {
+    display: block;
+    position: absolute;
+    inset: 0;
+    width: 2.5in;
+    height: 3.5in;
+  }
+
+  body.printing-cube-info .cube-info-print-root .cube-info-card {
+    width: 2.5in !important;
+    height: 3.5in !important;
+    aspect-ratio: auto;
+  }
+}
