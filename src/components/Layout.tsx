@@ -34,6 +34,12 @@ export function Layout() {
                 {link.label}
               </NavLink>
             ))}
+            <a
+              href="https://juglaz.github.io/cube-builder/"
+              className="rounded-full px-3 py-1.5 text-sm text-stone-300 hover:bg-white/5 hover:text-white"
+            >
+              Lore
+            </a>
           </nav>
         </div>
       </header>

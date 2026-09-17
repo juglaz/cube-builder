@@ -1,0 +1,35 @@
+html.lore-ozolith-run,
+.lore-ozolith-run {
+  --ink: #171b19;
+  --paper: #f3efe5;
+  --paper-deep: #e8e0d0;
+  --accent: #255b43;
+  --accent-dark: #123728;
+  --mark: #a44d2b;
+  --gold: #d0a65a;
+  --glow: #77d5ff;
+  --muted: #6e716d;
+  --hero-fallback: #0d1512;
+  --awakening-fallback: #0a1119;
+  --dark-band: #101713;
+  --lore-frame: #0d1512;
+  --faction-1: #78c49a;
+  --faction-2: #d4774a;
+  --faction-3: #73cfff;
+}
+
+.lore-ozolith-run .hero::before {
+  background-image: var(--hero-scrim), url("./images/hero.jpg");
+}
+
+.lore-ozolith-run .awakening::before {
+  background-image: var(--awakening-scrim), url("./images/awakening.jpg");
+}
+
+.lore-ozolith-run .chapter.greasefang {
+  background: var(--paper-deep);
+}
+
+.lore-ozolith-run .chapter.greasefang .pull {
+  border-color: #3386a7;
+}
