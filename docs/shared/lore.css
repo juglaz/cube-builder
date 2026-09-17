@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800;900&display=swap");
 
-html.lore-active,
-html.lore-active body {
+html.lore-active {
   background: var(--lore-frame, #0d1512);
-  color: var(--ink, #171b19);
+  color-scheme: light;
+  scroll-behavior: smooth;
 }
 
-html.lore-active {
-  scroll-behavior: smooth;
+html.lore-active body.lore-root {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 10% 20%, rgba(208, 166, 90, 0.18), transparent 22rem),
+    linear-gradient(180deg, #f8f5ed 0%, var(--paper) 100%);
 }
 
 html.lore-index,
@@ -39,10 +43,6 @@ html.lore-index,
   --faction-2: #d4774a;
   --faction-3: #73cfff;
   min-height: 100vh;
-  color: var(--ink);
-  background:
-    radial-gradient(circle at 10% 20%, color-mix(in srgb, var(--gold) 18%, transparent), transparent 22rem),
-    linear-gradient(180deg, #f8f5ed 0%, var(--paper) 100%);
   font-family: Georgia, "Times New Roman", serif;
   line-height: 1.62;
 }
@@ -134,7 +134,7 @@ html.lore-index,
   top: 0;
   z-index: 20;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  background: color-mix(in srgb, var(--hero-fallback, #0c1611) 94%, black);
+  background: rgba(12, 22, 17, 0.94);
   backdrop-filter: blur(14px);
   color: white;
 }
@@ -440,7 +440,7 @@ html.lore-index,
 
 .lore-root .reckoning div {
   padding-top: 14px;
-  border-top: 2px solid color-mix(in srgb, var(--glow) 70%, white);
+  border-top: 2px solid rgba(119, 213, 255, 0.7);
 }
 
 .lore-root .reckoning strong {
@@ -505,7 +505,7 @@ html.lore-index,
   text-decoration: none;
   color: inherit;
   border: 1px solid var(--line);
-  background: color-mix(in srgb, var(--paper-deep) 55%, white);
+  background: #f6f1e6;
   box-shadow: 0 22px 60px rgba(0, 0, 0, 0.12);
 }
 
