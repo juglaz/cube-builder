@@ -314,31 +314,39 @@ function recentlyTapped() {
 
 function bindPressTap(node, onTap, options = {}) {
   let start = null
-  let tapped = false
-  node.addEventListener("touchstart", (event) => {
-    const touch = event.changedTouches[0]
-    start = { x: touch.clientX, y: touch.clientY }
-    tapped = false
-  }, { passive: true })
-  node.addEventListener("touchend", (event) => {
-    if (!start) return
-    const touch = event.changedTouches[0]
-    const dx = touch.clientX - start.x
-    const dy = touch.clientY - start.y
+  let handled = false
+  let pointerType = "mouse"
+  node.addEventListener("pointerdown", (event) => {
+    pointerType = event.pointerType || "mouse"
+    handled = false
+    start = pointerType === "touch"
+      ? { x: event.clientX, y: event.clientY, id: event.pointerId }
+      : null
+  })
+  node.addEventListener("pointerup", (event) => {
+    if (pointerType !== "touch" || !start || event.pointerId !== start.id) return
+    const dx = event.clientX - start.x
+    const dy = event.clientY - start.y
     start = null
-    if (dx * dx + dy * dy > 64) return
-    tapped = true
+    if (dx * dx + dy * dy > 256) return
+    handled = true
     lastTapAt = Date.now()
-    event.preventDefault()
-    onTap({ clientX: touch.clientX, clientY: touch.clientY })
+    onTap(event)
+  })
+  node.addEventListener("pointercancel", () => {
+    start = null
+  })
+  node.addEventListener("touchend", (event) => {
+    if (handled) event.preventDefault()
   })
   node.addEventListener("click", (event) => {
-    if (tapped) {
-      tapped = false
+    if (handled || recentlyTapped()) {
+      handled = false
       event.preventDefault()
       return
     }
-    if (!options.alsoClick && window.matchMedia("(hover: hover) and (pointer: fine)").matches) return
+    const treatAsTap = options.alsoClick || pointerType === "touch" || window.matchMedia("(hover: none)").matches
+    if (!treatAsTap) return
     lastTapAt = Date.now()
     event.preventDefault()
     onTap(event)

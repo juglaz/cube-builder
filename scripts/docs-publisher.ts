@@ -99,7 +99,7 @@ function generatedPageHtml(cube: PublishedCube, cardCount: number): string {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#1a1410">
   <title>${name}</title>
-  <link rel="stylesheet" href="../shared/lore.css?v=15">
+  <link rel="stylesheet" href="../shared/lore.css?v=17">
 </head>
 <body class="lore-root lore-index" ${GENERATED_PAGE_MARKER} data-cube-id="${escapeHtml(cube.cubeId)}">
   <header class="hero" id="top">
@@ -136,7 +136,7 @@ function generatedPageHtml(cube: PublishedCube, cardCount: number): string {
 
   <footer class="lore-footer">Generated from Cube Builder · Card names and Magic: The Gathering are property of Wizards of the Coast</footer>
   <div id="card-zoom" class="card-zoom" hidden></div>
-  <script src="../shared/lore.js?v=15"></script>
+  <script src="../shared/lore.js?v=17"></script>
 </body>
 </html>
 `

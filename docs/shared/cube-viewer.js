@@ -457,8 +457,11 @@
 
   function enablePan(surface) {
     let drag = null
+    let lastTouchAt = 0
     surface.addEventListener("pointerdown", (event) => {
+      if (event.pointerType === "touch") lastTouchAt = Date.now()
       if (event.button !== 0 || event.pointerType !== "mouse") return
+      if (Date.now() - lastTouchAt < 900) return
       event.preventDefault()
       drag = {
         pointerId: event.pointerId,
