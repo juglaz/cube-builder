@@ -2,10 +2,20 @@
 <html lang="en" class="lore-active lore-ozolith-run">
 <head>
   <meta charset="utf-8">
+  <script>
+    (function () {
+      var path = location.pathname
+      if (location.protocol === "file:") return
+      if (path.endsWith("/")) return
+      var last = path.split("/").pop() || ""
+      if (/\.[a-z0-9]+$/i.test(last)) return
+      location.replace(path + "/" + location.search + location.hash)
+    })()
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101613">
   <title>The Ozolith Run</title>
-  <link rel="stylesheet" href="../shared/lore.css?v=3">
+  <link rel="stylesheet" href="../shared/lore.css?v=8">
   <link rel="stylesheet" href="./theme.css">
 </head>
 <body class="lore-root lore-ozolith-run">
@@ -13,7 +23,7 @@
     <div class="hero-inner">
       <p class="eyebrow">Cube Lore</p>
       <h1>The Ozolith Run</h1>
-      <p class="hero-deck">An interplanar racing circuit becomes a hunt for living crystal—and every crew on the track helps bring the Ozolith closer to becoming whole.</p>
+      <p class="hero-deck">The Omenpaths opened the racing circuit to other worlds. Then a crew came back from Ikoria with a piece of the Ozolith in its hold.</p>
       <div class="loop sans" aria-label="The cube's gameplay loop">
         <span>Build</span><span>Improve</span><span>Crew</span><span>Crash</span><span>Salvage</span><span>Rebuild</span>
       </div>
@@ -39,40 +49,40 @@
   <main>
     <section class="section narrow" id="race">
       <p class="eyebrow">Avishkar · Ikoria · The Omenpaths</p>
-      <h2>The race changed when the first crew came home.</h2>
+      <h2>Nobody remembers who won the first run to Ikoria.</h2>
       <div class="rule"></div>
-      <p class="lead dropcap">When the Omenpaths opened, Avishkar's racing circuit spilled across the Multiverse. Pilots and artificers drove experimental Vehicles through unfamiliar worlds, building for impossible terrain and proving their machines under pressure.</p>
-      <p>The first run to Ikoria returned with fragments of <span class="card">The Ozolith</span>. Near the crystal, modifications held and compounded: <span class="card">Hardened Scales</span> stayed on the hull, <span class="card">Hangarback Walker</span> kept growing, and salvaged parts carried traces of the machines they had belonged to. Crews started calling the largest remnant <span class="card">Ozolith, the Shattered Spire</span>.</p>
-      <p>From that moment, the finish line was only half the race. The real prize was the next shard—and every crew wanted to reach it first.</p>
+      <p class="lead dropcap">When the Omenpaths opened, Avishkar's racers did what racers always do: they found out where the new roads went, then argued over who could cross them fastest. The old circuit became a string of dangerous runs through worlds whose weather, gravity, and wildlife had never seen a Vehicle before.</p>
+      <p>One crew returned from Ikoria with half its machines missing and a sliver of <span class="card">The Ozolith</span> chained to the bed of the last truck. On the journey home, dents closed around it. Fresh plating thickened overnight. A <span class="card">Hangarback Walker</span> rebuilt itself from scrap no one remembered loading. By the time the crew reached Avishkar, the shard was worth more than the purse.</p>
+      <p>Within a month, the circuit had changed. Race officials added salvage rights to the rules. Maps to rumored fragments passed through back rooms for obscene prices. Crews still crossed the finish line, but only after checking what everyone else had brought home.</p>
       <div class="run-definition sans">
-        <div><strong>A race</strong><span>World-to-world routes through unstable Omenpaths.</span></div>
-        <div><strong>A treasure hunt</strong><span>Ozolith shards hidden in ruins, beasts, and wreckage.</span></div>
-        <div><strong>An arms race</strong><span>Each fragment makes the next machine harder to stop.</span></div>
+        <div><strong>The course</strong><span>Unstable Omenpaths and whatever waits beyond them.</span></div>
+        <div><strong>The prize</strong><span>Crystal fragments hidden in ruins, beasts, and old wrecks.</span></div>
+        <div><strong>The problem</strong><span>Every shard makes its owner harder to catch.</span></div>
       </div>
     </section>
 
     <section class="dark" id="factions">
       <div class="section">
         <p class="eyebrow">Three crews shape the Run</p>
-        <h2>They share a track.<br>They do not share a purpose.</h2>
+        <h2>Three crews came to own the road.</h2>
         <div class="faction-grid">
           <article class="faction-card">
             <div class="number">01</div>
             <h3>Depala's Expedition</h3>
-            <p>Organized engineers and pilots building the best machines on the circuit and recovering shards through sanctioned expeditions. Their flagship work is <span class="card">Heart of Kiran</span>.</p>
-            <div class="motive">Build · Secure · Advance</div>
+            <p>The circuit's official recovery team. Depala's engineers survey new routes, retrieve shards, and insist that both are safer in their hands. The <span class="card">Heart of Kiran</span> leads the convoy.</p>
+            <div class="motive">Survey · Recover · Hold</div>
           </article>
           <article class="faction-card">
             <div class="number">02</div>
             <h3>The Salvage Cartel</h3>
-            <p>Smugglers, raiders, thieves, and black-market crews who let others find the fragments—then steal them on the road home. None is more infamous than <span class="card">Smuggler's Copter</span>.</p>
-            <div class="motive">Ambush · Steal · Profit</div>
+            <p><span class="card">Magda, the Hoardmaster</span> has no reason to brave an unknown world when she can rob the people coming back. Her crews know every shortcut, fence, and crooked official on the circuit.</p>
+            <div class="motive">Follow · Ambush · Sell</div>
           </article>
           <article class="faction-card">
             <div class="number">03</div>
             <h3>Greasefang's Gang</h3>
-            <p>Racers and mechanics who drag dead Vehicles back onto the track, run them hard, and treat wreckage as temporary. Their signature rebuild is <span class="card">Reckoner Bankbuster</span>.</p>
-            <div class="motive">Recover · Revive · Redline</div>
+            <p>Okiba riders, mechanics, and wreckers with no patience for the difference between salvage and theft. If a machine can move for one more mile, Greasefang will race it.</p>
+            <div class="motive">Wreck · Rebuild · Run</div>
           </article>
         </div>
       </div>
@@ -87,18 +97,19 @@
         </div>
       </div>
       <div class="chapter-copy">
-        <p><span class="card">Depala, Pilot Exemplar</span> organized Avishkar's strongest pilots, mechanics, and artificers into an expeditionary motor guild. <span class="card">Sram, Senior Edificer</span> keeps the convoy legal. <span class="card">Pia Nalaar</span> keeps it armed. Their crews chart the routes, breach the ruins, and bring the fragments home under guard.</p>
-        <p>They call their work recovery, not conquest. Every shard is catalogued. Every Vehicle is purpose-built: <span class="card">Peacewalker Colossus</span> for the heavy runs, <span class="card">Cultivator's Caravan</span> for the long hauls, <span class="card">Weatherlight</span> and <span class="card">Valor's Flagship</span> when the expedition needs a legend on the grid. <span class="card">Shorikai, Genesis Engine</span> is the machine they do not take off the line.</p>
-        <p>But the distinction grows thinner with every victory. The more fragments Depala secures, the stronger her fleet becomes—and the more dangerous it would be to surrender them.</p>
+        <p><span class="card">Depala, Pilot Exemplar</span> built the Expedition after the Ikoria crew returned. She hired the best drivers on Avishkar, put <span class="card">Sram, Senior Edificer</span> in charge of permits and supply, and gave <span class="card">Pia Nalaar</span> authority over anything likely to explode. Within a season, the improvised races had become surveyed routes with checkpoints, recovery teams, and armed escorts.</p>
+        <p>The Expedition's answer to every hazard is better information followed by a better machine. The <span class="card">Heart of Kiran</span> runs at the head of the convoy. Behind it, <span class="card">Shorikai, Genesis Engine</span> serves as workshop, command post, and rolling chartroom. Every recovered shard is logged there before it is sealed and carried back under guard.</p>
+        <p>Depala says the fragments belong in public custody. Her rivals point out that “public custody” has given her the strongest fleet on the circuit. Both statements are true.</p>
         <div class="roster sans">
           <span>Depala, Pilot Exemplar</span>
           <span>Heart of Kiran</span>
           <span>Sram, Senior Edificer</span>
           <span>Pia Nalaar</span>
+          <span>Lita, Mechanical Engineer</span>
           <span>Shorikai, Genesis Engine</span>
-          <span>Weatherlight</span>
+          <span>Gearshift Ace</span>
         </div>
-        <blockquote class="pull">Build the machine that survives the route. Then build the route that only your machine can survive.</blockquote>
+        <blockquote class="pull">Bring back the crew first. The machine second. The shard does not come before either.</blockquote>
       </div>
     </section>
 
@@ -111,18 +122,19 @@
         </div>
       </div>
       <div class="chapter-copy">
-        <p>The Cartel does not waste time mapping ruins or surviving their traps. Its crews follow the people who do. <span class="card">Magda, the Hoardmaster</span> counts the take. <span class="card">Reckless Crew</span> makes the cut.</p>
-        <p>A convoy can spend weeks reaching a fragment and lose it in seconds on the return run. Raiders strike at speed, cut loose the cargo, and disappear through unofficial Omenpaths before Depala's heavier Vehicles can turn. None is more infamous than <span class="card">Smuggler's Copter</span>. When the prize is too large for a copter, <span class="card">Magmatic Galleon</span> and <span class="card">Hoard Hauler</span> swallow the road whole.</p>
-        <p>When a Vehicle goes down, the Cartel turns the wreck into a second race. Engines, armor, cargo, and crystal belong to whoever reaches them first. What cannot be sold is stripped. What cannot be stripped is burned. <span class="card">Deadly Dispute</span> and <span class="card">Costly Plunder</span> are not metaphors. They are procedure.</p>
+        <p><span class="card">Magda, the Hoardmaster</span> watched the first expeditions spend fortunes on fuel, scouts, and funerals. Then she paid one driver for a return schedule and stole the cargo ten miles from home. The Salvage Cartel grew from that lesson.</p>
+        <p><span class="card">Sai, Master Thopterist</span> sends tiny scouts through the Omenpaths to watch Expedition traffic and count which Vehicles return. His reports tell the Cartel what came home, how badly it is damaged, and which road it plans to take. Fast crews shadow the survivors while heavier crews block the road ahead. By the time an escort sees the <span class="card">Smuggler's Copter</span>, someone has already cut the shard loose.</p>
+        <p>Magda keeps the organization loose on purpose. Crews bargain over maps, divide stolen cargo, and settle losses among themselves. A <span class="card">Deadly Dispute</span> is bad for business, but the Cartel has never confused bad business with no business.</p>
         <div class="roster sans">
-          <span>Smuggler's Copter</span>
           <span>Magda, the Hoardmaster</span>
-          <span>Magmatic Galleon</span>
+          <span>Smuggler's Copter</span>
+          <span>Reckless Crew</span>
           <span>Hoard Hauler</span>
-          <span>Haunt the Network</span>
+          <span>Treasure Map</span>
+          <span>Defiant Salvager</span>
           <span>Deadly Dispute</span>
         </div>
-        <blockquote class="pull">Let the expedition find the prize. The open road will make it ours.</blockquote>
+        <blockquote class="pull">Why pay to find a shard when Depala will deliver it to the road?</blockquote>
       </div>
     </section>
 
@@ -135,42 +147,43 @@
         </div>
       </div>
       <div class="chapter-copy">
-        <p><span class="card">Greasefang, Okiba Boss</span> came through a Kamigawan Omenpath with a simpler rule: a Vehicle is not dead because it hit the wreckfield. It is dead only when nobody can make it move. <span class="card">Okiba Reckoner Raid</span> is how her gang introduces itself.</p>
-        <p>Her mechanics winch broken racers out of the dirt, hammer their engines awake, and throw them back onto the track before the dust settles. The repairs do not need to last. They need to hold through one more ambush, one more straightaway, or one final sprint. <span class="card">Carrion Cruiser</span>, <span class="card">Demonic Junker</span>, and <span class="card">Scrap Trawler</span> are not pretty. They do not have to be.</p>
-        <p>Unlike the Cartel, Greasefang's crews do not see wreckage as inventory. They see unfinished races. A chassis abandoned by Depala or gutted by smugglers may return hours later under Greasefang's colors—faster, meaner, and carrying every old scar. <span class="card">Vat of Rebirth</span> and <span class="card">Refurbish</span> keep the dead in the race. <span class="card">Reckoner Bankbuster</span> is the one they send when they want the finish line to remember them.</p>
+        <p><span class="card">Greasefang, Okiba Boss</span> arrived from Kamigawa with six riders, two tow cables, and no interest in Avishkar's salvage laws. On her first night at the circuit, the Okiba hauled a burned-out racer from an impound yard. It was back on the starting grid by morning.</p>
+        <p>Her mechanics work beside the track while the wrecks are still hot. Repairs are judged by distance, not beauty: enough road to clear the ambush, reach the next garage, or steal the win. The <span class="card">Carrion Cruiser</span> looks assembled from three different accidents because it was.</p>
+        <p>The Cartel strips wrecks for parts. Greasefang keeps their histories intact. Old dents, replacement engines, and crystal growth all go back into motion together. Her <span class="card">Reckoner Bankbuster</span> has been declared beyond repair four times. Around the Okiba, that only means someone has issued a challenge.</p>
         <div class="roster sans">
           <span>Greasefang, Okiba Boss</span>
           <span>Reckoner Bankbuster</span>
+          <span>Okiba Reckoner Raid</span>
           <span>Carrion Cruiser</span>
-          <span>Scrap Trawler</span>
-          <span>Vat of Rebirth</span>
           <span>The Last Ride</span>
+          <span>Scrap Welder</span>
+          <span>Trash for Treasure</span>
         </div>
-        <blockquote class="pull">If it crossed the finish line once, it can cross it again.</blockquote>
+        <blockquote class="pull">Dead is what you call a machine when you have run out of ideas.</blockquote>
       </div>
     </section>
 
     <section class="awakening" id="ozolith">
       <div class="awakening-inner">
-        <p class="eyebrow">The fragments remember each other</p>
-        <h2>The race is rebuilding the Ozolith.</h2>
-        <p>Shards stored together begin to align. Distant machines develop the same unfamiliar modifications. Navigation instruments pull toward fragments no crew has found. Then one shard moves on its own—toward another. <span class="card">Animation Module</span> and <span class="card">Walking Ballista</span> do not stay the same size for long. Neither does the crystal.</p>
-        <p><span class="card">The Ozolith</span> did not simply break. Its pieces are trying to reconnect, and every faction has become part of the mechanism. <span class="card">Ozolith, the Shattered Spire</span> is the wound. The rest of the cube is the scar tissue.</p>
+        <p class="eyebrow">Something is wrong with the cargo</p>
+        <h2>The shards are not inert.</h2>
+        <p>The first reports were easy to dismiss. Compass needles turned inside sealed cases. Two fragments stored across a workshop dragged their crates several inches closer overnight. Machines exposed to different shards began developing the same ridges of crystal in the same places.</p>
+        <p>Then Shorikai's navigators laid every unexplained reading over the master chart. Routes surveyed months apart curved toward the same unmarked regions. <span class="card">The Ozolith</span> was not scattered at random, and its fragments were not waiting to be collected. They were directing the search.</p>
         <div class="reckoning sans">
-          <div><strong>Depala gathers them</strong>to protect them and power the expedition.</div>
-          <div><strong>The Cartel gathers them</strong>to concentrate their value and sell them.</div>
-          <div><strong>Greasefang returns them</strong>inside wrecks that should have stayed buried.</div>
+          <div><strong>Depala</strong>locks the shards together in guarded vaults.</div>
+          <div><strong>Magda</strong>moves them through markets and hidden depots.</div>
+          <div><strong>Greasefang</strong>bolts them into machines and sends them back out.</div>
         </div>
-        <p><strong>Everyone believes they are chasing the Ozolith. The Run may be how the Ozolith is finding itself.</strong></p>
+        <p><strong>Whatever the crews intend, every run carries the pieces closer together.</strong></p>
       </div>
     </section>
 
     <section class="section finale">
-      <p class="eyebrow">The outcome is never fixed</p>
-      <h2>Every draft is another stretch of the Run.</h2>
-      <p class="lead">Depala may secure the fragments aboard <span class="card">Heart of Kiran</span>. The Cartel may lift them with <span class="card">Smuggler's Copter</span>. Greasefang may put <span class="card">The Last Ride</span> back on the track. The cards decide who wins this leg—and what the Ozolith becomes when the dust clears.</p>
+      <p class="eyebrow">Shuffle up</p>
+      <h2>The next run starts here.</h2>
+      <p class="lead">Depala may bring the fragments home aboard the <span class="card">Heart of Kiran</span>. Magda may take them before the convoy reaches Avishkar. Greasefang may arrive in a Vehicle everyone else left burning beside the road. Each draft deals the crews another route and gives the Ozolith another chance to gather its pieces.</p>
       <div class="final-loop sans">Build · Improve · Crew · Crash · Salvage · Rebuild</div>
-      <p class="last-line">Somewhere beneath it all, the Ozolith is calling its pieces home.</p>
+      <p class="last-line">The engines are running. Nobody intends to come back empty-handed.</p>
     </section>
 
     <section class="section spoilers" id="spoilers">
@@ -183,12 +196,13 @@
           <button type="button" data-copy="cardlist" data-copy-url="./cardlist.txt">Copy card list</button>
           <span class="spoiler-count" data-card-count>360 cards</span>
         </div>
-        <pre id="cardlist" class="cardlist" data-src="./cardlist.txt">Loading list…</pre>
+        <div id="card-grid" class="card-grid">Open to load card images.</div>
       </details>
     </section>
   </main>
 
   <footer class="lore-footer">Fan-created cube lore · Card names and Magic: The Gathering are property of Wizards of the Coast</footer>
-  <script src="../shared/lore.js"></script>
+  <div id="card-zoom" class="card-zoom" hidden></div>
+  <script src="../shared/lore.js?v=6"></script>
 </body>
 </html>

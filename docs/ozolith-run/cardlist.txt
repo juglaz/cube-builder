@@ -1,4 +1,5 @@
 A-Moss-Pit Skeleton
+Abrade
 Adarkar Wastes
 Adeline, Resplendent Cathar
 Aethergeode Miner
@@ -20,7 +21,6 @@ Basking Broodscale
 Basri's Lieutenant
 Battle Screech
 Battlefield Forge
-Betrayal
 Big Wheel
 Bind the Monster
 Blacksmith's Skill
@@ -40,8 +40,8 @@ Brightclimb Pathway // Grimclimb Pathway
 Bristly Bill, Spine Sower
 Broodheart Engine
 Brushland
-Built to Smash
 Buried Ruin
+Cankerbloom
 Captain America's Motorcycle
 Caradora, Heart of Alacria
 Carrion Cruiser
@@ -62,7 +62,6 @@ Cosima, God of the Voyage // The Omenkeel
 Costly Plunder
 Countless Gears Renegade
 Country Roads
-Courage in Crisis
 Covetous Castaway // Ghostly Castigator
 Cragcrown Pathway // Timbercrown Pathway
 Cryoshatter
@@ -86,6 +85,7 @@ Demonic Junker
 Depala, Pilot Exemplar
 Detention Chariot
 Dispatch
+Disruption Protocol
 Dragonspark Reactor
 Dreamdrinker Vampire
 Drive to Work
@@ -96,7 +96,6 @@ Dune Drifter
 Dusk Legion Duelist
 Duskshell Crawler
 Dyadrine, Synthesis Amalgam
-Eldritch Evolution
 Elite Guardmage
 Emry, Lurker of the Loch
 Endless One
@@ -182,6 +181,7 @@ Magda, the Hoardmaster
 Magitek Armor
 Magmatic Galleon
 Malamet Battle Glyph
+Malcator's Watcher
 Marauding Dreadship
 Marcus, Mutant Mayor
 Marionette Apprentice
@@ -210,7 +210,6 @@ Namor, Scourge of the Seas
 Needleverge Pathway // Pillarverge Pathway
 Nesting Grounds
 Network Disruptor
-Ninth Bridge Patrol
 Noxious Gearhulk
 Nyxborn Hydra
 Ochre Jelly
@@ -249,6 +248,7 @@ Recommission
 Reef Roads
 Refurbish
 Renegade Freighter
+Requisition Raid
 Resculpt
 Resourceful Return
 Return of the Wildspeaker
@@ -294,7 +294,6 @@ Solemn Recruit
 Soul Foundry
 Spectral Procession
 Speedway Fanatic
-Spined Thopter
 Spire of Industry
 Sram, Senior Edificer
 Steel Dromedary
@@ -308,6 +307,7 @@ Take Up the Shield
 Tanazir Quandrix
 Tanglepool Bridge
 Tataru Taru
+Tear Asunder
 Terrarion
 Terrasymbiosis
 Tezzeret, Agent of Bolas

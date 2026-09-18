@@ -1,0 +1,192 @@
+{
+  "set": "The Ozolith Run",
+  "setCode": "ORC",
+  "notes": "Run: npm run render-planes. text is the static plane ability (\\n\\n between abilities). chaos is only the effect; the script prefixes “Whenever chaos ensues,”. flavor is italic, drawn at the bottom of the text box. Markup: *italics*, {CHAOS} {W}{U}{B}{R}{G}{C}{1}{T}. artFocus is [x, y] in 0–1. Planes without art files are skipped.",
+  "planes": [
+    {
+      "id": "the-starting-grid",
+      "name": "The Starting Grid",
+      "type": "Plane — Avishkar",
+      "art": "the-starting-grid.png",
+      "artFocus": [0.5, 0.62],
+      "text": "The first time you activate a crew ability of a Vehicle you control each turn, it costs {1} less to activate.\n\nWhenever one or more creatures crew a Vehicle you control, you may put a +1/+1 counter on one of those creatures.",
+      "chaos": "Creatures and Vehicles you control gain haste until end of turn."
+    },
+    {
+      "id": "shardfield-expanse",
+      "name": "Shardfield Expanse",
+      "type": "Plane — Ikoria",
+      "art": "shardfield-expanse.png",
+      "artFocus": [0.45, 0.55],
+      "text": "Whenever one or more +1/+1 counters are put on a permanent you control during your turn, put one additional +1/+1 counter on that permanent. This ability triggers only once each turn.",
+      "chaos": "Move any number of counters from target permanent you control onto a second target permanent you control."
+    },
+    {
+      "id": "the-breakneck-causeway",
+      "name": "The Breakneck Causeway",
+      "type": "Plane — Avishkar",
+      "art": "breakneck-causeway.png",
+      "artFocus": [0.5, 0.5],
+      "text": "All creatures and Vehicles have haste.\n\nIf a creature that entered the battlefield this turn would attack, it attacks an opponent chosen at random if able.",
+      "chaos": "Target creature or Vehicle can't be blocked this turn."
+    },
+    {
+      "id": "smugglers-cut",
+      "name": "Smuggler's Cut",
+      "type": "Plane — Omenpath",
+      "art": "smugglers-cut.png",
+      "artFocus": [0.42, 0.5],
+      "text": "Whenever a player's first artifact is put into a graveyard from the battlefield each turn, that player creates a Treasure token.",
+      "chaos": "Gain control of target artifact until end of turn. Untap it. It gains haste until end of turn."
+    },
+    {
+      "id": "the-rust-warrens",
+      "name": "The Rust Warrens",
+      "type": "Plane — The Wreckfields",
+      "art": "rust-warrens.png",
+      "artFocus": [0.5, 0.5],
+      "text": "Whenever an artifact a player controls is put into a graveyard from the battlefield, that player may mill a card. If an artifact card is milled this way, that player creates a Treasure token. A player can't create more than one Treasure token this way each turn.",
+      "chaos": "Return target artifact card from your graveyard to your hand."
+    },
+    {
+      "id": "okiba-reach",
+      "name": "Okiba Reach",
+      "type": "Plane — Kamigawa",
+      "art": "okiba-reach.png",
+      "artFocus": [0.55, 0.48],
+      "text": "If an artifact you controlled left the battlefield this turn, artifact spells you cast cost {1} less to cast.",
+      "chaos": "Return target artifact card from your graveyard to the battlefield. It gains haste. Sacrifice it at the beginning of the next end step."
+    },
+    {
+      "id": "the-narrow",
+      "name": "The Narrow",
+      "type": "Plane — Avishkar",
+      "art": "the-narrow.png",
+      "artFocus": [0.5, 0.55],
+      "text": "No more than one creature can attack each combat unless its controller pays {1} for each creature attacking beyond the first.\n\nNo more than one creature can block each attacking creature.",
+      "chaos": "Target creature can't be blocked this turn."
+    },
+    {
+      "id": "magdas-foundry",
+      "name": "Magda's Foundry",
+      "type": "Plane — Avishkar",
+      "art": "magdas-foundry.png",
+      "artFocus": [0.5, 0.5],
+      "text": "Whenever you cast an artifact spell, you may pay {1}. If you do, create a 1/1 colorless Servo artifact creature token. This ability triggers only once each turn.",
+      "chaos": "Create a token that's a copy of target artifact token you control."
+    },
+    {
+      "id": "the-magnetic-ravine",
+      "name": "The Magnetic Ravine",
+      "type": "Plane — Omenpath",
+      "art": "magnetic-ravine.png",
+      "artFocus": [0.5, 0.5],
+      "text": "Whenever an artifact becomes tapped, if it is the first artifact its controller tapped this turn, put a stun counter on it.",
+      "chaos": "Tap target artifact. Put a stun counter on it.",
+      "flavor": "\"The first warning was a loose rivet floating past the windshield. The second was the engine.\"\n—Depala, Pilot Exemplar"
+    },
+    {
+      "id": "omenpath-bazaar",
+      "name": "Omenpath Bazaar",
+      "type": "Plane — Omenpath",
+      "art": "omenpath-bazaar.png",
+      "artFocus": [0.5, 0.5],
+      "text": "Once during each player's turn, that player may discard an artifact card. If they do, they look at the top three cards of their library. They put one of them into their hand and the rest on the bottom of their library in any order.",
+      "chaos": "Create a Treasure token. Then you may pay {1}. If you do, create a Treasure token. You may repeat this process, paying {1} more each time."
+    },
+    {
+      "id": "greasefangs-yard",
+      "name": "Greasefang's Yard",
+      "type": "Plane — Kamigawa",
+      "art": "greasefangs-yard.png",
+      "artFocus": [0.5, 0.45],
+      "text": "When you planeswalk to Greasefang's Yard, put a scrap counter on it for each player.\n\nDuring each player's turn, that player may cast up to one artifact card from their graveyard by paying its other costs and removing a scrap counter from Greasefang's Yard.",
+      "chaos": "Put two scrap counters on Greasefang's Yard."
+    },
+    {
+      "id": "the-black-circuit",
+      "name": "The Black Circuit",
+      "type": "Plane — The Run",
+      "art": "black-circuit.png",
+      "artFocus": [0.5, 0.5],
+      "text": "Once during each player's turn, that player may pay 2 life. If they do, they draw a card.",
+      "chaos": "Until end of turn, attacking creatures you control get +1/-1. Until end of turn, whenever one or more creatures you control deal combat damage to an opponent, create a Treasure token."
+    },
+    {
+      "id": "omenpath-service-yard",
+      "name": "Omenpath Service Yard",
+      "type": "Plane — Omenpath",
+      "art": "omenpath-service-yard.png",
+      "artFocus": [0.5, 0.55],
+      "text": "Once during each of your turns, you may pay {1}. If you do, target creature gets +0/+1 until end of turn.",
+      "chaos": "Create a Treasure token and a Food token.",
+      "flavor": "\"Hot food, clean fuel, and nobody asking about the blood. Almost civilized.\"\n—Greasefang, Okiba Boss"
+    },
+    {
+      "id": "the-ozolith-nexus",
+      "name": "The Ozolith Nexus",
+      "type": "Plane — Ikoria",
+      "art": "ozolith-nexus.png",
+      "artFocus": [0.5, 0.48],
+      "text": "Whenever a player's first creature with counters on it leaves the battlefield each turn, that player may put those counters on another creature they control. If they do, that creature can't attack this turn.",
+      "chaos": "Put two +1/+1 counters on target creature. It can't attack this turn."
+    },
+    {
+      "id": "the-unstable-omenpath",
+      "name": "The Unstable Omenpath",
+      "type": "Plane — Omenpath",
+      "art": "unstable-omenpath.png",
+      "artFocus": [0.38, 0.55],
+      "text": "The first spell each player casts during their turn costs {1} less to cast.",
+      "chaos": "Tap target creature or Vehicle you control. Put a stun counter on it.",
+      "flavor": "\"Behind us, the road has vanished. Ahead, it hasn't decided where to go.\"\n—Depala, Pilot Exemplar"
+    },
+    {
+      "id": "dismal-trench",
+      "name": "Dismal Trench",
+      "type": "Plane — The Run",
+      "art": "dismal-trench.png",
+      "artFocus": [0.5, 0.5],
+      "text": "At the beginning of your upkeep, torment 1.",
+      "chaos": "Torment 1, then planeswalk.",
+      "flavor": "\"The trench remembers every machine that tried to cross it. Its drivers are less fortunate.\""
+    },
+    {
+      "id": "depalas-foundry",
+      "name": "Depala's Foundry",
+      "type": "Plane — Avishkar",
+      "art": "depalas-foundry.png",
+      "artFocus": [0.5, 0.48],
+      "text": "Vehicle creatures get +1/+1.\n\nAt the beginning of each player's upkeep, that player may reveal the top card of their library. If it's a Vehicle card, that player puts it into their hand.",
+      "chaos": "Create two 1/1 red and white Dwarf creature tokens named Dwarven Gearhand."
+    },
+    {
+      "id": "the-shard-excavation",
+      "name": "The Shard Excavation",
+      "type": "Plane — Ikoria",
+      "art": "shard-excavation.png",
+      "artFocus": [0.42, 0.52],
+      "text": "At the beginning of your end step, you may tap an untapped creature you control. If you do, investigate.",
+      "chaos": "Investigate. Then you may sacrifice a Clue. When you do, put a +1/+1 counter on target creature and planeswalk. That creature can't attack this turn."
+    },
+    {
+      "id": "ambush-alley",
+      "name": "Ambush Alley",
+      "type": "Plane — Omenpath",
+      "art": "ambush-alley.png",
+      "artFocus": [0.4, 0.55],
+      "text": "At the beginning of combat on each player's turn, target creature can't block this turn.",
+      "chaos": "Target creature gains menace until end of turn.",
+      "flavor": "\"Three choke points, no patrols, and nowhere to turn around. Tell Magda I found her road.\"\n—Sai, Master Thopterist"
+    },
+    {
+      "id": "redline-final-sprint",
+      "name": "Redline: Final Sprint",
+      "type": "Plane — The Run",
+      "art": "redline-final-sprint.png",
+      "artFocus": [0.38, 0.58],
+      "text": "At the beginning of combat on each player's turn, that player chooses a creature. That creature gets +1/+0 and gains haste until end of turn.",
+      "chaos": "Choose one —\n• Creatures you control get +2/+0 until end of turn. At the beginning of your next upkeep, pay {4}. If you don't, you lose the game.\n• Torment 1."
+    }
+  ]
+}

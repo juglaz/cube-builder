@@ -1,6 +1,7 @@
 import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
+import { cubeDocsPublisherPlugin } from './scripts/docs-publisher.js'
 
 const proxy = {
   '/scryfall-data': {
@@ -18,13 +19,18 @@ const proxy = {
 }
 
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  plugins: [react(), tailwindcss(), cubeDocsPublisherPlugin()],
   optimizeDeps: {
     exclude: ['highs'],
   },
   worker: {
     format: 'es',
   },
-  server: { proxy },
+  server: {
+    proxy,
+    watch: {
+      ignored: ['**/docs/**'],
+    },
+  },
   preview: { proxy },
 })

@@ -27,6 +27,7 @@ import { creatureTypesFromCard, typeThemeId, typeThemesFromIds } from '../lib/cr
 import { addCardsToCube, removeCardFromCube, removeCardTheme, setCardTheme, updateCube } from '../lib/repo'
 import { applySettingsToGenerationDraft } from '../lib/generationDraft'
 import { formatCubeCreated } from '../lib/format'
+import { publishCubeDocs, publishedDocsUrl } from '../lib/docsPublish'
 import type { Synergy } from '../types'
 
 const EMPTY_THEME_IDS: string[] = []
@@ -49,6 +50,10 @@ export function CubePage() {
   const [infoDraft, setInfoDraft] = useState('')
   const [copiedList, setCopiedList] = useState(false)
   const [pasteOpen, setPasteOpen] = useState(false)
+  const [docsPublishState, setDocsPublishState] = useState<{
+    status: 'idle' | 'publishing' | 'success' | 'error'
+    message?: string
+  }>({ status: 'idle' })
 
   if (cubeId !== focusCubeId) {
     setFocusCubeId(cubeId)
@@ -56,6 +61,7 @@ export function CubePage() {
     setFillPage(false)
     setInfoOpen(false)
     setPasteOpen(false)
+    setDocsPublishState({ status: 'idle' })
   }
 
   useEffect(() => {
@@ -279,6 +285,73 @@ export function CubePage() {
     document.body.removeChild(area)
   }
 
+  async function publishDocsPage() {
+    if (!cube) return
+    setDocsPublishState({ status: 'publishing' })
+    try {
+      const syntheticTypeTags = cubeList.flatMap((card) =>
+        creatureTypesFromCard(card).map((typeName) => ({
+          oracleId: card.oracleId,
+          themeId: typeThemeId(typeName),
+          synergy: 4 as Synergy,
+        })),
+      )
+      const tagMap = new Map(
+        [...cubeTags, ...syntheticTypeTags].map((tag) => [
+          `${tag.oracleId}:${tag.themeId}`,
+          { oracleId: tag.oracleId, themeId: tag.themeId, synergy: tag.synergy },
+        ]),
+      )
+      const docsTags = [...tagMap.values()]
+      const docsThemeIds = new Set(docsTags.map((tag) => tag.themeId))
+      const result = await publishCubeDocs({
+        cubeId: cube.id,
+        name: cube.name,
+        description: infoDescription,
+        cards: cubeList.map((card) => ({
+          oracleId: card.oracleId,
+          name: card.name,
+          cmc: card.cmc,
+          typeLine: card.typeLine,
+          colors: card.colors,
+          colorIdentity: card.colorIdentity,
+          manaCost: card.manaCost,
+          oracleText: card.oracleText,
+          keywords: card.keywords,
+          imageNormal: card.imageNormal,
+          imageLarge: card.imageLarge,
+          layout: card.layout,
+          faces: card.faces,
+        })),
+        themes: pickerThemes
+          .filter((theme) => docsThemeIds.has(theme.id))
+          .map((theme) => ({
+            id: theme.id,
+            name: theme.name,
+            description: theme.description,
+            accent: theme.accent,
+          })),
+        tags: docsTags,
+        slug: cube.docsSlug || undefined,
+      })
+      if (result.slug !== cube.docsSlug) {
+        await updateCube({ ...cube, docsSlug: result.slug })
+      }
+      const message =
+        result.mode === 'generated-created'
+          ? `Created docs/${result.slug}/`
+          : result.mode === 'custom-cardlist'
+            ? `Updated docs/${result.slug}/cardlist.txt`
+            : `Updated docs/${result.slug}/`
+      setDocsPublishState({ status: 'success', message })
+    } catch (error) {
+      setDocsPublishState({
+        status: 'error',
+        message: error instanceof Error ? error.message : 'Docs publish failed.',
+      })
+    }
+  }
+
   const renderCanvas = () => (
     <CubeListView
       cards={tab === 'add' ? addVisible : visible}
@@ -373,14 +446,50 @@ export function CubePage() {
                   </button>
                 )}
                 {cubeList.length > 0 && (
-                  <button
-                    type="button"
-                    title="Copy card names, one per line, for Cube Cobra or a text file."
-                    onClick={() => void copyCardList()}
-                    className="rounded-full bg-white/10 px-3 py-1.5 text-sm text-stone-200"
-                  >
-                    {copiedList ? 'Copied' : 'Copy list'}
-                  </button>
+                  <>
+                    <button
+                      type="button"
+                      title="Copy card names, one per line, for Cube Cobra or a text file."
+                      onClick={() => void copyCardList()}
+                      className="rounded-full bg-white/10 px-3 py-1.5 text-sm text-stone-200"
+                    >
+                      {copiedList ? 'Copied' : 'Copy list'}
+                    </button>
+                    <button
+                      type="button"
+                      title="Publish this cube's name, description, and cards to its docs page."
+                      disabled={docsPublishState.status === 'publishing'}
+                      onClick={() => void publishDocsPage()}
+                      className="rounded-full bg-white/10 px-3 py-1.5 text-sm text-stone-200 disabled:cursor-wait disabled:opacity-60"
+                    >
+                      {docsPublishState.status === 'publishing'
+                        ? 'Publishing…'
+                        : cube.docsSlug
+                          ? 'Update docs page'
+                          : 'Create docs page'}
+                    </button>
+                    {cube.docsSlug && (
+                      <a
+                        href={publishedDocsUrl(cube.docsSlug)}
+                        target="_blank"
+                        rel="noreferrer"
+                        title="Open this cube's published docs page."
+                        className="rounded-full bg-white/10 px-3 py-1.5 text-sm text-stone-200"
+                      >
+                        View docs page
+                      </a>
+                    )}
+                    {docsPublishState.message && (
+                      <span
+                        className={`self-center text-xs ${
+                          docsPublishState.status === 'error' ? 'text-red-300' : 'text-emerald-300'
+                        }`}
+                        role={docsPublishState.status === 'error' ? 'alert' : 'status'}
+                      >
+                        {docsPublishState.message}
+                      </span>
+                    )}
+                  </>
                 )}
                 <button
                   type="button"

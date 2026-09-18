@@ -8,7 +8,10 @@
     "build": "tsc -b && vite build",
     "fetch-cobra": "node --max-old-space-size=8192 scripts/build-cobra-compact.mjs",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "test:docs": "node --test scripts/docs-publisher.test.ts",
+    "preview": "vite preview",
+    "render-planes": "node scripts/render-planes.mjs",
+    "print-planes": "node scripts/print-planes.mjs"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
@@ -21,11 +24,13 @@
     "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
+    "@napi-rs/canvas": "^1.0.9",
     "@types/node": "^24.13.3",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.7",
     "@vitejs/plugin-react": "^6.1.1",
     "oxlint": "^1.81.0",
+    "pdf-lib": "^1.17.1",
     "typescript": "~6.0.2",
     "vite": "^8.3.0"
   }

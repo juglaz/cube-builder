@@ -2,10 +2,20 @@
 <html lang="en" class="lore-active lore-index">
 <head>
   <meta charset="utf-8">
+  <script>
+    (function () {
+      var path = location.pathname
+      if (location.protocol === "file:") return
+      if (path.endsWith("/")) return
+      var last = path.split("/").pop() || ""
+      if (/\.[a-z0-9]+$/i.test(last)) return
+      location.replace(path + "/" + location.search + location.hash)
+    })()
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#1a1410">
   <title>Cube Lore</title>
-  <link rel="stylesheet" href="./shared/lore.css?v=3">
+  <link rel="stylesheet" href="./shared/lore.css?v=4">
 </head>
 <body class="lore-root lore-index">
   <header class="hero" id="top">
@@ -35,6 +45,7 @@
           <p>An interplanar racing circuit becomes a hunt for living crystal—and every crew on the track helps bring the Ozolith closer to becoming whole.</p>
         </div>
       </a>
+      <!-- cube-builder:generated:start --><!-- cube-builder:generated:end -->
     </div>
   </main>
 

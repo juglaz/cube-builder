@@ -124,6 +124,8 @@ export type Cube = {
   name: string
   targetSize: number
   notes: string
+  /** Stable docs folder assigned when this cube is first published. */
+  docsSlug?: string | null
   infoArt?: string | null
   /** When set, the info card uses these instead of generation seeds or densest tags. */
   primaryThemeIds?: string[] | null
