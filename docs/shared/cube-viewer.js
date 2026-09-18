@@ -527,9 +527,9 @@
   }
 
   async function start() {
-    const details = document.querySelector(".spoiler-box")
     const grid = document.getElementById("card-grid")
-    const copyUrl = document.querySelector("[data-copy-url]")?.getAttribute("data-copy-url")
+    const details = grid?.closest(".spoiler-box")
+    const copyUrl = details?.querySelector("[data-copy-url]")?.getAttribute("data-copy-url")
     if (!details || !grid || !copyUrl) return
     grid.textContent = "Loading cube data…"
     try {
@@ -545,7 +545,19 @@
         node.textContent = `${data.cards.length} cards`
       })
       const controls = element("div", "docs-viewer-controls")
+      controls.id = "cube-viewer-controls"
       grid.before(controls)
+      const toolbar = details.querySelector(".spoiler-toolbar")
+      const controlsToggle = element("button", "viewer-controls-toggle", "Hide controls")
+      controlsToggle.type = "button"
+      controlsToggle.setAttribute("aria-controls", controls.id)
+      controlsToggle.setAttribute("aria-expanded", "true")
+      controlsToggle.addEventListener("click", () => {
+        const collapsed = controls.toggleAttribute("hidden")
+        controlsToggle.textContent = collapsed ? "Show controls" : "Hide controls"
+        controlsToggle.setAttribute("aria-expanded", String(!collapsed))
+      })
+      toolbar?.append(controlsToggle)
       const render = () => {
         const visible = data.cards.filter((card) => matches(card, tagsByCard))
         renderColumns(grid, groupCards(visible, data.themes, tagsByCard), visible.length, data.cards.length)
@@ -557,18 +569,8 @@
     }
   }
 
-  const details = document.querySelector(".spoiler-box")
-  const summary = details?.querySelector("summary")
-  const closedLabel = summary?.textContent || "Show the card list"
-  const syncFullscreen = () => {
-    document.body.classList.toggle("viewer-fullscreen-open", Boolean(details?.open))
-    if (summary) summary.textContent = details?.open ? "Close the card list" : closedLabel
-  }
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && details?.open) details.open = false
-  })
-  details?.addEventListener("toggle", syncFullscreen)
-  syncFullscreen()
+  const grid = document.getElementById("card-grid")
+  const details = grid?.closest(".spoiler-box")
   if (details?.open) {
     details.dataset.viewerLoaded = "true"
     void start()

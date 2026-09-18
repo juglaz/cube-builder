@@ -15,7 +15,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101613">
   <title>The Ozolith Run</title>
-  <link rel="stylesheet" href="../shared/lore.css?v=8">
+  <link rel="stylesheet" href="../shared/lore.css?v=13">
   <link rel="stylesheet" href="./theme.css">
 </head>
 <body class="lore-root lore-ozolith-run">
@@ -23,7 +23,7 @@
     <div class="hero-inner">
       <p class="eyebrow">Cube Lore</p>
       <h1>The Ozolith Run</h1>
-      <p class="hero-deck">The Omenpaths opened the racing circuit to other worlds. Then a crew came back from Ikoria with a piece of the Ozolith in its hold.</p>
+      <p class="hero-deck">The <span class="lore-term" data-lore-term="omenpaths">Omenpaths</span> opened the racing circuit to other worlds. Then a crew came back from <span class="lore-term" data-lore-term="ikoria">Ikoria</span> with a piece of the <span class="lore-term" data-lore-term="ozolith">Ozolith</span> in its hold.</p>
       <div class="loop sans" aria-label="The cube's gameplay loop">
         <span>Build</span><span>Improve</span><span>Crew</span><span>Crash</span><span>Salvage</span><span>Rebuild</span>
       </div>
@@ -42,6 +42,7 @@
         <a href="#greasefang">Greasefang</a>
         <a href="#ozolith">The Ozolith</a>
         <a href="#spoilers">Spoilers</a>
+        <a href="#planes">Planes</a>
       </div>
     </div>
   </nav>
@@ -51,7 +52,7 @@
       <p class="eyebrow">Avishkar · Ikoria · The Omenpaths</p>
       <h2>Nobody remembers who won the first run to Ikoria.</h2>
       <div class="rule"></div>
-      <p class="lead dropcap">When the Omenpaths opened, Avishkar's racers did what racers always do: they found out where the new roads went, then argued over who could cross them fastest. The old circuit became a string of dangerous runs through worlds whose weather, gravity, and wildlife had never seen a Vehicle before.</p>
+      <p class="lead dropcap">When the Omenpaths opened, <span class="lore-term" data-lore-term="avishkar">Avishkar</span>'s racers did what racers always do: they found out where the new roads went, then argued over who could cross them fastest. The old <span class="lore-term" data-lore-term="circuit">circuit</span> became a string of dangerous runs through worlds whose weather, gravity, and wildlife had never seen a <span class="lore-term" data-lore-term="vehicle">Vehicle</span> before.</p>
       <p>One crew returned from Ikoria with half its machines missing and a sliver of <span class="card">The Ozolith</span> chained to the bed of the last truck. On the journey home, dents closed around it. Fresh plating thickened overnight. A <span class="card">Hangarback Walker</span> rebuilt itself from scrap no one remembered loading. By the time the crew reached Avishkar, the shard was worth more than the purse.</p>
       <p>Within a month, the circuit had changed. Race officials added salvage rights to the rules. Maps to rumored fragments passed through back rooms for obscene prices. Crews still crossed the finish line, but only after checking what everyone else had brought home.</p>
       <div class="run-definition sans">
@@ -81,7 +82,7 @@
           <article class="faction-card">
             <div class="number">03</div>
             <h3>Greasefang's Gang</h3>
-            <p>Okiba riders, mechanics, and wreckers with no patience for the difference between salvage and theft. If a machine can move for one more mile, Greasefang will race it.</p>
+            <p><span class="lore-term" data-lore-term="okiba">Okiba</span> riders, mechanics, and wreckers with no patience for the difference between salvage and theft. If a machine can move for one more mile, Greasefang will race it.</p>
             <div class="motive">Wreck · Rebuild · Run</div>
           </article>
         </div>
@@ -147,7 +148,7 @@
         </div>
       </div>
       <div class="chapter-copy">
-        <p><span class="card">Greasefang, Okiba Boss</span> arrived from Kamigawa with six riders, two tow cables, and no interest in Avishkar's salvage laws. On her first night at the circuit, the Okiba hauled a burned-out racer from an impound yard. It was back on the starting grid by morning.</p>
+        <p><span class="card">Greasefang, Okiba Boss</span> arrived from <span class="lore-term" data-lore-term="kamigawa">Kamigawa</span> with six riders, two tow cables, and no interest in Avishkar's salvage laws. On her first night at the circuit, the Okiba hauled a burned-out racer from an impound yard. It was back on the starting grid by morning.</p>
         <p>Her mechanics work beside the track while the wrecks are still hot. Repairs are judged by distance, not beauty: enough road to clear the ambush, reach the next garage, or steal the win. The <span class="card">Carrion Cruiser</span> looks assembled from three different accidents because it was.</p>
         <p>The Cartel strips wrecks for parts. Greasefang keeps their histories intact. Old dents, replacement engines, and crystal growth all go back into motion together. Her <span class="card">Reckoner Bankbuster</span> has been declared beyond repair four times. Around the Okiba, that only means someone has issued a challenge.</p>
         <div class="roster sans">
@@ -199,10 +200,23 @@
         <div id="card-grid" class="card-grid">Open to load card images.</div>
       </details>
     </section>
+
+    <section class="section spoilers" id="planes">
+      <p class="eyebrow">Planechase</p>
+      <h2>Planes</h2>
+      <p class="lead">These are the 20 plane cards for The Ozolith Run. Skip it if you want the story without the board.</p>
+      <details class="spoiler-box" id="plane-spoiler-box">
+        <summary>Show the plane list</summary>
+        <div class="spoiler-toolbar sans">
+          <span class="spoiler-count" data-plane-count>20 planes</span>
+        </div>
+        <div id="plane-grid" class="plane-grid">Open to load plane cards.</div>
+      </details>
+    </section>
   </main>
 
   <footer class="lore-footer">Fan-created cube lore · Card names and Magic: The Gathering are property of Wizards of the Coast</footer>
   <div id="card-zoom" class="card-zoom" hidden></div>
-  <script src="../shared/lore.js?v=6"></script>
+  <script src="../shared/lore.js?v=13"></script>
 </body>
 </html>

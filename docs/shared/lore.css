@@ -482,6 +482,51 @@ html.lore-index,
   font-weight: 600;
 }
 
+.lore-root .lore-term {
+  border-radius: 0.15em;
+  cursor: help;
+  text-decoration: underline dotted color-mix(in srgb, currentColor 58%, transparent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.lore-root .lore-term:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+.lore-root .lore-tooltip {
+  position: fixed;
+  z-index: 100;
+  box-sizing: border-box;
+  display: grid;
+  gap: 0.28em;
+  width: max-content;
+  max-width: min(26rem, calc(100vw - 24px));
+  padding: 10px 12px;
+  border: 1px solid color-mix(in srgb, var(--gold) 42%, transparent);
+  border-radius: 9px;
+  color: #f8f5ed;
+  background: rgba(12, 22, 17, 0.97);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.35);
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.45;
+  pointer-events: none;
+}
+
+.lore-root .lore-tooltip-label {
+  color: var(--gold);
+  font-size: 0.68rem;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.lore-root .lore-tooltip[hidden] {
+  display: none;
+}
+
 .lore-root .roster {
   display: flex;
   flex-wrap: wrap;
@@ -607,6 +652,28 @@ html.lore-index,
   gap: 12px 10px;
 }
 
+.lore-root .plane-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px 12px;
+}
+
+.lore-root .spoiler-box[open] > .plane-grid {
+  display: grid;
+  min-height: 0;
+  flex: 1 1 auto;
+  overflow: auto;
+  align-content: start;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  background: #16181d;
+}
+
+.lore-root .spoiler-box[open] .plane-card .thumb-name {
+  color: #eee9dc;
+}
+
 .lore-root .docs-viewer-controls {
   display: flex;
   flex-wrap: wrap;
@@ -618,6 +685,10 @@ html.lore-index,
   background: rgba(255, 255, 255, 0.36);
   padding: 6px 8px;
   font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+.lore-root .docs-viewer-controls[hidden] {
+  display: none;
 }
 
 .lore-root .viewer-theme-controls {
@@ -744,8 +815,8 @@ html.lore-index,
 }
 
 .lore-root .viewer-column-images {
-  width: 218px;
-  flex: 0 0 218px;
+  width: 250px;
+  flex: 0 0 250px;
 }
 
 .lore-root .viewer-column-header {
@@ -829,6 +900,7 @@ html.lore-index,
   background: #090b0d;
   padding: 0;
   cursor: zoom-in;
+  -webkit-touch-callout: none;
 }
 
 .lore-root .viewer-image-card img {
@@ -871,6 +943,12 @@ html.lore-index,
   font: 650 0.68rem/1.25 Inter, ui-sans-serif, system-ui, sans-serif;
 }
 
+.lore-root .plane-card img {
+  aspect-ratio: 10 / 7;
+  object-fit: contain;
+  background: #0b100e;
+}
+
 .lore-root .card,
 .lore-root .roster span {
   cursor: zoom-in;
@@ -894,6 +972,11 @@ html.lore-index,
   border-radius: 14px;
 }
 
+.lore-root .card-zoom.plane-zoom img {
+  width: min(920px, 88vw);
+  border-radius: 12px;
+}
+
 @media (max-width: 760px) {
   .lore-root .spoiler-box[open] {
     inset: 0;
@@ -904,6 +987,10 @@ html.lore-index,
 
   .lore-root .card-zoom img {
     width: min(240px, 72vw);
+  }
+
+  .lore-root .card-zoom.plane-zoom img {
+    width: min(96vw, 640px);
   }
 
   .lore-root .docs-viewer-controls {

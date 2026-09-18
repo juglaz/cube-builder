@@ -5,6 +5,222 @@ const activeHovers = new WeakSet()
 let listText = ""
 let gridLoaded = false
 
+const loreCatalog = {
+  avishkar: {
+    label: "Avishkar",
+    text: "The plane formerly called Kaladesh, renamed after the Consulate fell in the Indigo Revolution. Its capital, Ghirapur, now sits on an unusually large number of stable Omenpaths and hosts the Ghirapur Grand Prix.",
+  },
+  omenpaths: {
+    label: "Omenpaths",
+    text: "Transplanar passages that became widespread after New Phyrexia's invasion. Unlike planeswalking, they let ordinary people, cargo, and Vehicles travel between worlds. Ghirapur on Avishkar has an unusually large number of stable ones.",
+  },
+  ikoria: {
+    label: "Ikoria",
+    text: "A monster world of mutating beasts and crystal, where humans survive in a handful of walled sanctuaries. Ikoria's crystals power monster growth and evolution, and many flare when a beast is near.",
+  },
+  ozolith: {
+    label: "The Ozolith",
+    text: "A vast spiral of Ikorian crystal north of Drannith. A meddling planeswalker altered it, accelerating monster mutation; Lukka later overloaded the formation and shattered it. The self-gathering shards in this cube's story are original lore.",
+  },
+  circuit: {
+    label: "The circuit",
+    text: "Avishkar's canonical race is the Ghirapur Grand Prix, an interplanar event whose stages cross Omenpaths. The Ozolith Run is original cube lore: an offshoot circuit whose prize is living crystal rather than the official purse.",
+  },
+  vehicle: {
+    label: "Vehicle",
+    text: "A Magic artifact subtype that debuted on Kaladesh, now Avishkar. Vehicles are crewed by creatures before they can attack; Avishkari inventors treat them as racing machines, cargo haulers, and weapons.",
+  },
+  kamigawa: {
+    label: "Kamigawa",
+    text: "A plane where kami spirits and advanced technology coexist. In the Neon Dynasty era, the city of Towashi has an Undercity of neon streets and nezumi biker gangs.",
+  },
+  okiba: {
+    label: "Okiba Reckoners",
+    text: "Greasefang's nezumi-only biker gang from Towashi's Undercity on Kamigawa, part of the larger Reckoners crime network. Their role in this race is original cube lore.",
+  },
+  depala: {
+    label: "Depala",
+    text: "A dwarf pilot from Avishkar, once the second-ranked racer on Ghirapur's airship circuit and a Renegade during the Consulate years. The Expedition she leads here is original cube lore.",
+  },
+  magda: {
+    label: "Magda",
+    text: "A dwarf outlaw from Axgard on Kaldheim who left her clan, led a band of raiders, and later reached Thunder Junction through an Omenpath. The Salvage Cartel she runs here is original cube lore.",
+  },
+  greasefang: {
+    label: "Greasefang",
+    text: "Nezumi boss of the Okiba Reckoners, a biker gang in Towashi's Undercity. Any nezumi who joins is her family, and she answers slights against them in kind. Her arrival on Avishkar's circuit is original cube lore.",
+  },
+  shorikai: {
+    label: "Shorikai",
+    text: "Shorikai, Genesis Engine is a kami-inhabited Vehicle from Kamigawa's Neon Dynasty. In this cube's story it serves as the Expedition's rolling workshop and chartroom.",
+  },
+}
+
+const loreMatchers = [
+  { id: "omenpaths", pattern: /\bOmenpaths?\b/g },
+  { id: "kamigawa", pattern: /\bKamigawa\b/g },
+  { id: "avishkar", pattern: /\bAvishkar\b/g },
+  { id: "greasefang", pattern: /\bGreasefang\b/g },
+  { id: "shorikai", pattern: /\bShorikai\b/g },
+  { id: "ikoria", pattern: /\bIkorian?\b/g },
+  { id: "ozolith", pattern: /\bOzolith\b/g },
+  { id: "vehicle", pattern: /\bVehicles?\b/g },
+  { id: "okiba", pattern: /\bOkiba\b/g },
+  { id: "depala", pattern: /\bDepala\b/g },
+  { id: "magda", pattern: /\bMagda\b/g },
+  { id: "circuit", pattern: /\bcircuits?\b/gi },
+]
+
+const loreSkipClosest = "a, button, footer, h1, .card, .roster, .lore-term, .lore-tooltip, .loop, .lore-nav, .chapter-label, .spoiler-box"
+
+let activeLoreTerm = null
+
+function loreTooltip() {
+  let tooltip = document.getElementById("lore-tooltip")
+  if (tooltip) return tooltip
+  tooltip = document.createElement("div")
+  tooltip.id = "lore-tooltip"
+  tooltip.className = "lore-tooltip sans"
+  tooltip.setAttribute("role", "tooltip")
+  tooltip.hidden = true
+  document.body.append(tooltip)
+  return tooltip
+}
+
+function placeLoreTooltip(node) {
+  const tooltip = loreTooltip()
+  if (tooltip.hidden) return
+  const rect = node.getBoundingClientRect()
+  const margin = 12
+  const gap = 9
+  const left = Math.min(
+    window.innerWidth - tooltip.offsetWidth - margin,
+    Math.max(margin, rect.left + rect.width / 2 - tooltip.offsetWidth / 2),
+  )
+  const above = rect.top - tooltip.offsetHeight - gap
+  const top = above >= margin ? above : Math.min(window.innerHeight - tooltip.offsetHeight - margin, rect.bottom + gap)
+  tooltip.style.left = `${left}px`
+  tooltip.style.top = `${Math.max(margin, top)}px`
+}
+
+function loreEntry(id) {
+  return loreCatalog[id] || null
+}
+
+function showLoreTooltip(node) {
+  const entry = loreEntry(node.dataset.loreTerm)
+  if (!entry) return
+  activeLoreTerm = node
+  const tooltip = loreTooltip()
+  const label = document.createElement("strong")
+  label.className = "lore-tooltip-label"
+  label.textContent = entry.label
+  const body = document.createElement("span")
+  body.textContent = entry.text
+  tooltip.replaceChildren(label, body)
+  tooltip.hidden = false
+  placeLoreTooltip(node)
+}
+
+function hideLoreTooltip(node) {
+  if (node && activeLoreTerm !== node) return
+  activeLoreTerm = null
+  loreTooltip().hidden = true
+}
+
+function collectLoreMatches(text) {
+  const matches = []
+  for (const matcher of loreMatchers) {
+    const pattern = new RegExp(matcher.pattern.source, matcher.pattern.flags.includes("g") ? matcher.pattern.flags : `${matcher.pattern.flags}g`)
+    let match
+    while ((match = pattern.exec(text))) {
+      matches.push({
+        id: matcher.id,
+        start: match.index,
+        end: match.index + match[0].length,
+      })
+    }
+  }
+  matches.sort((left, right) => left.start - right.start || right.end - left.end)
+  const kept = []
+  let cursor = 0
+  for (const match of matches) {
+    if (match.start < cursor) continue
+    kept.push(match)
+    cursor = match.end
+  }
+  return kept
+}
+
+function wrapLoreTextNode(node) {
+  const text = node.nodeValue
+  if (!text) return
+  const matches = collectLoreMatches(text)
+  if (matches.length === 0) return
+  const fragment = document.createDocumentFragment()
+  let cursor = 0
+  for (const match of matches) {
+    if (match.start > cursor) fragment.append(text.slice(cursor, match.start))
+    const term = document.createElement("span")
+    term.className = "lore-term"
+    term.dataset.loreTerm = match.id
+    term.textContent = text.slice(match.start, match.end)
+    fragment.append(term)
+    cursor = match.end
+  }
+  if (cursor < text.length) fragment.append(text.slice(cursor))
+  node.replaceWith(fragment)
+}
+
+function linkLoreTerms(root = document.body) {
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+    acceptNode(node) {
+      if (!node.nodeValue || !/\S/.test(node.nodeValue)) return NodeFilter.FILTER_REJECT
+      const el = node.parentElement
+      if (!el || /^(SCRIPT|STYLE|TEXTAREA|NOSCRIPT)$/.test(el.tagName)) return NodeFilter.FILTER_REJECT
+      if (el.closest(loreSkipClosest)) return NodeFilter.FILTER_REJECT
+      return NodeFilter.FILTER_ACCEPT
+    },
+  })
+  const nodes = []
+  let current = walker.nextNode()
+  while (current) {
+    nodes.push(current)
+    current = walker.nextNode()
+  }
+  for (const node of nodes) wrapLoreTextNode(node)
+}
+
+function bindLoreTerms() {
+  linkLoreTerms()
+  const nodes = document.querySelectorAll("[data-lore-term]")
+  if (nodes.length === 0) return
+  const tooltip = loreTooltip()
+  for (const node of nodes) {
+    if (!loreEntry(node.dataset.loreTerm)) continue
+    node.tabIndex = 0
+    node.setAttribute("aria-describedby", tooltip.id)
+    node.addEventListener("pointerenter", (event) => {
+      if (event.pointerType !== "touch") showLoreTooltip(node)
+    })
+    node.addEventListener("pointerleave", () => {
+      if (document.activeElement !== node) hideLoreTooltip(node)
+    })
+    node.addEventListener("focus", () => showLoreTooltip(node))
+    node.addEventListener("blur", () => hideLoreTooltip(node))
+    node.addEventListener("click", () => showLoreTooltip(node))
+  }
+  document.addEventListener("pointerdown", (event) => {
+    if (!event.target.closest?.("[data-lore-term]")) hideLoreTooltip()
+  })
+  window.addEventListener("resize", () => {
+    if (activeLoreTerm) placeLoreTooltip(activeLoreTerm)
+  })
+  window.addEventListener("scroll", () => {
+    if (activeLoreTerm) placeLoreTooltip(activeLoreTerm)
+  }, true)
+}
+
 function frontName(name) {
   return name.split(" // ")[0].trim()
 }
@@ -103,12 +319,14 @@ function hideZoom() {
   const el = zoomEl()
   if (!el) return
   el.hidden = true
+  el.classList.remove("plane-zoom")
   el.replaceChildren()
 }
 
-function showZoom(images, event) {
+function showZoom(images, event, node) {
   const el = zoomEl()
   if (!el || !images?.large?.length) return
+  el.classList.toggle("plane-zoom", node?.dataset.zoomKind === "plane")
   el.replaceChildren()
   for (const src of images.large) {
     const img = document.createElement("img")
@@ -121,15 +339,49 @@ function showZoom(images, event) {
 }
 
 function bindZoom(node, name) {
-  node.addEventListener("pointerenter", async (event) => {
-    activeHovers.add(node)
-    const images = await ensureImages(name)
-    if (activeHovers.has(node)) showZoom(images, event)
-  })
-  node.addEventListener("pointermove", placeZoom)
-  node.addEventListener("pointerleave", () => {
+  let touchPress = null
+  const cancelTouchPress = () => {
+    if (touchPress?.timer) window.clearTimeout(touchPress.timer)
+    touchPress = null
     activeHovers.delete(node)
     hideZoom()
+  }
+  node.addEventListener("pointerenter", async (event) => {
+    if (event.pointerType === "touch") return
+    activeHovers.add(node)
+    const images = await ensureImages(name)
+    if (activeHovers.has(node)) showZoom(images, event, node)
+  })
+  node.addEventListener("pointerdown", (event) => {
+    if (event.pointerType !== "touch") return
+    const press = {
+      x: event.clientX,
+      y: event.clientY,
+      timer: 0,
+    }
+    touchPress = press
+    press.timer = window.setTimeout(async () => {
+      const images = await ensureImages(name)
+      if (touchPress !== press) return
+      activeHovers.add(node)
+      showZoom(images, press, node)
+    }, 320)
+  })
+  node.addEventListener("pointermove", (event) => {
+    if (event.pointerType !== "touch") {
+      placeZoom(event)
+      return
+    }
+    if (!touchPress) return
+    const dx = event.clientX - touchPress.x
+    const dy = event.clientY - touchPress.y
+    if (dx * dx + dy * dy > 64) cancelTouchPress()
+  })
+  node.addEventListener("pointerup", cancelTouchPress)
+  node.addEventListener("pointercancel", cancelTouchPress)
+  node.addEventListener("contextmenu", (event) => event.preventDefault())
+  node.addEventListener("pointerleave", () => {
+    cancelTouchPress()
   })
 }
 
@@ -198,6 +450,85 @@ async function loadList() {
   })
 }
 
+async function loadPlanes() {
+  const details = document.getElementById("plane-spoiler-box")
+  const grid = document.getElementById("plane-grid")
+  if (!details || !grid) return
+  let loaded = false
+  const start = async () => {
+    if (loaded) return
+    loaded = true
+    grid.textContent = "Loading planes…"
+    try {
+      const payload = await (await fetch("./planes.json")).json()
+      const planes = Array.isArray(payload.planes) ? payload.planes : []
+      document.querySelectorAll("[data-plane-count]").forEach((el) => {
+        el.textContent = `${planes.length} planes`
+      })
+      const fragment = document.createDocumentFragment()
+      for (const plane of planes) {
+        if (!plane?.id || !plane?.name) continue
+        const src = `./images/planes/${plane.id}.png`
+        remember(plane.name, { small: src, large: [src] })
+        const button = document.createElement("button")
+        button.type = "button"
+        button.className = "thumb-card plane-card"
+        button.dataset.zoomKind = "plane"
+        button.setAttribute("aria-label", plane.name)
+        const img = document.createElement("img")
+        img.alt = plane.name
+        img.loading = "lazy"
+        img.src = src
+        const label = document.createElement("span")
+        label.className = "thumb-name"
+        label.textContent = plane.name
+        button.append(img, label)
+        bindZoom(button, plane.name)
+        fragment.append(button)
+      }
+      grid.replaceChildren(fragment)
+    } catch {
+      loaded = false
+      grid.textContent = "Could not load plane cards."
+    }
+  }
+  if (details.open) void start()
+  details.addEventListener("toggle", () => {
+    if (details.open) void start()
+  })
+}
+
+function bindSpoilerBoxes() {
+  const boxes = [...document.querySelectorAll(".spoiler-box")]
+  const closedLabels = new Map()
+  const sync = (details) => {
+    const anyOpen = boxes.some((box) => box.open)
+    document.body.classList.toggle("viewer-fullscreen-open", anyOpen)
+    const summary = details.querySelector("summary")
+    const closed = closedLabels.get(details)
+    if (summary && closed) {
+      summary.textContent = details.open ? closed.replace(/^Show\b/i, "Close") : closed
+    }
+    if (!details.open) hideZoom()
+  }
+  for (const details of boxes) {
+    const summary = details.querySelector("summary")
+    if (summary) closedLabels.set(details, summary.textContent)
+    details.addEventListener("toggle", () => sync(details))
+    if (details.open) sync(details)
+  }
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") return
+    if (activeLoreTerm) {
+      hideLoreTooltip()
+      return
+    }
+    for (const details of boxes) {
+      if (details.open) details.open = false
+    }
+  })
+}
+
 document.querySelectorAll("[data-copy]").forEach((button) => {
   button.addEventListener("click", async () => {
     const previous = button.textContent
@@ -220,6 +551,10 @@ document.querySelectorAll(".card, .roster span").forEach((node) => {
   const name = node.textContent.trim()
   if (name) bindZoom(node, name)
 })
+
+bindLoreTerms()
+bindSpoilerBoxes()
+void loadPlanes()
 
 window.CubeLore = { bindZoom, facesFromCard, remember }
 
