@@ -201,16 +201,19 @@ function bindLoreTerms() {
     node.tabIndex = 0
     node.setAttribute("aria-describedby", tooltip.id)
     node.addEventListener("pointerenter", (event) => {
-      if (event.pointerType !== "touch") showLoreTooltip(node)
+      if (event.pointerType === "touch" || recentlyTapped()) return
+      showLoreTooltip(node)
     })
     node.addEventListener("pointerleave", () => {
+      if (recentlyTapped()) return
       if (document.activeElement !== node) hideLoreTooltip(node)
     })
     node.addEventListener("focus", () => showLoreTooltip(node))
     node.addEventListener("blur", () => hideLoreTooltip(node))
-    node.addEventListener("click", () => showLoreTooltip(node))
+    bindPressTap(node, () => showLoreTooltip(node), { alsoClick: true })
   }
   document.addEventListener("pointerdown", (event) => {
+    if (event.pointerType !== "touch" && recentlyTapped()) return
     if (!event.target.closest?.("[data-lore-term]")) hideLoreTooltip()
   })
   window.addEventListener("resize", () => {
@@ -301,11 +304,71 @@ function zoomEl() {
   return document.getElementById("card-zoom")
 }
 
+let stickyZoomNode = null
+let zoomDocBound = false
+let lastTapAt = 0
+
+function recentlyTapped() {
+  return Date.now() - lastTapAt < 800
+}
+
+function bindPressTap(node, onTap, options = {}) {
+  let start = null
+  let tapped = false
+  node.addEventListener("touchstart", (event) => {
+    const touch = event.changedTouches[0]
+    start = { x: touch.clientX, y: touch.clientY }
+    tapped = false
+  }, { passive: true })
+  node.addEventListener("touchend", (event) => {
+    if (!start) return
+    const touch = event.changedTouches[0]
+    const dx = touch.clientX - start.x
+    const dy = touch.clientY - start.y
+    start = null
+    if (dx * dx + dy * dy > 64) return
+    tapped = true
+    lastTapAt = Date.now()
+    event.preventDefault()
+    onTap({ clientX: touch.clientX, clientY: touch.clientY })
+  })
+  node.addEventListener("click", (event) => {
+    if (tapped) {
+      tapped = false
+      event.preventDefault()
+      return
+    }
+    if (!options.alsoClick && window.matchMedia("(hover: hover) and (pointer: fine)").matches) return
+    lastTapAt = Date.now()
+    event.preventDefault()
+    onTap(event)
+  })
+  node.addEventListener("contextmenu", (event) => event.preventDefault())
+}
+
+function hideZoom() {
+  stickyZoomNode = null
+  const el = zoomEl()
+  if (!el) return
+  el.hidden = true
+  el.classList.remove("plane-zoom")
+  el.replaceChildren()
+}
+
 function placeZoom(event) {
   const el = zoomEl()
   if (!el || el.hidden) return
   const width = el.offsetWidth
   const height = el.offsetHeight
+  const coarse = window.matchMedia("(pointer: coarse)").matches
+  if (coarse) {
+    const left = Math.max(8, Math.min((window.innerWidth - width) / 2, window.innerWidth - width - 8))
+    let top = event.clientY - height - 18
+    if (top < 8) top = event.clientY + 18
+    el.style.left = `${left}px`
+    el.style.top = `${Math.max(8, Math.min(top, window.innerHeight - height - 8))}px`
+    return
+  }
   let left = event.clientX + 20
   let top = event.clientY + 16
   if (left + width > window.innerWidth - 10) left = event.clientX - width - 20
@@ -313,14 +376,6 @@ function placeZoom(event) {
   if (left < 8) left = 8
   el.style.left = `${left}px`
   el.style.top = `${top}px`
-}
-
-function hideZoom() {
-  const el = zoomEl()
-  if (!el) return
-  el.hidden = true
-  el.classList.remove("plane-zoom")
-  el.replaceChildren()
 }
 
 function showZoom(images, event, node) {
@@ -338,50 +393,51 @@ function showZoom(images, event, node) {
   placeZoom(event)
 }
 
-function bindZoom(node, name) {
-  let touchPress = null
-  const cancelTouchPress = () => {
-    if (touchPress?.timer) window.clearTimeout(touchPress.timer)
-    touchPress = null
-    activeHovers.delete(node)
+function bindZoomDocument() {
+  if (zoomDocBound) return
+  zoomDocBound = true
+  document.addEventListener("pointerdown", (event) => {
+    if (!stickyZoomNode) return
+    if (event.pointerType !== "touch" && recentlyTapped()) return
+    if (event.target.closest?.(".card, .roster span, .thumb-card, .viewer-image-card, .viewer-list-card")) return
     hideZoom()
-  }
-  node.addEventListener("pointerenter", async (event) => {
-    if (event.pointerType === "touch") return
+  }, true)
+  document.addEventListener("contextmenu", (event) => {
+    if (event.target.closest?.(".card, .roster span, .lore-term, .thumb-card, .viewer-image-card, .viewer-list-card, .viewer-chip")) {
+      event.preventDefault()
+    }
+  })
+}
+
+function bindZoom(node, name) {
+  bindZoomDocument()
+  if (node.tabIndex < 0) node.tabIndex = 0
+  const showAt = async (event) => {
     activeHovers.add(node)
     const images = await ensureImages(name)
-    if (activeHovers.has(node)) showZoom(images, event, node)
+    if (stickyZoomNode === node || activeHovers.has(node)) showZoom(images, event, node)
+  }
+  node.addEventListener("pointerenter", (event) => {
+    if (event.pointerType === "touch" || recentlyTapped()) return
+    if (stickyZoomNode && stickyZoomNode !== node) return
+    void showAt(event)
   })
-  node.addEventListener("pointerdown", (event) => {
-    if (event.pointerType !== "touch") return
-    const press = {
-      x: event.clientX,
-      y: event.clientY,
-      timer: 0,
-    }
-    touchPress = press
-    press.timer = window.setTimeout(async () => {
-      const images = await ensureImages(name)
-      if (touchPress !== press) return
-      activeHovers.add(node)
-      showZoom(images, press, node)
-    }, 320)
-  })
-  node.addEventListener("pointermove", (event) => {
-    if (event.pointerType !== "touch") {
-      placeZoom(event)
+  bindPressTap(node, (event) => {
+    if (stickyZoomNode === node) {
+      hideZoom()
       return
     }
-    if (!touchPress) return
-    const dx = event.clientX - touchPress.x
-    const dy = event.clientY - touchPress.y
-    if (dx * dx + dy * dy > 64) cancelTouchPress()
+    stickyZoomNode = node
+    void showAt(event)
   })
-  node.addEventListener("pointerup", cancelTouchPress)
-  node.addEventListener("pointercancel", cancelTouchPress)
-  node.addEventListener("contextmenu", (event) => event.preventDefault())
-  node.addEventListener("pointerleave", () => {
-    cancelTouchPress()
+  node.addEventListener("pointermove", (event) => {
+    if (event.pointerType === "touch" || recentlyTapped()) return
+    placeZoom(event)
+  })
+  node.addEventListener("pointerleave", (event) => {
+    if (event.pointerType === "touch" || recentlyTapped() || stickyZoomNode === node) return
+    activeHovers.delete(node)
+    hideZoom()
   })
 }
 
@@ -394,6 +450,7 @@ function renderTile(name) {
   const img = document.createElement("img")
   img.alt = name
   img.loading = "lazy"
+  img.draggable = false
   img.src = images?.small || namedImage(name, "small")
   const label = document.createElement("span")
   label.className = "thumb-name"
@@ -478,6 +535,7 @@ async function loadPlanes() {
         const img = document.createElement("img")
         img.alt = plane.name
         img.loading = "lazy"
+        img.draggable = false
         img.src = src
         const label = document.createElement("span")
         label.className = "thumb-name"
@@ -509,7 +567,7 @@ function bindSpoilerBoxes() {
     if (summary && closed) {
       summary.textContent = details.open ? closed.replace(/^Show\b/i, "Close") : closed
     }
-    if (!details.open) hideZoom()
+    hideZoom()
   }
   for (const details of boxes) {
     const summary = details.querySelector("summary")
@@ -519,6 +577,10 @@ function bindSpoilerBoxes() {
   }
   document.addEventListener("keydown", (event) => {
     if (event.key !== "Escape") return
+    if (!zoomEl()?.hidden) {
+      hideZoom()
+      return
+    }
     if (activeLoreTerm) {
       hideLoreTooltip()
       return

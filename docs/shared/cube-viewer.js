@@ -254,11 +254,41 @@
     const button = element("button", "viewer-chip", label)
     button.type = "button"
     button.dataset.active = active ? "true" : "false"
-    button.addEventListener("click", onClick)
+    let suppressClick = false
+    button.addEventListener("click", (event) => {
+      if (suppressClick) {
+        suppressClick = false
+        event.preventDefault()
+        return
+      }
+      onClick()
+    })
     if (onOnly) {
-      button.title = "Click to add/remove. Right-click to select only this."
+      button.title = "Click to add or remove. Right-click or long-press to select only this."
+      let press = 0
+      const cancelPress = () => {
+        if (press) window.clearTimeout(press)
+        press = 0
+      }
+      button.addEventListener("pointerdown", (event) => {
+        if (event.pointerType !== "touch") return
+        cancelPress()
+        press = window.setTimeout(() => {
+          press = 0
+          suppressClick = true
+          onOnly()
+        }, 480)
+      })
+      button.addEventListener("pointerup", cancelPress)
+      button.addEventListener("pointercancel", cancelPress)
+      button.addEventListener("pointermove", (event) => {
+        if (!press) return
+        if (Math.abs(event.movementX) + Math.abs(event.movementY) > 6) cancelPress()
+      })
       button.addEventListener("contextmenu", (event) => {
         event.preventDefault()
+        cancelPress()
+        if (event.pointerType === "touch") return
         onOnly()
       })
     }
@@ -283,6 +313,7 @@
     const search = element("input", "viewer-search")
     search.type = "search"
     search.placeholder = "Search name, type, or rules text"
+    search.setAttribute("aria-label", "Search cards")
     search.value = state.query
     search.addEventListener("input", () => {
       state.query = search.value
@@ -290,6 +321,7 @@
     })
     root.append(search)
 
+    const filters = element("div", "viewer-filter-block")
     const colorRow = element("div", "viewer-control-row")
     colorRow.append(element("span", "viewer-control-label", "Color"))
     for (const color of COLORS) {
@@ -310,7 +342,6 @@
       (value) => { state.colorMode = value; render() },
       "Color filter mode",
     ))
-    root.append(colorRow)
 
     const typeRow = element("div", "viewer-control-row")
     typeRow.append(element("span", "viewer-control-label", "Type"))
@@ -326,7 +357,6 @@
         render()
       }))
     }
-    root.append(typeRow)
 
     const cmcRow = element("div", "viewer-control-row")
     cmcRow.append(element("span", "viewer-control-label", "Mana value"))
@@ -342,7 +372,8 @@
         render()
       }))
     }
-    root.append(cmcRow)
+    filters.append(colorRow, typeRow, cmcRow)
+    root.append(filters)
 
     if (data.themes.length) {
       const counts = themeCounts(data.cards, tagsByCard)
@@ -476,6 +507,7 @@
       image.src = card.imageNormal || card.imageLarge
       image.alt = card.name
       image.loading = "lazy"
+      image.draggable = false
       button.append(image)
     } else {
       button.textContent = card.name
@@ -548,13 +580,18 @@
       controls.id = "cube-viewer-controls"
       grid.before(controls)
       const toolbar = details.querySelector(".spoiler-toolbar")
-      const controlsToggle = element("button", "viewer-controls-toggle", "Hide controls")
+      const controlsToggle = element("button", "viewer-controls-toggle", "Hide filters")
       controlsToggle.type = "button"
       controlsToggle.setAttribute("aria-controls", controls.id)
-      controlsToggle.setAttribute("aria-expanded", "true")
+      const compact = window.matchMedia("(max-width: 760px)").matches
+      if (compact) {
+        controls.hidden = true
+        controlsToggle.textContent = "Show filters"
+      }
+      controlsToggle.setAttribute("aria-expanded", String(!controls.hidden))
       controlsToggle.addEventListener("click", () => {
         const collapsed = controls.toggleAttribute("hidden")
-        controlsToggle.textContent = collapsed ? "Show controls" : "Hide controls"
+        controlsToggle.textContent = collapsed ? "Show filters" : "Hide filters"
         controlsToggle.setAttribute("aria-expanded", String(!collapsed))
       })
       toolbar?.append(controlsToggle)
