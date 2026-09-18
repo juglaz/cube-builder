@@ -2,10 +2,11 @@ A-Moss-Pit Skeleton
 Abrade
 Adarkar Wastes
 Adeline, Resplendent Cathar
-Aethergeode Miner
+Aether Spellbomb
 Aethersphere Harvester
 Agatha's Soul Cauldron
 Air Response Unit
+Ancient Animus
 Animation Module
 Ao, the Dawn Sky
 Apocalypse Runner
@@ -13,7 +14,6 @@ Aquastrand Spider
 Arbaaz Mir
 Arcbound Tracker
 Artificer's Assistant
-Aviary Mechanic
 Axgard Artisan
 Baleful Strix
 Barkchannel Pathway // Tidechannel Pathway
@@ -22,15 +22,14 @@ Basri's Lieutenant
 Battle Screech
 Battlefield Forge
 Big Wheel
-Bind the Monster
 Blacksmith's Skill
-Blade of the Oni
 Blightstep Pathway // Searstep Pathway
 Bloated Contaminator
 Blood Fountain
 Blood Petal Celebrant
 Bomat Courier
 Bone Devourer
+Bone Shards
 Boommobile
 Boosted Sloop
 Botanical Brawler
@@ -47,7 +46,6 @@ Caradora, Heart of Alacria
 Carrion Cruiser
 Caught in the Brights
 Caustic Bronco
-Caustic Exhale
 Caves of Koilos
 Chandra, Spark Hunter
 Chief Engineer
@@ -55,6 +53,7 @@ Chromatic Star
 Circuit Mender
 Clearwater Pathway // Murkwater Pathway
 Cloudspire Skycycle
+Collector's Vault
 Command Bridge
 Conclave Mentor
 Conqueror's Galleon // Conqueror's Foothold
@@ -62,12 +61,10 @@ Cosima, God of the Voyage // The Omenkeel
 Costly Plunder
 Countless Gears Renegade
 Country Roads
-Covetous Castaway // Ghostly Castigator
 Cragcrown Pathway // Timbercrown Pathway
 Cryoshatter
 Cryptcaller Chariot
 Crystal Fragments // Summon: Alexander
-Cult Conscript
 Cultivator's Caravan
 Cursed Wombat
 Cyberdrive Awakener
@@ -87,8 +84,8 @@ Detention Chariot
 Dispatch
 Disruption Protocol
 Dragonspark Reactor
+Dread Return
 Dreamdrinker Vampire
-Drive to Work
 Drossforge Bridge
 Drown in Ichor
 Duel for Dominance
@@ -96,9 +93,7 @@ Dune Drifter
 Dusk Legion Duelist
 Duskshell Crawler
 Dyadrine, Synthesis Amalgam
-Elite Guardmage
 Emry, Lurker of the Loch
-Endless One
 Enthusiastic Mechanaut
 Esika's Chariot
 Etherium Sculptor
@@ -107,12 +102,12 @@ Experiment One
 Experimental Synthesizer
 Fabled Passage
 Faithless Looting
+Fallaji Archaeologist
 Fearless Liberator
 Fearless Swashbuckler
 Feldon, Ronom Excavator
 Fell Beast of Mordor
 Filigree Vector
-Fire Imp
 Fire Nation Salvagers
 Fleetwheel Cruiser
 Fortuitous Find
@@ -123,6 +118,7 @@ Galvanic Blast
 Gastal Thrillroller
 Gearshift Ace
 Generous Pup
+Getaway Glamer
 Glistening Dawn
 Glóin, Dwarf Emissary
 Goblin Engineer
@@ -131,9 +127,7 @@ Grateful Apparition
 Gravelighter
 Greasefang, Okiba Boss
 Grim Bauble
-Grisly Ritual
 Guidelight Pathmaker
-Gutterbones
 Hadana's Climb // Winged Temple of Orazca
 Halana and Alena, Partners
 Hammers of Moradin
@@ -166,15 +160,15 @@ Kappa Cannoneer
 Karn's Bastion
 Karplusan Forest
 Kid Loki
-Kitesail Freebooter
 Knight of the Ebon Legion
 Kodama of the West Tree
-Kor Skyfisher
+Kotori, Pilot Prodigy
 Laelia, the Blade Reforged
 Lion Sash
 Lita, Mechanical Engineer
 Llanowar Wastes
 Lorehold Archivist // Restore Relic
+Losheel, Clockwork Scholar
 Lotusguard Disciple
 Luminarch Aspirant
 Magda, the Hoardmaster
@@ -190,27 +184,27 @@ Marketback Walker
 Mary Read and Anne Bonny
 Master of Etherium
 Master Trinketeer
+Mech Hangar
 Mechtitan Core
 Meren of Clan Nel Toth
 Metallic Rebuke
 Metastatic Evangel
 Mindlink Mech
-Mirrex
 Mishra, Tamer of Mak Fawa
 Mishra's Factory
 Mistvault Bridge
 Mobile Garrison
 Mobilizer Mech
 Moira and Teshar
-Mortarpod
 Myr Retriever
-Myr Sire
+Myr Scrapling
 N'Yami-Class Mother Ship
-Namor, Scourge of the Seas
+Necron Deathmark
 Needleverge Pathway // Pillarverge Pathway
+Nested Shambler
 Nesting Grounds
 Network Disruptor
-Noxious Gearhulk
+Noble Hierarch
 Nyxborn Hydra
 Ochre Jelly
 Óin the Brave
@@ -220,10 +214,10 @@ Omarthis, Ghostfire Initiate
 Oni-Cult Anvil
 Opportunistic Dragon
 Oran-Rief Ooze
+Oswald Fiddlebender
 Ovalchase Dragster
 Oviya, Automech Artisan
 Ozolith, the Shattered Spire
-Pain Seer
 Patchwork Automaton
 Peacewalker Colossus
 Pensive Professor
@@ -231,12 +225,13 @@ Phoenix Chick
 Pia Nalaar
 Possession Engine
 Power Depot
-Prized Statue
 Prizefight
 Prodigy's Prototype
+Proft's Eidetic Memory
 Pyrewood Gearhulk
 Quicksmith Genius
 Quirion Beastcaller
+Raffine's Informant
 Raise the Alarm
 Razortide Bridge
 Reality Heist
@@ -250,6 +245,7 @@ Refurbish
 Renegade Freighter
 Requisition Raid
 Resculpt
+Research Thief
 Resourceful Return
 Return of the Wildspeaker
 Reverse Engineer
@@ -264,6 +260,7 @@ Run Over
 Rustvale Bridge
 Sage of the Fang
 Sai, Master Thopterist
+Sanwell, Avenger Ace
 Scourge of Nel Toth
 Scrap Trawler
 Scrap Welder
@@ -276,7 +273,6 @@ Shimmer Dragon
 Shivan Reef
 Shorikai, Genesis Engine
 Shrapnel Blast
-Sigiled Sentinel
 Signature Slam
 Silas Renn, Seeker Adept
 Silverbluff Bridge
@@ -290,28 +286,32 @@ Smell Fear
 Smuggler's Copter
 Snakeskin Veil
 Snarling Gorehound
+Sokenzan Smelter
 Solemn Recruit
 Soul Foundry
 Spectral Procession
 Speedway Fanatic
 Spire of Industry
+Springleaf Drum
 Sram, Senior Edificer
 Steel Dromedary
 Stern Lesson
+Stitcher's Supplier
+Stonecoil Serpent
 Sulfurous Springs
 Surgehacker Mech
 Swarm Shambler
+Syndicate Trafficker
 Synthesizer Labship
-Tail Swipe
+Syr Ginger, the Meal Ender
 Take Up the Shield
 Tanazir Quandrix
 Tanglepool Bridge
-Tataru Taru
 Tear Asunder
-Terrarion
 Terrasymbiosis
 Tezzeret, Agent of Bolas
 Tezzeret, Betrayer of Flesh
+The Antiquities War
 The Enigma Jewel // Locus of Enlightenment
 The Fire Nation Drill
 The Last Ride
@@ -324,34 +324,34 @@ Thopter Spy Network
 Thornglint Bridge
 Thought Monitor
 Thoughtcast
+Throne of Geth
 Thunderous Velocipede
 Toolcraft Exemplar
-Trailtracker Scout
 Trash for Treasure
 Treasure Map // Treasure Cove
+Triarch Praetorian
 Truck Toss
+Undead Butler
 Underground River
-Universal Automaton
 Untethered Express
 Valor's Flagship
 Vastwood Fortification // Vastwood Thicket
 Vat of Rebirth
-Vault Skirge
 Vedalken Certarch
 Vengeful Rebel
 Victimize
 Vogar, Necropolis Tyrant
+Voldaren Bloodcaster // Bloodbat Summoner
 Voltage Surge
 Vorel of the Hull Clade
 Walking Ballista
+Warden of the Inner Sky
 Waterlogged Hulk // Watertight Gondola
-Wave Goodbye
 Weaponcraft Enthusiast
 Weatherlight
 Wedding Announcement // Wedding Festivity
 Welding Sparks
 Westvale Abbey // Ormendahl, Profane Prince
-Where We're Going...
 Whirler Rogue
 Wild Roads
 Wildwood Scourge

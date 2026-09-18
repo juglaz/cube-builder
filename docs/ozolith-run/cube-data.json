@@ -85,21 +85,19 @@
       "layout": "normal"
     },
     {
-      "oracleId": "92045f6c-9ec2-4bf0-826c-e21ef253011c",
-      "name": "Aethergeode Miner",
-      "cmc": 2,
-      "typeLine": "Creature — Dwarf Scout",
-      "colors": [
-        "W"
-      ],
+      "oracleId": "4b033a0a-c1ae-44d7-9662-72cbbfda024b",
+      "name": "Aether Spellbomb",
+      "cmc": 1,
+      "typeLine": "Artifact",
+      "colors": [],
       "colorIdentity": [
-        "W"
+        "U"
       ],
-      "manaCost": "{1}{W}",
-      "oracleText": "Whenever this creature attacks, you get {E}{E} (two energy counters).\nPay {E}{E}: Exile this creature, then return it to the battlefield under its owner's control.",
+      "manaCost": "{1}",
+      "oracleText": "{U}, Sacrifice this artifact: Return target creature to its owner's hand.\n{1}, Sacrifice this artifact: Draw a card.",
       "keywords": [],
-      "imageNormal": "https://cards.scryfall.io/normal/front/8/0/80bb3abd-ebaf-4dc2-97eb-ed4a2b005177.jpg?1783936787",
-      "imageLarge": "https://cards.scryfall.io/large/front/8/0/80bb3abd-ebaf-4dc2-97eb-ed4a2b005177.jpg?1783936787",
+      "imageNormal": "https://cards.scryfall.io/normal/front/a/5/a54e8ce9-edd7-4ae7-9521-6fb6727cf63b.jpg?1783930343",
+      "imageLarge": "https://cards.scryfall.io/large/front/a/5/a54e8ce9-edd7-4ae7-9521-6fb6727cf63b.jpg?1783930343",
       "layout": "normal"
     },
     {
@@ -153,6 +151,26 @@
       ],
       "imageNormal": "https://cards.scryfall.io/normal/front/d/7/d77c8e29-de24-4664-baf8-959608dd99ca.jpg?1783907923",
       "imageLarge": "https://cards.scryfall.io/large/front/d/7/d77c8e29-de24-4664-baf8-959608dd99ca.jpg?1783907923",
+      "layout": "normal"
+    },
+    {
+      "oracleId": "4c9a38f8-8fcb-45f9-8b70-e54298c7b485",
+      "name": "Ancient Animus",
+      "cmc": 2,
+      "typeLine": "Instant",
+      "colors": [
+        "G"
+      ],
+      "colorIdentity": [
+        "G"
+      ],
+      "manaCost": "{1}{G}",
+      "oracleText": "Put a +1/+1 counter on target creature you control if it's legendary. Then it fights target creature an opponent controls. (Each deals damage equal to its power to the other.)",
+      "keywords": [
+        "Fight"
+      ],
+      "imageNormal": "https://cards.scryfall.io/normal/front/5/e/5ee76006-5272-400d-b6b2-e1548bca9dbf.jpg?1783928800",
+      "imageLarge": "https://cards.scryfall.io/large/front/5/e/5ee76006-5272-400d-b6b2-e1548bca9dbf.jpg?1783928800",
       "layout": "normal"
     },
     {
@@ -292,24 +310,6 @@
       ],
       "imageNormal": "https://cards.scryfall.io/normal/front/d/e/deadf867-b999-49b2-88d8-91da975a3cc5.jpg?1783935031",
       "imageLarge": "https://cards.scryfall.io/large/front/d/e/deadf867-b999-49b2-88d8-91da975a3cc5.jpg?1783935031",
-      "layout": "normal"
-    },
-    {
-      "oracleId": "b47d37ee-2bb2-4ca8-b245-94d2cc4b6684",
-      "name": "Aviary Mechanic",
-      "cmc": 2,
-      "typeLine": "Creature — Dwarf Artificer",
-      "colors": [
-        "W"
-      ],
-      "colorIdentity": [
-        "W"
-      ],
-      "manaCost": "{1}{W}",
-      "oracleText": "When this creature enters, you may return another permanent you control to its owner's hand.",
-      "keywords": [],
-      "imageNormal": "https://cards.scryfall.io/normal/front/b/9/b97b0767-4308-4e5d-bc12-6cf8d8724797.jpg?1783937237",
-      "imageLarge": "https://cards.scryfall.io/large/front/b/9/b97b0767-4308-4e5d-bc12-6cf8d8724797.jpg?1783937237",
       "layout": "normal"
     },
     {
@@ -487,26 +487,6 @@
       "layout": "normal"
     },
     {
-      "oracleId": "8d1a3935-8a8c-4754-b474-189611188bc5",
-      "name": "Bind the Monster",
-      "cmc": 1,
-      "typeLine": "Enchantment — Aura",
-      "colors": [
-        "U"
-      ],
-      "colorIdentity": [
-        "U"
-      ],
-      "manaCost": "{U}",
-      "oracleText": "Enchant creature\nWhen this Aura enters, tap enchanted creature. It deals damage to you equal to its power.\nEnchanted creature doesn't untap during its controller's untap step.",
-      "keywords": [
-        "Enchant"
-      ],
-      "imageNormal": "https://cards.scryfall.io/normal/front/0/8/080be8d1-e453-4250-b917-f0eb26644895.jpg?1783928268",
-      "imageLarge": "https://cards.scryfall.io/large/front/0/8/080be8d1-e453-4250-b917-f0eb26644895.jpg?1783928268",
-      "layout": "normal"
-    },
-    {
       "oracleId": "5c5b308c-07d5-422a-8b45-b8b19cb967ca",
       "name": "Blacksmith's Skill",
       "cmc": 1,
@@ -522,27 +502,6 @@
       "keywords": [],
       "imageNormal": "https://cards.scryfall.io/normal/front/3/1/31506792-d0ab-4c13-9ab8-6fa433220dbf.jpg?1783926896",
       "imageLarge": "https://cards.scryfall.io/large/front/3/1/31506792-d0ab-4c13-9ab8-6fa433220dbf.jpg?1783926896",
-      "layout": "normal"
-    },
-    {
-      "oracleId": "6d9ac636-3c6c-40ca-90f3-1a3387836bb4",
-      "name": "Blade of the Oni",
-      "cmc": 2,
-      "typeLine": "Artifact Creature — Equipment Demon",
-      "colors": [
-        "B"
-      ],
-      "colorIdentity": [
-        "B"
-      ],
-      "manaCost": "{1}{B}",
-      "oracleText": "Menace\nEquipped creature has base power and toughness 5/5, has menace, and is a black Demon in addition to its other colors and types.\nReconfigure {2}{B}{B} ({2}{B}{B}: Attach to target creature you control; or unattach from a creature. Reconfigure only as a sorcery. While attached, this isn't a creature.)",
-      "keywords": [
-        "Menace",
-        "Reconfigure"
-      ],
-      "imageNormal": "https://cards.scryfall.io/normal/front/b/6/b6bc3f71-b4ce-4c05-be3c-7a0faad476c3.jpg?1783923890",
-      "imageLarge": "https://cards.scryfall.io/large/front/b/6/b6bc3f71-b4ce-4c05-be3c-7a0faad476c3.jpg?1783923890",
       "layout": "normal"
     },
     {
@@ -673,6 +632,24 @@
       ],
       "imageNormal": "https://cards.scryfall.io/normal/front/5/a/5acb9bd4-ed86-400e-9f5d-4c26351242f2.jpg?1783907177",
       "imageLarge": "https://cards.scryfall.io/large/front/5/a/5acb9bd4-ed86-400e-9f5d-4c26351242f2.jpg?1783907177",
+      "layout": "normal"
+    },
+    {
+      "oracleId": "6e760cfe-45b9-4a3f-b2e2-4ca6ec2bd13a",
+      "name": "Bone Shards",
+      "cmc": 1,
+      "typeLine": "Sorcery",
+      "colors": [
+        "B"
+      ],
+      "colorIdentity": [
+        "B"
+      ],
+      "manaCost": "{B}",
+      "oracleText": "As an additional cost to cast this spell, sacrifice a creature or discard a card.\nDestroy target creature or planeswalker.",
+      "keywords": [],
+      "imageNormal": "https://cards.scryfall.io/normal/front/1/e/1ee98955-4c47-4d45-9377-608dfa755337.jpg?1783926865",
+      "imageLarge": "https://cards.scryfall.io/large/front/1/e/1ee98955-4c47-4d45-9377-608dfa755337.jpg?1783926865",
       "layout": "normal"
     },
     {
@@ -1022,26 +999,6 @@
       "layout": "normal"
     },
     {
-      "oracleId": "c4023e1f-26e3-4225-98d0-3d33f6654616",
-      "name": "Caustic Exhale",
-      "cmc": 1,
-      "typeLine": "Instant",
-      "colors": [
-        "B"
-      ],
-      "colorIdentity": [
-        "B"
-      ],
-      "manaCost": "{B}",
-      "oracleText": "As an additional cost to cast this spell, behold a Dragon or pay {1}. (To behold a Dragon, choose a Dragon you control or reveal a Dragon card from your hand.)\nTarget creature gets -3/-3 until end of turn.",
-      "keywords": [
-        "Behold"
-      ],
-      "imageNormal": "https://cards.scryfall.io/normal/front/4/8/488152ce-2048-4ccb-b2d6-b9628958286f.jpg?1783907381",
-      "imageLarge": "https://cards.scryfall.io/large/front/4/8/488152ce-2048-4ccb-b2d6-b9628958286f.jpg?1783907381",
-      "layout": "normal"
-    },
-    {
       "oracleId": "33de01e9-ce5a-42d4-afcb-343cd54a6d80",
       "name": "Caves of Koilos",
       "cmc": 0,
@@ -1176,6 +1133,22 @@
       ],
       "imageNormal": "https://cards.scryfall.io/normal/front/8/8/881f01a4-a923-4d56-bacb-984a389296fa.jpg?1783907860",
       "imageLarge": "https://cards.scryfall.io/large/front/8/8/881f01a4-a923-4d56-bacb-984a389296fa.jpg?1783907860",
+      "layout": "normal"
+    },
+    {
+      "oracleId": "f460ff80-8175-43f7-9810-540cf3817085",
+      "name": "Collector's Vault",
+      "cmc": 2,
+      "typeLine": "Artifact",
+      "colors": [],
+      "colorIdentity": [],
+      "manaCost": "{2}",
+      "oracleText": "{2}, {T}: Draw a card, then discard a card. Create a Treasure token. (It's an artifact with \"{T}, Sacrifice this token: Add one mana of any color.\")",
+      "keywords": [
+        "Treasure"
+      ],
+      "imageNormal": "https://cards.scryfall.io/normal/front/9/6/967a4f27-8cd6-437d-8c05-8aedbc7ddc4b.jpg?1783915060",
+      "imageLarge": "https://cards.scryfall.io/large/front/9/6/967a4f27-8cd6-437d-8c05-8aedbc7ddc4b.jpg?1783915060",
       "layout": "normal"
     },
     {
@@ -1334,43 +1307,6 @@
       "layout": "normal"
     },
     {
-      "oracleId": "8f3e6554-eb8a-4096-81a3-2411186d9cb4",
-      "name": "Covetous Castaway // Ghostly Castigator",
-      "cmc": 2,
-      "typeLine": "Creature — Human // Creature — Spirit",
-      "colors": [],
-      "colorIdentity": [
-        "U"
-      ],
-      "manaCost": "{1}{U}",
-      "oracleText": "When this creature dies, mill three cards. (Put the top three cards of your library into your graveyard.)\nDisturb {3}{U}{U} (You may cast this card from your graveyard transformed for its disturb cost.)\n//\nFlying\nWhen this creature enters, you may shuffle up to three target cards from your graveyard into your library.\nIf Ghostly Castigator would be put into a graveyard from anywhere, exile it instead.",
-      "keywords": [
-        "Flying",
-        "Transform",
-        "Mill",
-        "Disturb"
-      ],
-      "imageNormal": "https://cards.scryfall.io/normal/front/4/f/4ff66f14-aee6-4ad2-be70-1c9bb39089b3.jpg?1783908171",
-      "imageLarge": "https://cards.scryfall.io/large/front/4/f/4ff66f14-aee6-4ad2-be70-1c9bb39089b3.jpg?1783908171",
-      "layout": "transform",
-      "faces": [
-        {
-          "name": "Covetous Castaway",
-          "manaCost": "{1}{U}",
-          "typeLine": "Creature — Human",
-          "oracleText": "When this creature dies, mill three cards. (Put the top three cards of your library into your graveyard.)\nDisturb {3}{U}{U} (You may cast this card from your graveyard transformed for its disturb cost.)",
-          "imageNormal": "https://cards.scryfall.io/normal/front/4/f/4ff66f14-aee6-4ad2-be70-1c9bb39089b3.jpg?1783908171"
-        },
-        {
-          "name": "Ghostly Castigator",
-          "manaCost": "",
-          "typeLine": "Creature — Spirit",
-          "oracleText": "Flying\nWhen this creature enters, you may shuffle up to three target cards from your graveyard into your library.\nIf Ghostly Castigator would be put into a graveyard from anywhere, exile it instead.",
-          "imageNormal": "https://cards.scryfall.io/normal/back/4/f/4ff66f14-aee6-4ad2-be70-1c9bb39089b3.jpg?1783908171"
-        }
-      ]
-    },
-    {
       "oracleId": "727ca426-f4cc-4218-8ae5-8c427af2e816",
       "name": "Cragcrown Pathway // Timbercrown Pathway",
       "cmc": 0,
@@ -1479,24 +1415,6 @@
           "imageNormal": "https://cards.scryfall.io/normal/back/5/f/5f51c853-949d-44e9-a3a2-02e1ce69a147.jpg?1783906657"
         }
       ]
-    },
-    {
-      "oracleId": "e5762815-5fc3-4ae7-abee-69f27c5e4e90",
-      "name": "Cult Conscript",
-      "cmc": 1,
-      "typeLine": "Creature — Skeleton Warrior",
-      "colors": [
-        "B"
-      ],
-      "colorIdentity": [
-        "B"
-      ],
-      "manaCost": "{B}",
-      "oracleText": "This creature enters tapped.\n{1}{B}: Return this card from your graveyard to the battlefield. Activate only if a non-Skeleton creature died under your control this turn.",
-      "keywords": [],
-      "imageNormal": "https://cards.scryfall.io/normal/front/f/e/fed77513-94ab-44e2-b9a1-30ba927cd6ee.jpg?1783921335",
-      "imageLarge": "https://cards.scryfall.io/large/front/f/e/fed77513-94ab-44e2-b9a1-30ba927cd6ee.jpg?1783921335",
-      "layout": "normal"
     },
     {
       "oracleId": "c1eb530c-dd36-40ae-8617-6bb6969565e1",
@@ -1877,6 +1795,26 @@
       "layout": "normal"
     },
     {
+      "oracleId": "352b64d2-2ae5-44ee-a64f-94932ef545d3",
+      "name": "Dread Return",
+      "cmc": 4,
+      "typeLine": "Sorcery",
+      "colors": [
+        "B"
+      ],
+      "colorIdentity": [
+        "B"
+      ],
+      "manaCost": "{2}{B}{B}",
+      "oracleText": "Return target creature card from your graveyard to the battlefield.\nFlashback—Sacrifice three creatures. (You may cast this card from your graveyard for its flashback cost. Then exile it.)",
+      "keywords": [
+        "Flashback"
+      ],
+      "imageNormal": "https://cards.scryfall.io/normal/front/3/4/34a87901-98bb-41dd-b566-bcb510c20022.jpg?1783915677",
+      "imageLarge": "https://cards.scryfall.io/large/front/3/4/34a87901-98bb-41dd-b566-bcb510c20022.jpg?1783915677",
+      "layout": "normal"
+    },
+    {
       "oracleId": "5b4e1163-09aa-4597-9a41-e1e384975056",
       "name": "Dreamdrinker Vampire",
       "cmc": 2,
@@ -1895,24 +1833,6 @@
       ],
       "imageNormal": "https://cards.scryfall.io/normal/front/9/6/961a3a53-344b-44d5-bc8e-f43437e6b558.jpg?1783911282",
       "imageLarge": "https://cards.scryfall.io/large/front/9/6/961a3a53-344b-44d5-bc8e-f43437e6b558.jpg?1783911282",
-      "layout": "normal"
-    },
-    {
-      "oracleId": "8c768e86-4181-462b-a6a5-4ca0f6660380",
-      "name": "Drive to Work",
-      "cmc": 1,
-      "typeLine": "Instant",
-      "colors": [
-        "W"
-      ],
-      "colorIdentity": [
-        "W"
-      ],
-      "manaCost": "{W}",
-      "oracleText": "Exile target creature or Vehicle. At the beginning of the next end step, return that card to the battlefield under its owner's control. Then you may share a story or fun fact about that card. If you do, you gain 3 life.",
-      "keywords": [],
-      "imageNormal": "https://cards.scryfall.io/normal/front/6/e/6e4b2cff-9fa2-40f4-9b8d-94d537b97c80.jpg?1783909149",
-      "imageLarge": "https://cards.scryfall.io/large/front/6/e/6e4b2cff-9fa2-40f4-9b8d-94d537b97c80.jpg?1783909149",
       "layout": "normal"
     },
     {
@@ -2058,28 +1978,6 @@
       "layout": "normal"
     },
     {
-      "oracleId": "92dfeeb2-1117-422b-87ea-08a589f1134b",
-      "name": "Elite Guardmage",
-      "cmc": 4,
-      "typeLine": "Creature — Human Wizard",
-      "colors": [
-        "U",
-        "W"
-      ],
-      "colorIdentity": [
-        "U",
-        "W"
-      ],
-      "manaCost": "{2}{W}{U}",
-      "oracleText": "Flying\nWhen this creature enters, you gain 3 life and draw a card.",
-      "keywords": [
-        "Flying"
-      ],
-      "imageNormal": "https://cards.scryfall.io/normal/front/d/2/d2e40b14-48a2-4b9e-b767-e914cab04b30.jpg?1783933396",
-      "imageLarge": "https://cards.scryfall.io/large/front/d/2/d2e40b14-48a2-4b9e-b767-e914cab04b30.jpg?1783933396",
-      "layout": "normal"
-    },
-    {
       "oracleId": "da3e7d3d-2ca0-40c3-9602-fca37c92f507",
       "name": "Emry, Lurker of the Loch",
       "cmc": 3,
@@ -2098,20 +1996,6 @@
       ],
       "imageNormal": "https://cards.scryfall.io/normal/front/c/9/c977d89a-bfd1-4e98-9d95-3e41c53dd188.jpg?1783906044",
       "imageLarge": "https://cards.scryfall.io/large/front/c/9/c977d89a-bfd1-4e98-9d95-3e41c53dd188.jpg?1783906044",
-      "layout": "normal"
-    },
-    {
-      "oracleId": "7a51780a-fa28-4ee0-94c7-4330800ca9cb",
-      "name": "Endless One",
-      "cmc": 0,
-      "typeLine": "Creature — Eldrazi",
-      "colors": [],
-      "colorIdentity": [],
-      "manaCost": "{X}",
-      "oracleText": "This creature enters with X +1/+1 counters on it.",
-      "keywords": [],
-      "imageNormal": "https://cards.scryfall.io/normal/front/0/0/00b3c10a-799f-4922-bb0a-44981b13203b.jpg?1783915458",
-      "imageLarge": "https://cards.scryfall.io/large/front/0/0/00b3c10a-799f-4922-bb0a-44981b13203b.jpg?1783915458",
       "layout": "normal"
     },
     {
@@ -2267,6 +2151,26 @@
       "layout": "normal"
     },
     {
+      "oracleId": "bf037457-82e3-45fd-bc17-5bc25e66c15e",
+      "name": "Fallaji Archaeologist",
+      "cmc": 2,
+      "typeLine": "Creature — Human Scout",
+      "colors": [
+        "U"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "manaCost": "{1}{U}",
+      "oracleText": "When this creature enters, mill three cards. You may put a noncreature, nonland card from among the cards milled this way into your hand. If you don't, put a +1/+1 counter on this creature. (To mill a card, put the top card of your library into your graveyard.)",
+      "keywords": [
+        "Mill"
+      ],
+      "imageNormal": "https://cards.scryfall.io/normal/front/b/0/b0eab397-25a6-4377-8e12-e8acef9675cf.jpg?1783920114",
+      "imageLarge": "https://cards.scryfall.io/large/front/b/0/b0eab397-25a6-4377-8e12-e8acef9675cf.jpg?1783920114",
+      "layout": "normal"
+    },
+    {
       "oracleId": "b0b93253-6432-401e-9a01-94c41fb72c10",
       "name": "Fearless Liberator",
       "cmc": 2,
@@ -2367,24 +2271,6 @@
       ],
       "imageNormal": "https://cards.scryfall.io/normal/front/9/7/97fb9c9a-2278-42d0-9632-3a7e8faff74d.jpg?1783917289",
       "imageLarge": "https://cards.scryfall.io/large/front/9/7/97fb9c9a-2278-42d0-9632-3a7e8faff74d.jpg?1783917289",
-      "layout": "normal"
-    },
-    {
-      "oracleId": "5bd806e7-3f9b-4bb4-9708-f87a578f531e",
-      "name": "Fire Imp",
-      "cmc": 3,
-      "typeLine": "Creature — Imp",
-      "colors": [
-        "R"
-      ],
-      "colorIdentity": [
-        "R"
-      ],
-      "manaCost": "{2}{R}",
-      "oracleText": "When this creature enters, it deals 2 damage to target creature.",
-      "keywords": [],
-      "imageNormal": "https://cards.scryfall.io/normal/front/b/1/b1dbce3e-d88f-4fee-bf7d-8247f48d5c1a.jpg?1783941437",
-      "imageLarge": "https://cards.scryfall.io/large/front/b/1/b1dbce3e-d88f-4fee-bf7d-8247f48d5c1a.jpg?1783941437",
       "layout": "normal"
     },
     {
@@ -2577,6 +2463,26 @@
       "layout": "normal"
     },
     {
+      "oracleId": "98eac0f7-3f4d-46ef-9575-680c52e967cf",
+      "name": "Getaway Glamer",
+      "cmc": 1,
+      "typeLine": "Instant",
+      "colors": [
+        "W"
+      ],
+      "colorIdentity": [
+        "W"
+      ],
+      "manaCost": "{W}",
+      "oracleText": "Spree (Choose one or more additional costs.)\n+ {1} — Exile target nontoken creature. Return it to the battlefield under its owner's control at the beginning of the next end step.\n+ {2} — Destroy target creature if no other creature has greater power.",
+      "keywords": [
+        "Spree"
+      ],
+      "imageNormal": "https://cards.scryfall.io/normal/front/6/9/69689049-a704-4f16-84ee-4d5d915028ec.jpg?1783911857",
+      "imageLarge": "https://cards.scryfall.io/large/front/6/9/69689049-a704-4f16-84ee-4d5d915028ec.jpg?1783911857",
+      "layout": "normal"
+    },
+    {
       "oracleId": "13ee85c3-a16a-41ac-bbaa-c7549c700a03",
       "name": "Glistening Dawn",
       "cmc": 4,
@@ -2737,24 +2643,6 @@
       "layout": "normal"
     },
     {
-      "oracleId": "56c78349-e4fa-48ba-ae8e-d2312ae6edc6",
-      "name": "Grisly Ritual",
-      "cmc": 6,
-      "typeLine": "Sorcery",
-      "colors": [
-        "B"
-      ],
-      "colorIdentity": [
-        "B"
-      ],
-      "manaCost": "{5}{B}",
-      "oracleText": "Destroy target creature or planeswalker. Create two Blood tokens. (They're artifacts with \"{1}, {T}, Discard a card, Sacrifice this token: Draw a card.\")",
-      "keywords": [],
-      "imageNormal": "https://cards.scryfall.io/normal/front/5/3/53cdf2ab-3acd-49bd-8273-84c1cfc92883.jpg?1783924861",
-      "imageLarge": "https://cards.scryfall.io/large/front/5/3/53cdf2ab-3acd-49bd-8273-84c1cfc92883.jpg?1783924861",
-      "layout": "normal"
-    },
-    {
       "oracleId": "f8103865-5086-4f16-a35a-a56acdab1547",
       "name": "Guidelight Pathmaker",
       "cmc": 6,
@@ -2775,24 +2663,6 @@
       ],
       "imageNormal": "https://cards.scryfall.io/normal/front/b/2/b2e00cd7-925e-4bab-b064-c96aa2935f8c.jpg?1783907857",
       "imageLarge": "https://cards.scryfall.io/large/front/b/2/b2e00cd7-925e-4bab-b064-c96aa2935f8c.jpg?1783907857",
-      "layout": "normal"
-    },
-    {
-      "oracleId": "76ae3779-c821-4cd3-8d0f-8c42d1206ce4",
-      "name": "Gutterbones",
-      "cmc": 1,
-      "typeLine": "Creature — Skeleton Warrior",
-      "colors": [
-        "B"
-      ],
-      "colorIdentity": [
-        "B"
-      ],
-      "manaCost": "{B}",
-      "oracleText": "This creature enters tapped.\n{1}{B}: Return this card from your graveyard to your hand. Activate only during your turn and only if an opponent lost life this turn.",
-      "keywords": [],
-      "imageNormal": "https://cards.scryfall.io/normal/front/6/a/6a1c710b-bd67-4174-ab02-6ae98a7575ac.jpg?1783933694",
-      "imageLarge": "https://cards.scryfall.io/large/front/6/a/6a1c710b-bd67-4174-ab02-6ae98a7575ac.jpg?1783933694",
       "layout": "normal"
     },
     {
@@ -3438,26 +3308,6 @@
       "layout": "normal"
     },
     {
-      "oracleId": "8aa1bbc9-b047-4d68-93f4-728e40dafc5e",
-      "name": "Kitesail Freebooter",
-      "cmc": 2,
-      "typeLine": "Creature — Human Pirate",
-      "colors": [
-        "B"
-      ],
-      "colorIdentity": [
-        "B"
-      ],
-      "manaCost": "{1}{B}",
-      "oracleText": "Flying\nWhen this creature enters, target opponent reveals their hand. You choose a noncreature, nonland card from it. Exile that card until this creature leaves the battlefield.",
-      "keywords": [
-        "Flying"
-      ],
-      "imageNormal": "https://cards.scryfall.io/normal/front/8/8/88496096-fd9a-451a-85d9-31ccc3580623.jpg?1783930706",
-      "imageLarge": "https://cards.scryfall.io/large/front/8/8/88496096-fd9a-451a-85d9-31ccc3580623.jpg?1783930706",
-      "layout": "normal"
-    },
-    {
       "oracleId": "3b4eaa50-dff6-4825-97da-42b2f5554218",
       "name": "Knight of the Ebon Legion",
       "cmc": 1,
@@ -3496,23 +3346,23 @@
       "layout": "normal"
     },
     {
-      "oracleId": "054a0193-861e-4644-ab0a-8aa33407abc8",
-      "name": "Kor Skyfisher",
-      "cmc": 2,
-      "typeLine": "Creature — Kor Soldier",
+      "oracleId": "0659a5b0-9807-4e4c-8af3-b6e233051ad6",
+      "name": "Kotori, Pilot Prodigy",
+      "cmc": 3,
+      "typeLine": "Legendary Creature — Moonfolk Pilot",
       "colors": [
+        "U",
         "W"
       ],
       "colorIdentity": [
+        "U",
         "W"
       ],
-      "manaCost": "{1}{W}",
-      "oracleText": "Flying\nWhen this creature enters, return a permanent you control to its owner's hand.",
-      "keywords": [
-        "Flying"
-      ],
-      "imageNormal": "https://cards.scryfall.io/normal/front/d/7/d7501662-1216-4e08-bd2b-e0a459057942.jpg?1783936681",
-      "imageLarge": "https://cards.scryfall.io/large/front/d/7/d7501662-1216-4e08-bd2b-e0a459057942.jpg?1783936681",
+      "manaCost": "{1}{W}{U}",
+      "oracleText": "Vehicles you control have crew 2.\nAt the beginning of combat on your turn, target artifact creature you control gains lifelink and vigilance until end of turn.",
+      "keywords": [],
+      "imageNormal": "https://cards.scryfall.io/normal/front/f/e/fea6c1c8-eff9-4b66-b96d-e23016f0bb62.jpg?1783924000",
+      "imageLarge": "https://cards.scryfall.io/large/front/f/e/fea6c1c8-eff9-4b66-b96d-e23016f0bb62.jpg?1783924000",
       "layout": "normal"
     },
     {
@@ -3628,6 +3478,24 @@
           "oracleText": "Exile target artifact or creature card from your graveyard. Create a token that's a copy of it."
         }
       ]
+    },
+    {
+      "oracleId": "f8c2a972-e38f-47e5-a355-6f30ad09b1ae",
+      "name": "Losheel, Clockwork Scholar",
+      "cmc": 3,
+      "typeLine": "Legendary Creature — Elephant Artificer",
+      "colors": [
+        "W"
+      ],
+      "colorIdentity": [
+        "W"
+      ],
+      "manaCost": "{2}{W}",
+      "oracleText": "Prevent all combat damage that would be dealt to attacking artifact creatures you control.\nWhenever one or more artifact creatures you control enter, draw a card. This ability triggers only once each turn.",
+      "keywords": [],
+      "imageNormal": "https://cards.scryfall.io/normal/front/e/e/ee6b54de-8e79-4f60-b642-3d259bf74ea0.jpg?1783915719",
+      "imageLarge": "https://cards.scryfall.io/large/front/e/e/ee6b54de-8e79-4f60-b642-3d259bf74ea0.jpg?1783915719",
+      "layout": "normal"
     },
     {
       "oracleId": "1139ee31-cb6e-4ae6-a08b-252c46b2db97",
@@ -3929,6 +3797,20 @@
       "layout": "normal"
     },
     {
+      "oracleId": "abc04775-171d-41f3-83ea-4b4eb72723d5",
+      "name": "Mech Hangar",
+      "cmc": 0,
+      "typeLine": "Land",
+      "colors": [],
+      "colorIdentity": [],
+      "manaCost": "",
+      "oracleText": "{T}: Add {C}.\n{T}: Add one mana of any color. Spend this mana only to cast a Pilot or Vehicle spell.\n{3}, {T}: Target Vehicle becomes an artifact creature until end of turn.",
+      "keywords": [],
+      "imageNormal": "https://cards.scryfall.io/normal/front/c/0/c093984d-38cd-4b49-b179-1e289ab442d1.jpg?1783923817",
+      "imageLarge": "https://cards.scryfall.io/large/front/c/0/c093984d-38cd-4b49-b179-1e289ab442d1.jpg?1783923817",
+      "layout": "normal"
+    },
+    {
       "oracleId": "f1eb489d-104c-4801-b6d2-3f1a7ee73a75",
       "name": "Mechtitan Core",
       "cmc": 2,
@@ -4023,20 +3905,6 @@
       ],
       "imageNormal": "https://cards.scryfall.io/normal/front/2/8/28273a5b-57b3-4b7a-b017-5886c171c9c9.jpg?1783923900",
       "imageLarge": "https://cards.scryfall.io/large/front/2/8/28273a5b-57b3-4b7a-b017-5886c171c9c9.jpg?1783923900",
-      "layout": "normal"
-    },
-    {
-      "oracleId": "5502741a-e3b9-454e-8121-4360a6db6750",
-      "name": "Mirrex",
-      "cmc": 0,
-      "typeLine": "Land — Sphere",
-      "colors": [],
-      "colorIdentity": [],
-      "manaCost": "",
-      "oracleText": "{T}: Add {C}.\n{T}: Add one mana of any color. Activate only if this land entered this turn.\n{3}, {T}: Create a 1/1 colorless Phyrexian Mite artifact creature token with toxic 1 and \"This token can't block.\" (Players dealt combat damage by it also get a poison counter.)",
-      "keywords": [],
-      "imageNormal": "https://cards.scryfall.io/normal/front/5/4/54a702cd-ca49-4570-b47e-8b090452a3c3.jpg?1783917980",
-      "imageLarge": "https://cards.scryfall.io/large/front/5/4/54a702cd-ca49-4570-b47e-8b090452a3c3.jpg?1783917980",
       "layout": "normal"
     },
     {
@@ -4152,23 +4020,6 @@
       "layout": "normal"
     },
     {
-      "oracleId": "77248a76-373c-48fc-939f-aa378ab57f7c",
-      "name": "Mortarpod",
-      "cmc": 2,
-      "typeLine": "Artifact — Equipment",
-      "colors": [],
-      "colorIdentity": [],
-      "manaCost": "{2}",
-      "oracleText": "Living weapon (When this Equipment enters, create a 0/0 black Phyrexian Germ creature token, then attach this to it.)\nEquipped creature gets +0/+1 and has \"Sacrifice this creature: This creature deals 1 damage to any target.\"\nEquip {2}",
-      "keywords": [
-        "Equip",
-        "Living weapon"
-      ],
-      "imageNormal": "https://cards.scryfall.io/normal/front/f/1/f1e6b292-41e7-40f9-b9fe-34f27d4526af.jpg?1783938382",
-      "imageLarge": "https://cards.scryfall.io/large/front/f/1/f1e6b292-41e7-40f9-b9fe-34f27d4526af.jpg?1783938382",
-      "layout": "normal"
-    },
-    {
       "oracleId": "d07d3be3-f69d-4484-8467-cffd43871788",
       "name": "Myr Retriever",
       "cmc": 2,
@@ -4183,17 +4034,17 @@
       "layout": "normal"
     },
     {
-      "oracleId": "25794033-bd17-4056-b116-68d3acf52569",
-      "name": "Myr Sire",
-      "cmc": 2,
-      "typeLine": "Artifact Creature — Phyrexian Myr",
+      "oracleId": "1a4ffc1e-2f5e-446a-b1e8-32385b3c083b",
+      "name": "Myr Scrapling",
+      "cmc": 1,
+      "typeLine": "Artifact Creature — Myr",
       "colors": [],
       "colorIdentity": [],
-      "manaCost": "{2}",
-      "oracleText": "When this creature dies, create a 1/1 colorless Phyrexian Myr artifact creature token.",
+      "manaCost": "{1}",
+      "oracleText": "Sacrifice this creature: Put a +1/+1 counter on target creature.",
       "keywords": [],
-      "imageNormal": "https://cards.scryfall.io/normal/front/1/1/11ba43d1-e879-40e0-b49c-e009deb7e3aa.jpg?1783915594",
-      "imageLarge": "https://cards.scryfall.io/large/front/1/1/11ba43d1-e879-40e0-b49c-e009deb7e3aa.jpg?1783915594",
+      "imageNormal": "https://cards.scryfall.io/normal/front/5/b/5b9072a5-bd7f-4007-a34a-ebe251c95356.jpg?1783926803",
+      "imageLarge": "https://cards.scryfall.io/large/front/5/b/5b9072a5-bd7f-4007-a34a-ebe251c95356.jpg?1783926803",
       "layout": "normal"
     },
     {
@@ -4216,24 +4067,25 @@
       "layout": "normal"
     },
     {
-      "oracleId": "5278728e-9203-4d18-97a5-1c4f751a5acf",
-      "name": "Namor, Scourge of the Seas",
+      "oracleId": "45866598-4ee4-46b6-ade2-ffcdbe98e58f",
+      "name": "Necron Deathmark",
       "cmc": 5,
-      "typeLine": "Legendary Creature — Mutant Merfolk Villain",
+      "typeLine": "Artifact Creature — Necron",
       "colors": [
-        "U"
+        "B"
       ],
       "colorIdentity": [
-        "U"
+        "B"
       ],
-      "manaCost": "{3}{U}{U}",
-      "oracleText": "Flying\nEach other Merfolk you control with a +1/+1 counter on it has flying.\nAt the beginning of combat on your turn, target creature you control connives. (Draw a card, then discard a card. If you discarded a nonland card, put a +1/+1 counter on that creature.)",
+      "manaCost": "{3}{B}{B}",
+      "oracleText": "Flash\nSynaptic Disintegrator — When this creature enters, destroy up to one target creature and target player mills three cards.",
       "keywords": [
-        "Flying",
-        "Connive"
+        "Synaptic Disintegrator",
+        "Flash",
+        "Mill"
       ],
-      "imageNormal": "https://cards.scryfall.io/normal/front/e/c/ecbba25e-40fd-43f5-90c8-786ce9c27075.jpg?1783903070",
-      "imageLarge": "https://cards.scryfall.io/large/front/e/c/ecbba25e-40fd-43f5-90c8-786ce9c27075.jpg?1783903070",
+      "imageNormal": "https://cards.scryfall.io/normal/front/4/1/4129cb0d-eefe-4971-9db8-1196201ef353.jpg?1783920921",
+      "imageLarge": "https://cards.scryfall.io/large/front/4/1/4129cb0d-eefe-4971-9db8-1196201ef353.jpg?1783920921",
       "layout": "normal"
     },
     {
@@ -4270,6 +4122,24 @@
       ]
     },
     {
+      "oracleId": "bfa882ee-de18-4ef8-8957-3e04ed6e3c1e",
+      "name": "Nested Shambler",
+      "cmc": 1,
+      "typeLine": "Creature — Zombie",
+      "colors": [
+        "B"
+      ],
+      "colorIdentity": [
+        "B"
+      ],
+      "manaCost": "{B}",
+      "oracleText": "When this creature dies, create X tapped 1/1 green Squirrel creature tokens, where X is this creature's power.",
+      "keywords": [],
+      "imageNormal": "https://cards.scryfall.io/normal/front/9/8/9851f290-f502-49f8-9b48-67f7966d4e34.jpg?1783926858",
+      "imageLarge": "https://cards.scryfall.io/large/front/9/8/9851f290-f502-49f8-9b48-67f7966d4e34.jpg?1783926858",
+      "layout": "normal"
+    },
+    {
       "oracleId": "d27bb97d-286b-4947-8d7b-443e4df93319",
       "name": "Nesting Grounds",
       "cmc": 0,
@@ -4304,23 +4174,25 @@
       "layout": "normal"
     },
     {
-      "oracleId": "a77b5be2-f361-4135-ba25-670a74d268ac",
-      "name": "Noxious Gearhulk",
-      "cmc": 6,
-      "typeLine": "Artifact Creature — Construct",
+      "oracleId": "98aa9424-5912-4bd6-9300-b3972a31d8af",
+      "name": "Noble Hierarch",
+      "cmc": 1,
+      "typeLine": "Creature — Human Druid",
       "colors": [
-        "B"
+        "G"
       ],
       "colorIdentity": [
-        "B"
+        "G",
+        "U",
+        "W"
       ],
-      "manaCost": "{4}{B}{B}",
-      "oracleText": "Menace\nWhen this creature enters, you may destroy another target creature. If a creature is destroyed this way, you gain life equal to its toughness.",
+      "manaCost": "{G}",
+      "oracleText": "Exalted (Whenever a creature you control attacks alone, that creature gets +1/+1 until end of turn.)\n{T}: Add {G}, {W}, or {U}.",
       "keywords": [
-        "Menace"
+        "Exalted"
       ],
-      "imageNormal": "https://cards.scryfall.io/normal/front/2/8/289c11b7-a460-4a2f-b11a-e1ba54bd1f34.jpg?1783907084",
-      "imageLarge": "https://cards.scryfall.io/large/front/2/8/289c11b7-a460-4a2f-b11a-e1ba54bd1f34.jpg?1783907084",
+      "imageNormal": "https://cards.scryfall.io/normal/front/4/0/400382a4-aea2-4827-b06a-1b0b3745908b.jpg?1783930143",
+      "imageLarge": "https://cards.scryfall.io/large/front/4/0/400382a4-aea2-4827-b06a-1b0b3745908b.jpg?1783930143",
       "layout": "normal"
     },
     {
@@ -4518,6 +4390,24 @@
       "layout": "normal"
     },
     {
+      "oracleId": "dbc9ea19-cf68-41d3-88a8-b5ab8df75c5a",
+      "name": "Oswald Fiddlebender",
+      "cmc": 2,
+      "typeLine": "Legendary Creature — Gnome Artificer",
+      "colors": [
+        "W"
+      ],
+      "colorIdentity": [
+        "W"
+      ],
+      "manaCost": "{1}{W}",
+      "oracleText": "Magical Tinkering — {W}, {T}, Sacrifice an artifact: Search your library for an artifact card with mana value equal to 1 plus the sacrificed artifact's mana value, put it onto the battlefield, then shuffle. Activate only as a sorcery.",
+      "keywords": [],
+      "imageNormal": "https://cards.scryfall.io/normal/front/b/b/bba1650f-eddf-49a9-820e-489cb8d5b6fa.jpg?1783926527",
+      "imageLarge": "https://cards.scryfall.io/large/front/b/b/bba1650f-eddf-49a9-820e-489cb8d5b6fa.jpg?1783926527",
+      "layout": "normal"
+    },
+    {
       "oracleId": "345de988-4d26-4400-8202-225968db370f",
       "name": "Ovalchase Dragster",
       "cmc": 4,
@@ -4571,26 +4461,6 @@
       ],
       "imageNormal": "https://cards.scryfall.io/normal/front/1/d/1d5bab94-362e-45e6-8988-69e2b2c681b1.jpg?1783903762",
       "imageLarge": "https://cards.scryfall.io/large/front/1/d/1d5bab94-362e-45e6-8988-69e2b2c681b1.jpg?1783903762",
-      "layout": "normal"
-    },
-    {
-      "oracleId": "910036e7-ae27-4adb-a314-d9760bce1eb0",
-      "name": "Pain Seer",
-      "cmc": 2,
-      "typeLine": "Creature — Human Wizard",
-      "colors": [
-        "B"
-      ],
-      "colorIdentity": [
-        "B"
-      ],
-      "manaCost": "{1}{B}",
-      "oracleText": "Inspired — Whenever this creature becomes untapped, reveal the top card of your library and put that card into your hand. You lose life equal to that card's mana value.",
-      "keywords": [
-        "Inspired"
-      ],
-      "imageNormal": "https://cards.scryfall.io/normal/front/8/c/8ce8891f-b44c-4be4-878e-9fc45a9dc9cb.jpg?1783939553",
-      "imageLarge": "https://cards.scryfall.io/large/front/8/c/8ce8891f-b44c-4be4-878e-9fc45a9dc9cb.jpg?1783939553",
       "layout": "normal"
     },
     {
@@ -4723,22 +4593,6 @@
       "layout": "normal"
     },
     {
-      "oracleId": "681fc668-cb26-4ba4-a915-48ddfa2b9520",
-      "name": "Prized Statue",
-      "cmc": 2,
-      "typeLine": "Artifact",
-      "colors": [],
-      "colorIdentity": [],
-      "manaCost": "{2}",
-      "oracleText": "When this artifact enters or is put into a graveyard from the battlefield, create a Treasure token. (It's an artifact with \"{T}, Sacrifice this token: Add one mana of any color.\")",
-      "keywords": [
-        "Treasure"
-      ],
-      "imageNormal": "https://cards.scryfall.io/normal/front/5/8/58a49829-c354-4823-8cc1-a159fc46c0d7.jpg?1783922667",
-      "imageLarge": "https://cards.scryfall.io/large/front/5/8/58a49829-c354-4823-8cc1-a159fc46c0d7.jpg?1783922667",
-      "layout": "normal"
-    },
-    {
       "oracleId": "c0c4ecf6-84e6-443e-8a81-e395b31c631d",
       "name": "Prizefight",
       "cmc": 2,
@@ -4779,6 +4633,24 @@
       ],
       "imageNormal": "https://cards.scryfall.io/normal/front/b/e/be046e0a-6509-450b-b34f-29d5a5e3472e.jpg?1783923831",
       "imageLarge": "https://cards.scryfall.io/large/front/b/e/be046e0a-6509-450b-b34f-29d5a5e3472e.jpg?1783923831",
+      "layout": "normal"
+    },
+    {
+      "oracleId": "b749e9e4-0f2a-4157-8cca-facd6b48157f",
+      "name": "Proft's Eidetic Memory",
+      "cmc": 2,
+      "typeLine": "Legendary Enchantment",
+      "colors": [
+        "U"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "manaCost": "{1}{U}",
+      "oracleText": "When Proft's Eidetic Memory enters, draw a card.\nYou have no maximum hand size.\nAt the beginning of combat on your turn, if you've drawn more than one card this turn, put X +1/+1 counters on target creature you control, where X is the number of cards you've drawn this turn minus one.",
+      "keywords": [],
+      "imageNormal": "https://cards.scryfall.io/normal/front/a/f/af5b29b3-974c-4200-8df8-b072c11e1600.jpg?1783912906",
+      "imageLarge": "https://cards.scryfall.io/large/front/a/f/af5b29b3-974c-4200-8df8-b072c11e1600.jpg?1783912906",
       "layout": "normal"
     },
     {
@@ -4838,6 +4710,26 @@
       "keywords": [],
       "imageNormal": "https://cards.scryfall.io/normal/front/2/a/2a501319-59a7-45d4-a6ca-666276095f87.jpg?1783921296",
       "imageLarge": "https://cards.scryfall.io/large/front/2/a/2a501319-59a7-45d4-a6ca-666276095f87.jpg?1783921296",
+      "layout": "normal"
+    },
+    {
+      "oracleId": "838c4831-7d5c-4025-92b3-46eee59d6b34",
+      "name": "Raffine's Informant",
+      "cmc": 2,
+      "typeLine": "Creature — Human Wizard",
+      "colors": [
+        "W"
+      ],
+      "colorIdentity": [
+        "W"
+      ],
+      "manaCost": "{1}{W}",
+      "oracleText": "When this creature enters, it connives. (Draw a card, then discard a card. If you discarded a nonland card, put a +1/+1 counter on this creature.)",
+      "keywords": [
+        "Connive"
+      ],
+      "imageNormal": "https://cards.scryfall.io/normal/front/4/e/4e64ff87-2099-4360-94f6-164277b7b514.jpg?1783923153",
+      "imageLarge": "https://cards.scryfall.io/large/front/4/e/4e64ff87-2099-4360-94f6-164277b7b514.jpg?1783923153",
       "layout": "normal"
     },
     {
@@ -5074,6 +4966,27 @@
       "keywords": [],
       "imageNormal": "https://cards.scryfall.io/normal/front/5/4/5443f46d-03f9-468e-a78d-a059529b1151.jpg?1783903789",
       "imageLarge": "https://cards.scryfall.io/large/front/5/4/5443f46d-03f9-468e-a78d-a059529b1151.jpg?1783903789",
+      "layout": "normal"
+    },
+    {
+      "oracleId": "ba5055ce-6809-47a4-bee6-fb97a5b60f8a",
+      "name": "Research Thief",
+      "cmc": 5,
+      "typeLine": "Artifact Creature — Moonfolk Wizard",
+      "colors": [
+        "U"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "manaCost": "{4}{U}",
+      "oracleText": "Flash\nFlying\nWhenever an artifact creature you control deals combat damage to a player, draw a card.",
+      "keywords": [
+        "Flying",
+        "Flash"
+      ],
+      "imageNormal": "https://cards.scryfall.io/normal/front/d/0/d0ef159d-657a-4566-b9e0-f545df230025.jpg?1783923994",
+      "imageLarge": "https://cards.scryfall.io/large/front/d/0/d0ef159d-657a-4566-b9e0-f545df230025.jpg?1783923994",
       "layout": "normal"
     },
     {
@@ -5359,6 +5272,24 @@
       "layout": "normal"
     },
     {
+      "oracleId": "4884ad6c-2290-44fc-ab9e-6e6b75b2d69a",
+      "name": "Sanwell, Avenger Ace",
+      "cmc": 2,
+      "typeLine": "Legendary Creature — Human Pilot",
+      "colors": [
+        "W"
+      ],
+      "colorIdentity": [
+        "W"
+      ],
+      "manaCost": "{1}{W}",
+      "oracleText": "As long as an artifact creature you control is attacking, prevent all damage that would be dealt to Sanwell.\nWhenever Sanwell becomes tapped, exile the top six cards of your library. You may cast a Vehicle or artifact creature spell from among them. Then put the rest on the bottom of your library in a random order.",
+      "keywords": [],
+      "imageNormal": "https://cards.scryfall.io/normal/front/7/0/70cb4359-8e57-4d1a-bf1f-c188555376ce.jpg?1783919724",
+      "imageLarge": "https://cards.scryfall.io/large/front/7/0/70cb4359-8e57-4d1a-bf1f-c188555376ce.jpg?1783919724",
+      "layout": "normal"
+    },
+    {
       "oracleId": "32972d7a-c7c6-437c-8e7c-6c7d56b130e4",
       "name": "Scourge of Nel Toth",
       "cmc": 7,
@@ -5589,27 +5520,6 @@
       "keywords": [],
       "imageNormal": "https://cards.scryfall.io/normal/front/a/e/ae1c5afc-81b4-438a-928e-0b0aefae191a.jpg?1783935072",
       "imageLarge": "https://cards.scryfall.io/large/front/a/e/ae1c5afc-81b4-438a-928e-0b0aefae191a.jpg?1783935072",
-      "layout": "normal"
-    },
-    {
-      "oracleId": "79c90a68-1c31-4e16-be53-1304132da80f",
-      "name": "Sigiled Sentinel",
-      "cmc": 3,
-      "typeLine": "Creature — Human Knight",
-      "colors": [
-        "W"
-      ],
-      "colorIdentity": [
-        "W"
-      ],
-      "manaCost": "{2}{W}",
-      "oracleText": "Backup 1 (When this creature enters, put a +1/+1 counter on target creature. If that's another creature, it gains the following ability until end of turn.)\nVigilance",
-      "keywords": [
-        "Vigilance",
-        "Backup"
-      ],
-      "imageNormal": "https://cards.scryfall.io/normal/front/7/f/7f65b178-51d6-4dcb-a1cc-4b4dcb2237cd.jpg?1783917048",
-      "imageLarge": "https://cards.scryfall.io/large/front/7/f/7f65b178-51d6-4dcb-a1cc-4b4dcb2237cd.jpg?1783917048",
       "layout": "normal"
     },
     {
@@ -5866,6 +5776,24 @@
       "layout": "normal"
     },
     {
+      "oracleId": "dd645241-2992-4c4e-a6a8-c2215d2340ae",
+      "name": "Sokenzan Smelter",
+      "cmc": 2,
+      "typeLine": "Creature — Goblin Artificer",
+      "colors": [
+        "R"
+      ],
+      "colorIdentity": [
+        "R"
+      ],
+      "manaCost": "{1}{R}",
+      "oracleText": "At the beginning of combat on your turn, you may pay {1} and sacrifice an artifact. If you do, create a 3/1 red Construct artifact creature token with haste.",
+      "keywords": [],
+      "imageNormal": "https://cards.scryfall.io/normal/front/7/5/758724f9-93c9-4178-ae40-3fefc75a010e.jpg?1783923858",
+      "imageLarge": "https://cards.scryfall.io/large/front/7/5/758724f9-93c9-4178-ae40-3fefc75a010e.jpg?1783923858",
+      "layout": "normal"
+    },
+    {
       "oracleId": "cf747d6e-05ae-484d-9e72-1d0fb71fd4ff",
       "name": "Solemn Recruit",
       "cmc": 3,
@@ -5955,6 +5883,20 @@
       "layout": "normal"
     },
     {
+      "oracleId": "bdeb440d-a714-40e8-9038-f651e6ae45fb",
+      "name": "Springleaf Drum",
+      "cmc": 1,
+      "typeLine": "Artifact",
+      "colors": [],
+      "colorIdentity": [],
+      "manaCost": "{1}",
+      "oracleText": "{T}, Tap an untapped creature you control: Add one mana of any color.",
+      "keywords": [],
+      "imageNormal": "https://cards.scryfall.io/normal/front/e/1/e15ab0aa-4059-4923-9816-6f7a9e5b5a18.jpg?1783904399",
+      "imageLarge": "https://cards.scryfall.io/large/front/e/1/e15ab0aa-4059-4923-9816-6f7a9e5b5a18.jpg?1783904399",
+      "layout": "normal"
+    },
+    {
       "oracleId": "7e00b0cd-d212-4604-ba07-da21f4fe00b0",
       "name": "Sram, Senior Edificer",
       "cmc": 2,
@@ -6002,6 +5944,44 @@
       "keywords": [],
       "imageNormal": "https://cards.scryfall.io/normal/front/3/1/3151caa2-10ed-4f30-83eb-cd1bd3f642ce.jpg?1783920104",
       "imageLarge": "https://cards.scryfall.io/large/front/3/1/3151caa2-10ed-4f30-83eb-cd1bd3f642ce.jpg?1783920104",
+      "layout": "normal"
+    },
+    {
+      "oracleId": "7fd61a18-6e4f-40c5-aa00-3d101ec1ec82",
+      "name": "Stitcher's Supplier",
+      "cmc": 1,
+      "typeLine": "Creature — Zombie",
+      "colors": [
+        "B"
+      ],
+      "colorIdentity": [
+        "B"
+      ],
+      "manaCost": "{B}",
+      "oracleText": "When this creature enters or dies, mill three cards. (Put the top three cards of your library into your graveyard.)",
+      "keywords": [
+        "Mill"
+      ],
+      "imageNormal": "https://cards.scryfall.io/normal/front/2/e/2edcde06-b326-476e-884d-770187c785fe.jpg?1783907080",
+      "imageLarge": "https://cards.scryfall.io/large/front/2/e/2edcde06-b326-476e-884d-770187c785fe.jpg?1783907080",
+      "layout": "normal"
+    },
+    {
+      "oracleId": "78124cd1-2658-43f3-a339-0755d84154d2",
+      "name": "Stonecoil Serpent",
+      "cmc": 0,
+      "typeLine": "Artifact Creature — Snake",
+      "colors": [],
+      "colorIdentity": [],
+      "manaCost": "{X}",
+      "oracleText": "Reach, trample, protection from multicolored\nThis creature enters with X +1/+1 counters on it.",
+      "keywords": [
+        "Reach",
+        "Protection",
+        "Trample"
+      ],
+      "imageNormal": "https://cards.scryfall.io/normal/front/4/9/4909ee20-f84e-480e-8215-78946cedf877.jpg?1783903736",
+      "imageLarge": "https://cards.scryfall.io/large/front/4/9/4909ee20-f84e-480e-8215-78946cedf877.jpg?1783903736",
       "layout": "normal"
     },
     {
@@ -6057,6 +6037,24 @@
       "layout": "normal"
     },
     {
+      "oracleId": "2eb8397a-ba8b-497d-b1f5-a1b09c686597",
+      "name": "Syndicate Trafficker",
+      "cmc": 2,
+      "typeLine": "Creature — Aetherborn Rogue",
+      "colors": [
+        "B"
+      ],
+      "colorIdentity": [
+        "B"
+      ],
+      "manaCost": "{1}{B}",
+      "oracleText": "{1}, Sacrifice an artifact: Put a +1/+1 counter on this creature. It gains indestructible until end of turn.",
+      "keywords": [],
+      "imageNormal": "https://cards.scryfall.io/normal/front/d/8/d89427f0-08d5-49a1-9684-ebe8769430f6.jpg?1783937200",
+      "imageLarge": "https://cards.scryfall.io/large/front/d/8/d89427f0-08d5-49a1-9684-ebe8769430f6.jpg?1783937200",
+      "layout": "normal"
+    },
+    {
       "oracleId": "a37314cf-bbbd-4003-b94d-0e6e60edfc15",
       "name": "Synthesizer Labship",
       "cmc": 1,
@@ -6077,23 +6075,19 @@
       "layout": "normal"
     },
     {
-      "oracleId": "525d98d6-b117-44f4-b19c-3dd26e7c9fd4",
-      "name": "Tail Swipe",
-      "cmc": 1,
-      "typeLine": "Instant",
-      "colors": [
-        "G"
-      ],
-      "colorIdentity": [
-        "G"
-      ],
-      "manaCost": "{G}",
-      "oracleText": "Choose target creature you control and target creature you don't control. If you cast this spell during your main phase, the creature you control gets +1/+1 until end of turn. Then those creatures fight each other. (Each deals damage equal to its power to the other.)",
+      "oracleId": "2eb16535-718f-4b88-92bc-96429d796327",
+      "name": "Syr Ginger, the Meal Ender",
+      "cmc": 2,
+      "typeLine": "Legendary Artifact Creature — Food Knight",
+      "colors": [],
+      "colorIdentity": [],
+      "manaCost": "{2}",
+      "oracleText": "Syr Ginger has trample, hexproof, and haste as long as an opponent controls a planeswalker.\nWhenever another artifact you control is put into a graveyard from the battlefield, put a +1/+1 counter on Syr Ginger and scry 1.\n{2}, {T}, Sacrifice Syr Ginger: You gain life equal to its power.",
       "keywords": [
-        "Fight"
+        "Scry"
       ],
-      "imageNormal": "https://cards.scryfall.io/normal/front/9/5/95a39b26-8c83-40ea-b492-036251366d73.jpg?1783921295",
-      "imageLarge": "https://cards.scryfall.io/large/front/9/5/95a39b26-8c83-40ea-b492-036251366d73.jpg?1783921295",
+      "imageNormal": "https://cards.scryfall.io/normal/front/7/f/7fbdba12-1369-41ae-b0e9-c405c0f0a2e5.jpg?1783915057",
+      "imageLarge": "https://cards.scryfall.io/large/front/7/f/7fbdba12-1369-41ae-b0e9-c405c0f0a2e5.jpg?1783915057",
       "layout": "normal"
     },
     {
@@ -6158,27 +6152,6 @@
       "layout": "normal"
     },
     {
-      "oracleId": "70dd5013-f18f-4501-882f-70590c424e20",
-      "name": "Tataru Taru",
-      "cmc": 2,
-      "typeLine": "Legendary Creature — Dwarf Advisor",
-      "colors": [
-        "W"
-      ],
-      "colorIdentity": [
-        "W"
-      ],
-      "manaCost": "{1}{W}",
-      "oracleText": "When Tataru Taru enters, you draw a card and target opponent may draw a card.\nScions' Secretary — Whenever an opponent draws a card, if it isn't that player's turn, create a tapped Treasure token. This ability triggers only once each turn.",
-      "keywords": [
-        "Scions' Secretary",
-        "Treasure"
-      ],
-      "imageNormal": "https://cards.scryfall.io/normal/front/9/3/93176e85-2343-43a8-8578-69699b464b86.jpg?1783906365",
-      "imageLarge": "https://cards.scryfall.io/large/front/9/3/93176e85-2343-43a8-8578-69699b464b86.jpg?1783906365",
-      "layout": "normal"
-    },
-    {
       "oracleId": "610af0f7-b5e3-43fb-9d02-7c59bd99034c",
       "name": "Tear Asunder",
       "cmc": 2,
@@ -6197,20 +6170,6 @@
       ],
       "imageNormal": "https://cards.scryfall.io/normal/front/e/4/e408c673-4a1f-45db-827a-75c501e1b3d6.jpg?1783906030",
       "imageLarge": "https://cards.scryfall.io/large/front/e/4/e408c673-4a1f-45db-827a-75c501e1b3d6.jpg?1783906030",
-      "layout": "normal"
-    },
-    {
-      "oracleId": "9e7ade56-ab68-42ab-8a6f-bc38957f1563",
-      "name": "Terrarion",
-      "cmc": 1,
-      "typeLine": "Artifact",
-      "colors": [],
-      "colorIdentity": [],
-      "manaCost": "{1}",
-      "oracleText": "This artifact enters tapped.\n{2}, {T}, Sacrifice this artifact: Add two mana in any combination of colors.\nWhen this artifact is put into a graveyard from the battlefield, draw a card.",
-      "keywords": [],
-      "imageNormal": "https://cards.scryfall.io/normal/front/4/8/48eda056-e00f-4e28-ad26-9150a4704d21.jpg?1783930331",
-      "imageLarge": "https://cards.scryfall.io/large/front/4/8/48eda056-e00f-4e28-ad26-9150a4704d21.jpg?1783930331",
       "layout": "normal"
     },
     {
@@ -6268,6 +6227,24 @@
       "imageNormal": "https://cards.scryfall.io/normal/front/3/5/35f30004-13e0-42c1-9842-eea52793fcfc.jpg?1783913011",
       "imageLarge": "https://cards.scryfall.io/large/front/3/5/35f30004-13e0-42c1-9842-eea52793fcfc.jpg?1783913011",
       "layout": "normal"
+    },
+    {
+      "oracleId": "ab5a9749-5c94-43e0-b9df-bd2c3601936f",
+      "name": "The Antiquities War",
+      "cmc": 4,
+      "typeLine": "Enchantment — Saga",
+      "colors": [
+        "U"
+      ],
+      "colorIdentity": [
+        "U"
+      ],
+      "manaCost": "{3}{U}",
+      "oracleText": "(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)\nI, II — Look at the top five cards of your library. You may reveal an artifact card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.\nIII — Artifacts you control become artifact creatures with base power and toughness 5/5 until end of turn.",
+      "keywords": [],
+      "imageNormal": "https://cards.scryfall.io/normal/front/b/b/bbda670a-00a7-419c-b4b5-bfdb323f006d.jpg?1789445945",
+      "imageLarge": "https://cards.scryfall.io/large/front/b/b/bbda670a-00a7-419c-b4b5-bfdb323f006d.jpg?1789445945",
+      "layout": "saga"
     },
     {
       "oracleId": "c0d2bdd9-1e68-4d3a-83f8-ec2ba440a494",
@@ -6516,6 +6493,22 @@
       "layout": "normal"
     },
     {
+      "oracleId": "5a5f39ab-21b4-415f-aa1f-d8fad420d372",
+      "name": "Throne of Geth",
+      "cmc": 2,
+      "typeLine": "Artifact",
+      "colors": [],
+      "colorIdentity": [],
+      "manaCost": "{2}",
+      "oracleText": "{T}, Sacrifice an artifact: Proliferate. (Choose any number of permanents and/or players, then give each another counter of each kind already there.)",
+      "keywords": [
+        "Proliferate"
+      ],
+      "imageNormal": "https://cards.scryfall.io/normal/front/a/5/a5719f8b-0a65-4f0c-bde0-74c5e107b64d.jpg?1783930092",
+      "imageLarge": "https://cards.scryfall.io/large/front/a/5/a5719f8b-0a65-4f0c-bde0-74c5e107b64d.jpg?1783930092",
+      "layout": "normal"
+    },
+    {
       "oracleId": "899007b5-6a07-4491-9104-bb537106b07d",
       "name": "Thunderous Velocipede",
       "cmc": 3,
@@ -6552,24 +6545,6 @@
       "keywords": [],
       "imageNormal": "https://cards.scryfall.io/normal/front/d/a/daae3dae-3297-4750-9bca-c8aadaf815ea.jpg?1783937228",
       "imageLarge": "https://cards.scryfall.io/large/front/d/a/daae3dae-3297-4750-9bca-c8aadaf815ea.jpg?1783937228",
-      "layout": "normal"
-    },
-    {
-      "oracleId": "d38646dc-d1ea-473c-aaf1-df8ba327459f",
-      "name": "Trailtracker Scout",
-      "cmc": 2,
-      "typeLine": "Creature — Raccoon Scout",
-      "colors": [
-        "G"
-      ],
-      "colorIdentity": [
-        "G"
-      ],
-      "manaCost": "{1}{G}",
-      "oracleText": "{T}: Add one mana of any color.\nWhenever you expend 8, return up to one target permanent card from your graveyard to your hand. (You expend 8 as you spend your eighth total mana to cast spells during a turn.)",
-      "keywords": [],
-      "imageNormal": "https://cards.scryfall.io/normal/front/3/6/36ee967a-3cac-4fff-b616-ec2557c676f2.jpg?1783910727",
-      "imageLarge": "https://cards.scryfall.io/large/front/3/6/36ee967a-3cac-4fff-b616-ec2557c676f2.jpg?1783910727",
       "layout": "normal"
     },
     {
@@ -6625,6 +6600,28 @@
       ]
     },
     {
+      "oracleId": "52aa5a79-db0e-4eaa-b2df-e41674c47794",
+      "name": "Triarch Praetorian",
+      "cmc": 2,
+      "typeLine": "Artifact Creature — Necron",
+      "colors": [
+        "B"
+      ],
+      "colorIdentity": [
+        "B"
+      ],
+      "manaCost": "{1}{B}",
+      "oracleText": "Flying\nDynastic Codes — When this creature enters from a graveyard, you draw two cards and you lose 2 life.\nUnearth {4}{B} ({4}{B}: Return this card from your graveyard to the battlefield. It gains haste. Exile it at the beginning of the next end step or if it would leave the battlefield. Unearth only as a sorcery.)",
+      "keywords": [
+        "Flying",
+        "Dynastic Codes",
+        "Unearth"
+      ],
+      "imageNormal": "https://cards.scryfall.io/normal/front/5/a/5ad67a79-cb13-44b8-adac-36cfd211f2d3.jpg?1783920899",
+      "imageLarge": "https://cards.scryfall.io/large/front/5/a/5ad67a79-cb13-44b8-adac-36cfd211f2d3.jpg?1783920899",
+      "layout": "normal"
+    },
+    {
       "oracleId": "7d765055-da62-43f7-9580-98e9d164753b",
       "name": "Truck Toss",
       "cmc": 4,
@@ -6643,6 +6640,26 @@
       "layout": "normal"
     },
     {
+      "oracleId": "426fa8e8-b0f9-4b6c-b22b-04ec2073187a",
+      "name": "Undead Butler",
+      "cmc": 2,
+      "typeLine": "Creature — Zombie",
+      "colors": [
+        "B"
+      ],
+      "colorIdentity": [
+        "B"
+      ],
+      "manaCost": "{1}{B}",
+      "oracleText": "When this creature enters, mill three cards. (Put the top three cards of your library into your graveyard.)\nWhen this creature dies, you may exile it. When you do, return target creature card from your graveyard to your hand.",
+      "keywords": [
+        "Mill"
+      ],
+      "imageNormal": "https://cards.scryfall.io/normal/front/2/c/2c9b8582-8887-4652-82e2-f9b11ee21545.jpg?1783924849",
+      "imageLarge": "https://cards.scryfall.io/large/front/2/c/2c9b8582-8887-4652-82e2-f9b11ee21545.jpg?1783924849",
+      "layout": "normal"
+    },
+    {
       "oracleId": "857febd9-cdd7-4f8e-a852-d88084b0cfbc",
       "name": "Underground River",
       "cmc": 0,
@@ -6657,22 +6674,6 @@
       "keywords": [],
       "imageNormal": "https://cards.scryfall.io/normal/front/5/e/5e50c8d5-6b22-4fc6-87ea-3d7d77ced17f.jpg?1783909555",
       "imageLarge": "https://cards.scryfall.io/large/front/5/e/5e50c8d5-6b22-4fc6-87ea-3d7d77ced17f.jpg?1783909555",
-      "layout": "normal"
-    },
-    {
-      "oracleId": "d50b1d2e-1825-432a-ab73-068fdc356f50",
-      "name": "Universal Automaton",
-      "cmc": 1,
-      "typeLine": "Artifact Creature — Shapeshifter",
-      "colors": [],
-      "colorIdentity": [],
-      "manaCost": "{1}",
-      "oracleText": "Changeling (This card is every creature type.)",
-      "keywords": [
-        "Changeling"
-      ],
-      "imageNormal": "https://cards.scryfall.io/normal/front/5/3/53c682e2-c90f-4f4b-9010-00b099e85518.jpg?1783933069",
-      "imageLarge": "https://cards.scryfall.io/large/front/5/3/53c682e2-c90f-4f4b-9010-00b099e85518.jpg?1783933069",
       "layout": "normal"
     },
     {
@@ -6767,27 +6768,6 @@
       "layout": "normal"
     },
     {
-      "oracleId": "64cf5d59-7bcd-4b0b-a160-c8468d4c0f60",
-      "name": "Vault Skirge",
-      "cmc": 2,
-      "typeLine": "Artifact Creature — Phyrexian Imp",
-      "colors": [
-        "B"
-      ],
-      "colorIdentity": [
-        "B"
-      ],
-      "manaCost": "{1}{B/P}",
-      "oracleText": "({B/P} can be paid with either {B} or 2 life.)\nFlying\nLifelink (Damage dealt by this creature also causes you to gain that much life.)",
-      "keywords": [
-        "Flying",
-        "Lifelink"
-      ],
-      "imageNormal": "https://cards.scryfall.io/normal/front/f/2/f254239c-c07a-4c41-98f7-8f4de539c73e.jpg?1783941310",
-      "imageLarge": "https://cards.scryfall.io/large/front/f/2/f254239c-c07a-4c41-98f7-8f4de539c73e.jpg?1783941310",
-      "layout": "normal"
-    },
-    {
       "oracleId": "337533fb-2783-493c-856f-c41a83cca443",
       "name": "Vedalken Certarch",
       "cmc": 1,
@@ -6866,6 +6846,43 @@
       "layout": "normal"
     },
     {
+      "oracleId": "a720f3d3-c2d7-4e50-8cc6-600120380e9c",
+      "name": "Voldaren Bloodcaster // Bloodbat Summoner",
+      "cmc": 2,
+      "typeLine": "Creature — Vampire Wizard // Creature — Vampire Wizard",
+      "colors": [],
+      "colorIdentity": [
+        "B"
+      ],
+      "manaCost": "{1}{B}",
+      "oracleText": "Flying\nWhenever this creature or another nontoken creature you control dies, create a Blood token. (It's an artifact with \"{1}, {T}, Discard a card, Sacrifice this token: Draw a card.\")\nWhenever you create a Blood token, if you control five or more Blood tokens, transform this creature.\n//\nFlying\nAt the beginning of combat on your turn, up to one target Blood token you control becomes a 2/2 black Bat creature with flying and haste in addition to its other types.",
+      "keywords": [
+        "Flying",
+        "Transform"
+      ],
+      "imageNormal": "https://cards.scryfall.io/normal/front/4/b/4b4390f4-451f-4575-96e0-dc4dcb45ad8f.jpg?1783908133",
+      "imageLarge": "https://cards.scryfall.io/large/front/4/b/4b4390f4-451f-4575-96e0-dc4dcb45ad8f.jpg?1783908133",
+      "layout": "transform",
+      "faces": [
+        {
+          "name": "Voldaren Bloodcaster",
+          "manaCost": "{1}{B}",
+          "typeLine": "Creature — Vampire Wizard",
+          "oracleText": "Flying\nWhenever this creature or another nontoken creature you control dies, create a Blood token. (It's an artifact with \"{1}, {T}, Discard a card, Sacrifice this token: Draw a card.\")\nWhenever you create a Blood token, if you control five or more Blood tokens, transform this creature.",
+          "imageNormal": "https://cards.scryfall.io/normal/front/4/b/4b4390f4-451f-4575-96e0-dc4dcb45ad8f.jpg?1783908133",
+          "imageLarge": "https://cards.scryfall.io/large/front/4/b/4b4390f4-451f-4575-96e0-dc4dcb45ad8f.jpg?1783908133"
+        },
+        {
+          "name": "Bloodbat Summoner",
+          "manaCost": "",
+          "typeLine": "Creature — Vampire Wizard",
+          "oracleText": "Flying\nAt the beginning of combat on your turn, up to one target Blood token you control becomes a 2/2 black Bat creature with flying and haste in addition to its other types.",
+          "imageNormal": "https://cards.scryfall.io/normal/back/4/b/4b4390f4-451f-4575-96e0-dc4dcb45ad8f.jpg?1783908133",
+          "imageLarge": "https://cards.scryfall.io/large/back/4/b/4b4390f4-451f-4575-96e0-dc4dcb45ad8f.jpg?1783908133"
+        }
+      ]
+    },
+    {
       "oracleId": "1779af8e-38fc-4043-b5fa-ee16a7ea840c",
       "name": "Voltage Surge",
       "cmc": 1,
@@ -6920,6 +6937,26 @@
       "layout": "normal"
     },
     {
+      "oracleId": "5268f772-5b42-4b5b-9e57-c32c662a42f3",
+      "name": "Warden of the Inner Sky",
+      "cmc": 1,
+      "typeLine": "Creature — Human Soldier",
+      "colors": [
+        "W"
+      ],
+      "colorIdentity": [
+        "W"
+      ],
+      "manaCost": "{W}",
+      "oracleText": "As long as this creature has three or more counters on it, it has flying and vigilance.\nTap three untapped artifacts and/or creatures you control: Put a +1/+1 counter on this creature. Scry 1. Activate only as a sorcery.",
+      "keywords": [
+        "Scry"
+      ],
+      "imageNormal": "https://cards.scryfall.io/normal/front/5/4/549fd992-ed37-431d-97cb-9ca017db1d47.jpg?1783913801",
+      "imageLarge": "https://cards.scryfall.io/large/front/5/4/549fd992-ed37-431d-97cb-9ca017db1d47.jpg?1783913801",
+      "layout": "normal"
+    },
+    {
       "oracleId": "30820f71-9fd4-453c-b377-c2e0b01c07a7",
       "name": "Waterlogged Hulk // Watertight Gondola",
       "cmc": 1,
@@ -6957,24 +6994,6 @@
           "imageNormal": "https://cards.scryfall.io/normal/back/7/e/7ea89d3c-8d47-4bbb-9271-8cdfd9296e2f.jpg?1783913790"
         }
       ]
-    },
-    {
-      "oracleId": "06ef46c6-00ba-40e6-b866-d0095ab83749",
-      "name": "Wave Goodbye",
-      "cmc": 4,
-      "typeLine": "Sorcery",
-      "colors": [
-        "U"
-      ],
-      "colorIdentity": [
-        "U"
-      ],
-      "manaCost": "{2}{U}{U}",
-      "oracleText": "Return each creature without a +1/+1 counter on it to its owner's hand.",
-      "keywords": [],
-      "imageNormal": "https://cards.scryfall.io/normal/front/8/f/8fb141d9-addd-47ad-bfc1-b5b376d4c950.jpg?1783904160",
-      "imageLarge": "https://cards.scryfall.io/large/front/8/f/8fb141d9-addd-47ad-bfc1-b5b376d4c950.jpg?1783904160",
-      "layout": "normal"
     },
     {
       "oracleId": "7c27136a-bf9d-4f42-9c37-abe347fad1bb",
@@ -7104,24 +7123,6 @@
       ]
     },
     {
-      "oracleId": "bbb4643a-4bc6-4860-95e5-6f69cd1aebbe",
-      "name": "Where We're Going...",
-      "cmc": 1,
-      "typeLine": "Instant",
-      "colors": [
-        "U"
-      ],
-      "colorIdentity": [
-        "U"
-      ],
-      "manaCost": "{U}",
-      "oracleText": "Put a flying counter on target creature or Vehicle.\nDraw a card.",
-      "keywords": [],
-      "imageNormal": "https://cards.scryfall.io/normal/front/d/f/df891f42-3a3d-4791-a036-74307c7cb0de.jpg?1783907514",
-      "imageLarge": "https://cards.scryfall.io/large/front/d/f/df891f42-3a3d-4791-a036-74307c7cb0de.jpg?1783907514",
-      "layout": "normal"
-    },
-    {
       "oracleId": "7060f2c8-fca0-4b7a-bddf-37682f434596",
       "name": "Whirler Rogue",
       "cmc": 4,
@@ -7227,6 +7228,12 @@
   ],
   "themes": [
     {
+      "id": "1793f1ca-5551-4a85-89b5-fb39774dd22d",
+      "name": "40k model",
+      "description": "Cards named after and representing a Warhammer 40,000 model.",
+      "accent": "#4c7c5a"
+    },
+    {
       "id": "1ab2a220-a953-4f28-b57a-2c5cb82dde7b",
       "name": "abrade",
       "description": "Modal instant or sorcery spells that offer the option to either deal damage to creature(s) or remove artifact(s).",
@@ -7248,12 +7255,6 @@
       "id": "acf78b42-a1d5-4829-bef0-69204f29e260",
       "name": "activated ability",
       "description": "Cards with activated abilities.",
-      "accent": "#4c7c9c"
-    },
-    {
-      "id": "ceff9536-392b-490b-825b-0b213930f7da",
-      "name": "addendum",
-      "description": "Instant-speed cards that do something extra if you played them during your main phase.",
       "accent": "#4c7c9c"
     },
     {
@@ -7291,12 +7292,6 @@
       "name": "affinity for artifacts",
       "description": "",
       "accent": "#9c4c4c"
-    },
-    {
-      "id": "77ac0ebf-7810-460b-8814-fe68756c0193",
-      "name": "aikido",
-      "description": "Effects that turn your opponent's strength against them.",
-      "accent": "#6b4c7c"
     },
     {
       "id": "a3909e64-69d4-442e-8da1-fffa309492b8",
@@ -7401,12 +7396,6 @@
       "accent": "#4c7c5a"
     },
     {
-      "id": "598e4be3-3039-489d-9e38-1d099ddf230e",
-      "name": "banish-hand",
-      "description": "Exile one or more cards from a player's hand as long as this remains in play.",
-      "accent": "#c4a35a"
-    },
-    {
       "id": "55a20ecd-06ec-476f-84d6-a35fe385e8ff",
       "name": "bear with set's mechanic",
       "description": "A 2/2 for 2 with one of the set's iconic mechanics",
@@ -7429,6 +7418,12 @@
       "name": "Bird",
       "description": "Creature type Bird. The generator pulls cards with this type, plus Tagger typal payoffs when that catalog is installed.",
       "accent": "#4c7c5a"
+    },
+    {
+      "id": "2ac7b430-999c-44f0-9971-f81f5dd84e79",
+      "name": "birthing pod",
+      "description": "Derived from the titular card, this refers to the ability that allows to sacrifice a permanent, search your library for another permanent with a converted mana cost either in relation to the sacrificed permanent or the mana you paid, and put it on the battlefield.",
+      "accent": "#8a6b4c"
     },
     {
       "id": "97ad9590-e188-4879-9c25-c3a26e8a66ba",
@@ -7459,18 +7454,6 @@
       "name": "bottomless mana sink",
       "description": "Repeatable effects that, if an arbitrary amount of mana is dumped into them, will probably win you the game—for example, by drawing your whole deck, creating an arbitrarily large attacker, making an endless army of tokens, gaining infinite life, etc.",
       "accent": "#9c4c4c"
-    },
-    {
-      "id": "1906bb02-3036-4040-93b1-e60da7fb5a69",
-      "name": "bounce-self",
-      "description": "",
-      "accent": "#4c7c9c"
-    },
-    {
-      "id": "20af1439-9d51-47e4-9b8c-d27d131b0ad4",
-      "name": "bribery",
-      "description": "Give an opponent something in exchange for a benefit to you.",
-      "accent": "#6b4c7c"
     },
     {
       "id": "b0fc01b1-389c-4545-b122-1e0be18dee60",
@@ -7603,12 +7586,6 @@
       "name": "Centaur",
       "description": "Creature type Centaur. The generator pulls cards with this type, plus Tagger typal payoffs when that catalog is installed.",
       "accent": "#8a6b4c"
-    },
-    {
-      "id": "9ed3d104-27cd-48d8-be36-85bcd4d5e026",
-      "name": "changeling",
-      "description": "Cards that have all creature types in all zones.",
-      "accent": "#4c7c5a"
     },
     {
       "id": "41001ec8-915d-4113-9f6d-e4d103cc4b5d",
@@ -7893,6 +7870,12 @@
       "accent": "#4c7c9c"
     },
     {
+      "id": "348b012c-d5db-49b7-bc8d-8821a14deb11",
+      "name": "cycle-bro-c-mulch",
+      "description": "",
+      "accent": "#8a6b4c"
+    },
+    {
       "id": "4f92bbf1-8e21-472c-9529-a53e77c9eb32",
       "name": "cycle-bro-mishra-vertical",
       "description": "Mishra in Uncommon, Rare and Mythic Meld from Brothers War",
@@ -8037,12 +8020,6 @@
       "accent": "#4c7c5a"
     },
     {
-      "id": "e8be69b7-fe68-441f-af97-bf409326a6ef",
-      "name": "cycle-kld-gearhulk",
-      "description": "",
-      "accent": "#7c6b4c"
-    },
-    {
       "id": "52699877-4851-4463-a6db-9996eb4c6915",
       "name": "cycle-kld-module",
       "description": "The Modules of Kaladesh were designed to work together in this order: Animation -&gt; Decoction -&gt; Fabrication -&gt; repeat.",
@@ -8095,6 +8072,12 @@
       "name": "cycle-mom-draft-signpost",
       "description": "",
       "accent": "#c4a35a"
+    },
+    {
+      "id": "79bb366e-c658-46f5-a3ad-41132e11005f",
+      "name": "cycle-mrd-spellbomb",
+      "description": "",
+      "accent": "#4c7c5a"
     },
     {
       "id": "a9cc276f-755c-48fe-933a-a05d1eeebe49",
@@ -8151,12 +8134,6 @@
       "accent": "#9c4c4c"
     },
     {
-      "id": "84f32dcb-f367-41d4-ac1d-e50d08067322",
-      "name": "cycle-tdm-c-behold",
-      "description": "",
-      "accent": "#4c7c9c"
-    },
-    {
       "id": "c6f0cba1-7e86-4de8-811c-886526e05a9d",
       "name": "cycle-vma-r-two-color",
       "description": "",
@@ -8167,12 +8144,6 @@
       "name": "cycle-vow-r-two-color-legend",
       "description": "",
       "accent": "#4c7c5a"
-    },
-    {
-      "id": "529a51de-2bc9-48c3-a2c1-334f1ee3862b",
-      "name": "cycle-war-draft-signpost",
-      "description": "",
-      "accent": "#4c7c9c"
     },
     {
       "id": "d802a4f1-1df9-4e22-84bf-8718e03e4017",
@@ -8197,6 +8168,12 @@
       "name": "damage prevention-creature",
       "description": "",
       "accent": "#4c7c9c"
+    },
+    {
+      "id": "b6351d4a-373b-4b09-a08f-66fbe4956dd0",
+      "name": "damage prevention-self",
+      "description": "",
+      "accent": "#6b4c7c"
     },
     {
       "id": "e44c3d09-026b-4c33-827a-6c4851e7e439",
@@ -8265,6 +8242,12 @@
       "accent": "#4c7c9c"
     },
     {
+      "id": "7a0d5fcf-1f73-4c45-ac27-679c93bbe9bf",
+      "name": "dnd character",
+      "description": "Cards that represent Dungeons and Dragons characters: name, rules text, etc. See also the [dungeons and dragons](/tags/artwork/dungeons-and-dragons) art tag.",
+      "accent": "#4c7c9c"
+    },
+    {
       "id": "e12fd27b-8119-469b-832f-72e3f78fbfe1",
       "name": "dnd monster",
       "description": "Cards named after and representing monsters from DnD.",
@@ -8274,6 +8257,12 @@
       "id": "type:dog",
       "name": "Dog",
       "description": "Creature type Dog. The generator pulls cards with this type, plus Tagger typal payoffs when that catalog is installed.",
+      "accent": "#7c6b4c"
+    },
+    {
+      "id": "9f7167ec-2421-4ddc-bc47-f41f2e3ce3cc",
+      "name": "dolmen ability",
+      "description": "Derived from the titular card, this ability prevents all combat damage that would be dealt to attacking creatures you control. Other conditions may apply.",
       "accent": "#7c6b4c"
     },
     {
@@ -8307,9 +8296,9 @@
       "accent": "#7c6b4c"
     },
     {
-      "id": "4c4a713b-b4b3-45dc-98e1-f8aa8adeb3ca",
-      "name": "draw hate",
-      "description": "Cards that can hate on players drawing cards.",
+      "id": "e09bd7ce-86c3-4870-87d9-f213ecae2c17",
+      "name": "draw matters",
+      "description": "",
       "accent": "#4c7c5a"
     },
     {
@@ -8365,6 +8354,12 @@
       "name": "Elemental",
       "description": "Creature type Elemental. The generator pulls cards with this type, plus Tagger typal payoffs when that catalog is installed.",
       "accent": "#7c6b4c"
+    },
+    {
+      "id": "type:elephant",
+      "name": "Elephant",
+      "description": "Creature type Elephant. The generator pulls cards with this type, plus Tagger typal payoffs when that catalog is installed.",
+      "accent": "#6b4c7c"
     },
     {
       "id": "type:elf",
@@ -8451,6 +8446,12 @@
       "accent": "#4c7c5a"
     },
     {
+      "id": "1f17b570-e7c3-44d7-a215-04eaa50d7110",
+      "name": "face-commander",
+      "description": "A card that is the primary, marquee legendary creature featured on the packaging of a pre-constructed Commander deck. It sets the main mechanical theme and color identity of the deck.",
+      "accent": "#4c7c9c"
+    },
+    {
       "id": "79a091cf-7720-47ca-93ef-5265659ed013",
       "name": "face-up-face-down-effects",
       "description": "",
@@ -8503,18 +8504,6 @@
       "name": "flicker-slow",
       "description": "Exile a card to be brought back after a set time (usually at end of turn).",
       "accent": "#6b4c7c"
-    },
-    {
-      "id": "11f804b6-7a51-4741-8a00-810de28ff407",
-      "name": "flicker-vehicle",
-      "description": "",
-      "accent": "#8a6b4c"
-    },
-    {
-      "id": "acf8bf02-6505-4ec9-a1fb-14cd1ecb0d0b",
-      "name": "flying counter",
-      "description": "",
-      "accent": "#7c6b4c"
     },
     {
       "id": "406196c4-9d4f-42de-9654-da1eafb989d9",
@@ -8597,6 +8586,12 @@
     {
       "id": "0500f9c8-715e-45f4-88a2-1e7f5015c3f2",
       "name": "gains hexproof",
+      "description": "",
+      "accent": "#4c7c9c"
+    },
+    {
+      "id": "8332f391-6edc-40a8-a0aa-da80edd0bc0d",
+      "name": "gains indestructible",
       "description": "",
       "accent": "#4c7c9c"
     },
@@ -8763,6 +8758,12 @@
       "accent": "#6b4c7c"
     },
     {
+      "id": "type:gnome",
+      "name": "Gnome",
+      "description": "Creature type Gnome. The generator pulls cards with this type, plus Tagger typal payoffs when that catalog is installed.",
+      "accent": "#6b4c7c"
+    },
+    {
       "id": "type:goblin",
       "name": "Goblin",
       "description": "Creature type Goblin. The generator pulls cards with this type, plus Tagger typal payoffs when that catalog is installed.",
@@ -8805,6 +8806,12 @@
       "accent": "#9c4c4c"
     },
     {
+      "id": "7cd8bba0-9946-4cc8-8661-b61606ba52df",
+      "name": "graveyard fuel-self",
+      "description": "",
+      "accent": "#8a6b4c"
+    },
+    {
       "id": "cfa5bf89-e142-4f80-a660-3fe41ffb059a",
       "name": "greed ability",
       "description": "Pay life and mana to draw cards.",
@@ -8821,6 +8828,12 @@
       "name": "group slug",
       "description": "Cards that are able to deal damage or otherwise target multiple players at once.",
       "accent": "#6b4c7c"
+    },
+    {
+      "id": "afb0c553-e747-4859-9b8b-f11791b56e31",
+      "name": "hand size increase",
+      "description": "Cards that increase the maximum amount of cards you can hold.",
+      "accent": "#4c7c9c"
     },
     {
       "id": "48f1d055-d516-4c44-bfd7-f288f7c8d27a",
@@ -8869,6 +8882,12 @@
       "name": "hate-multicolor",
       "description": "",
       "accent": "#c4a35a"
+    },
+    {
+      "id": "4f29f8d4-8c9b-4737-a1a5-6f1acc1622a6",
+      "name": "hate-planeswalker",
+      "description": "Effects that specifically answer or are better against planeswalkers. This does not include effects that happen to trigger whether it's a player or planeswalker and don't help remove the planeswalker.",
+      "accent": "#6b4c7c"
     },
     {
       "id": "c1a60e85-ed47-49f2-b1b1-03d9b52bd159",
@@ -8949,12 +8968,6 @@
       "accent": "#4c7c5a"
     },
     {
-      "id": "type:imp",
-      "name": "Imp",
-      "description": "Creature type Imp. The generator pulls cards with this type, plus Tagger typal payoffs when that catalog is installed.",
-      "accent": "#4c7c5a"
-    },
-    {
       "id": "2805baba-e957-4608-8cca-d547485d5cb6",
       "name": "impact effect",
       "description": "Effects that have your creatures do ETB damage or life loss.",
@@ -8979,10 +8992,28 @@
       "accent": "#7c6b4c"
     },
     {
+      "id": "15830293-aa64-4802-a8f9-060faaa39c96",
+      "name": "impulse-artifact-creature",
+      "description": "",
+      "accent": "#c4a35a"
+    },
+    {
       "id": "69762641-6002-43c1-a624-c445a75fa60d",
       "name": "impulse-artifact-vehicle",
       "description": "",
       "accent": "#9c4c4c"
+    },
+    {
+      "id": "0852c76d-3240-4332-ad05-d15e101a89b8",
+      "name": "impulse-battle",
+      "description": "",
+      "accent": "#7c6b4c"
+    },
+    {
+      "id": "c3a7e971-287f-4744-a0d8-e7d6a45b4c9c",
+      "name": "impulse-cast",
+      "description": "",
+      "accent": "#c4a35a"
     },
     {
       "id": "553df236-5cd7-4e81-bd7e-44845d888a5c",
@@ -8991,10 +9022,22 @@
       "accent": "#4c7c9c"
     },
     {
+      "id": "5db72854-03f8-4a25-bb30-efd6e9b42404",
+      "name": "impulse-enchantment",
+      "description": "",
+      "accent": "#4c7c5a"
+    },
+    {
       "id": "3996cac2-0ddc-49b2-9c14-3132168d0b2f",
       "name": "impulse-historic",
       "description": "",
       "accent": "#4c7c9c"
+    },
+    {
+      "id": "4635ad68-76d1-43f3-98f6-8c60c74b8fdd",
+      "name": "impulse-instant",
+      "description": "",
+      "accent": "#7c6b4c"
     },
     {
       "id": "70ded4ac-78a4-4180-8946-765b45a19063",
@@ -9013,6 +9056,18 @@
       "name": "impulse-permanent",
       "description": "",
       "accent": "#4c7c5a"
+    },
+    {
+      "id": "f73fab4f-5401-404b-b5fa-7400b2d71473",
+      "name": "impulse-planeswalker",
+      "description": "",
+      "accent": "#4c7c9c"
+    },
+    {
+      "id": "c5fa2c00-faa8-49a8-b830-ddd0ae009f01",
+      "name": "impulse-sorcery",
+      "description": "",
+      "accent": "#8a6b4c"
     },
     {
       "id": "78844aa5-9575-4bed-81c1-3330b5c56299",
@@ -9039,12 +9094,6 @@
       "accent": "#6b4c7c"
     },
     {
-      "id": "3b1795ac-b75d-463e-b998-aca94634b289",
-      "name": "inspired",
-      "description": "Cards that care about the action of untapping a permanent. For cards that care about untapped permanents, see [synergy-untapped](synergy-untapped) and [untapped matters-self](untapped-matters-self).",
-      "accent": "#4c7c9c"
-    },
-    {
       "id": "68f9547a-5c51-4d1b-86c4-8c07e654f789",
       "name": "intervening if clause",
       "description": "At/When/Whenever [event], if [clause], [effect].",
@@ -9067,12 +9116,6 @@
       "name": "Knight",
       "description": "Creature type Knight. The generator pulls cards with this type, plus Tagger typal payoffs when that catalog is installed.",
       "accent": "#4c7c9c"
-    },
-    {
-      "id": "type:kor",
-      "name": "Kor",
-      "description": "Creature type Kor. The generator pulls cards with this type, plus Tagger typal payoffs when that catalog is installed.",
-      "accent": "#9c4c4c"
     },
     {
       "id": "de8087f3-9b70-4f31-90b2-499ecf0ee066",
@@ -9165,22 +9208,10 @@
       "accent": "#8a6b4c"
     },
     {
-      "id": "346ca9a4-9877-447f-953c-63a8fee974a2",
-      "name": "living weapon",
-      "description": "Equipments that attach themselves to a creature they create on ETB.",
-      "accent": "#c4a35a"
-    },
-    {
       "id": "type:lizard",
       "name": "Lizard",
       "description": "Creature type Lizard. The generator pulls cards with this type, plus Tagger typal payoffs when that catalog is installed.",
       "accent": "#6b4c7c"
-    },
-    {
-      "id": "d431643b-f9b0-42bb-9563-5714ad90b2cb",
-      "name": "lockdown-creature",
-      "description": "",
-      "accent": "#8a6b4c"
     },
     {
       "id": "0397de5e-7344-4056-bf44-7d31260af593",
@@ -9223,6 +9254,12 @@
       "name": "mana filter",
       "description": "Convert mana to other colors.",
       "accent": "#8a6b4c"
+    },
+    {
+      "id": "523a4f29-25ee-483c-8123-a8e62b62af5a",
+      "name": "mana rock",
+      "description": "Noncreature artifacts that net increase your mana.",
+      "accent": "#c4a35a"
     },
     {
       "id": "8c2afeb7-e6c8-4cbc-9a5e-079f09b1cace",
@@ -9291,6 +9328,12 @@
       "accent": "#6b4c7c"
     },
     {
+      "id": "0b23af67-d270-4e79-8173-09b9c51d88aa",
+      "name": "mill-any",
+      "description": "Cards that let you choose a library to mill. Could be yours, could be theirs. It could also be an indirect choice, e.g. milling the controller of a targeted permanent.",
+      "accent": "#8a6b4c"
+    },
+    {
       "id": "bcae5f6a-f68b-4217-8f6c-0b4d31abd045",
       "name": "mill-self",
       "description": "Cards that put cards from top of your own library to the graveyard. Check the tag \"mill\" for more.",
@@ -9313,6 +9356,12 @@
       "name": "miniwheel",
       "description": "Discard your hand, and draw less than seven cards. See also [wheel](/tags/card/wheel) for drawing (potentially) seven or more cards.",
       "accent": "#9c4c4c"
+    },
+    {
+      "id": "38f0dba1-36c0-4432-a09f-3c2b000fe1e3",
+      "name": "misnomer",
+      "description": "Cards with names that imply something that card isn't, such as a mechanic or a color.",
+      "accent": "#7c6b4c"
     },
     {
       "id": "a26602ef-606a-4373-9ec1-224f47f1aad0",
@@ -9361,6 +9410,12 @@
       "name": "move counters",
       "description": "",
       "accent": "#6b4c7c"
+    },
+    {
+      "id": "82ae343d-7544-4b15-ac06-031c3d4a68a2",
+      "name": "mulch",
+      "description": "An effect that filters cards at the top of the library, putting remainders into the graveyard.",
+      "accent": "#8a6b4c"
     },
     {
       "id": "f60d961b-2d3c-4d4f-b5a5-7e94f5bda745",
@@ -9426,6 +9481,12 @@
       "id": "59355dd3-4ad0-478c-bd82-c736e07ce6e4",
       "name": "naturalize with set mechanic",
       "description": "",
+      "accent": "#4c7c9c"
+    },
+    {
+      "id": "type:necron",
+      "name": "Necron",
+      "description": "Creature type Necron. The generator pulls cards with this type, plus Tagger typal payoffs when that catalog is installed.",
       "accent": "#4c7c9c"
     },
     {
@@ -9553,12 +9614,6 @@
       "name": "Phyrexian",
       "description": "Creature type Phyrexian. The generator pulls cards with this type, plus Tagger typal payoffs when that catalog is installed.",
       "accent": "#4c7c5a"
-    },
-    {
-      "id": "b7c20089-a104-4fda-815e-45422c004471",
-      "name": "phyrexian mana cost",
-      "description": "Cards where the casting cost includes phyrexian mana",
-      "accent": "#9c4c4c"
     },
     {
       "id": "8d696d27-115e-4978-8151-5224c14e78bb",
@@ -9735,12 +9790,6 @@
       "accent": "#8a6b4c"
     },
     {
-      "id": "type:raccoon",
-      "name": "Raccoon",
-      "description": "Creature type Raccoon. The generator pulls cards with this type, plus Tagger typal payoffs when that catalog is installed.",
-      "accent": "#7c6b4c"
-    },
-    {
       "id": "6671420c-fd48-417e-bd71-a1f3c5553866",
       "name": "rainbow land",
       "description": "A land that can net one or more mana of any color.",
@@ -9763,6 +9812,12 @@
       "name": "Rat",
       "description": "Creature type Rat. The generator pulls cards with this type, plus Tagger typal payoffs when that catalog is installed.",
       "accent": "#8a6b4c"
+    },
+    {
+      "id": "54de5246-7ca2-4e52-bf80-7a5c19e04441",
+      "name": "reanimate matters",
+      "description": "",
+      "accent": "#7c6b4c"
     },
     {
       "id": "121eec9b-a613-454c-a3dd-86fc88eedf4c",
@@ -9847,12 +9902,6 @@
       "name": "regrowth-creature",
       "description": "",
       "accent": "#4c7c9c"
-    },
-    {
-      "id": "9a474dd4-a64c-4819-bd15-63ea874780ff",
-      "name": "regrowth-permanent",
-      "description": "",
-      "accent": "#c4a35a"
     },
     {
       "id": "cb0787e8-49e0-440d-8737-0b2def800367",
@@ -10059,18 +10108,6 @@
       "accent": "#4c7c9c"
     },
     {
-      "id": "917ab124-2cfb-46a1-9b63-b893bc9718c3",
-      "name": "rescue-permanent",
-      "description": "",
-      "accent": "#9c4c4c"
-    },
-    {
-      "id": "b24bafdb-ae90-4719-829b-1d499e1bdd05",
-      "name": "restock-any",
-      "description": "Return any cards to your library from the graveyard, not caring about their types.",
-      "accent": "#6b4c7c"
-    },
-    {
       "id": "34aa2571-a8dc-4c52-83d4-0dfec652ee14",
       "name": "restricted mana",
       "description": "Mana that has restrictions on what you can or cannot use it on.",
@@ -10179,12 +10216,6 @@
       "accent": "#7c6b4c"
     },
     {
-      "id": "84d4490e-341b-40fe-893e-e98e80f25b89",
-      "name": "selective group hug",
-      "description": "Group Hug cards that benefit only certain opponents in particular.",
-      "accent": "#9c4c4c"
-    },
-    {
       "id": "b8d076cf-c620-4ed7-8400-e68a9c225252",
       "name": "self-discard matters",
       "description": "Cards that reward you for tossing your own hand into the graveyard. For cards that reward you for having a small hand, see [hellbent](hellbent) and [heckbent](heckbent).",
@@ -10219,12 +10250,6 @@
       "name": "shapesharing",
       "description": "Something on the battlefield becomes a copy of something else.",
       "accent": "#9c4c4c"
-    },
-    {
-      "id": "type:shapeshifter",
-      "name": "Shapeshifter",
-      "description": "Creature type Shapeshifter. The generator pulls cards with this type, plus Tagger typal payoffs when that catalog is installed.",
-      "accent": "#8a6b4c"
     },
     {
       "id": "d3a1ecff-e67b-45ce-b0d5-1f6ac695447e",
@@ -10293,12 +10318,6 @@
       "accent": "#8a6b4c"
     },
     {
-      "id": "a3fcc40c-732e-4e53-857c-79bd27304e77",
-      "name": "speech matters",
-      "description": "Cards that care about talking (or the lack of it)",
-      "accent": "#9c4c4c"
-    },
-    {
       "id": "type:spider",
       "name": "Spider",
       "description": "Creature type Spider. The generator pulls cards with this type, plus Tagger typal payoffs when that catalog is installed.",
@@ -10347,12 +10366,6 @@
       "accent": "#c4a35a"
     },
     {
-      "id": "33b97ce5-f156-4332-9ecc-1e0256702f26",
-      "name": "sweeper-one-sided",
-      "description": "Sweepers that are, or have high potential to be, one-sided.",
-      "accent": "#6b4c7c"
-    },
-    {
       "id": "d7feb2f6-3278-4ff8-9888-82cb19feb339",
       "name": "synergy-activated-ability",
       "description": "",
@@ -10381,6 +10394,12 @@
       "name": "synergy-blocker-self",
       "description": "",
       "accent": "#6b4c7c"
+    },
+    {
+      "id": "d84389f3-5e7f-4f9d-a4b5-61757a9b9ade",
+      "name": "synergy-blood",
+      "description": "",
+      "accent": "#c4a35a"
     },
     {
       "id": "c45b0713-da4a-4dba-87e3-6f5ae012ac34",
@@ -10423,6 +10442,12 @@
       "name": "synergy-island",
       "description": "",
       "accent": "#6b4c7c"
+    },
+    {
+      "id": "394a55d0-f936-4742-a71f-81eede568e63",
+      "name": "synergy-legendary",
+      "description": "",
+      "accent": "#c4a35a"
     },
     {
       "id": "9ef944ba-bfc9-4bf5-a157-b10034b687c0",
@@ -10569,33 +10594,15 @@
       "accent": "#8a6b4c"
     },
     {
-      "id": "eff3a64f-6a21-41f7-a7cd-1c1057efa596",
-      "name": "thoughtseize",
-      "description": "Opponent reveals their hand, and you choose a card for them to discard.",
-      "accent": "#7c6b4c"
-    },
-    {
       "id": "505b0216-b9bb-4f29-b166-2b456b426941",
       "name": "titan trigger",
       "description": "An ability that triggers on both entering the battlefield and attacking, similar to the Titan cycle from M11",
       "accent": "#4c7c9c"
     },
     {
-      "id": "23d9aa9d-e895-475e-a756-8ede44b7ce61",
-      "name": "token errata",
-      "description": "These cards used to make a different type of token, which has since been updated. For type lines, see [Type Errata](type-errata)",
-      "accent": "#4c7c5a"
-    },
-    {
       "id": "43b7c3c3-30a8-44f3-b66d-19f59c70ce51",
       "name": "tokenlink",
       "description": "Dealing N damage creates N tokens (or similar).",
-      "accent": "#6b4c7c"
-    },
-    {
-      "id": "b4ad8849-14ec-48a9-9e69-085c85a32776",
-      "name": "toll",
-      "description": "Generate resources from your opponent's actions without them being able to pay it off.",
       "accent": "#6b4c7c"
     },
     {
@@ -10638,12 +10645,6 @@
       "id": "77c28a17-1c58-407d-ad41-32915b8a2e24",
       "name": "transform-improvement",
       "description": "Cards that do the same effect but better, or the same effects but with extra when they transform.",
-      "accent": "#7c6b4c"
-    },
-    {
-      "id": "3c47d74b-765c-455a-98f1-437b4f1492c0",
-      "name": "transform-mirror",
-      "description": "Cards that mirror themselves mechanically when they transform",
       "accent": "#7c6b4c"
     },
     {
@@ -10713,6 +10714,12 @@
       "accent": "#4c7c5a"
     },
     {
+      "id": "8a1ac1b1-f943-42cf-af4b-ae9dce07496a",
+      "name": "tutor-mv",
+      "description": "Cards that tutor cards with a certain mana value.",
+      "accent": "#7c6b4c"
+    },
+    {
       "id": "f5148059-a7ca-4ffd-9936-b6094af9308c",
       "name": "tutor-to-battlefield",
       "description": "Cards that tutor something out of the library and straight onto the battlefield.",
@@ -10743,22 +10750,10 @@
       "accent": "#4c7c5a"
     },
     {
-      "id": "3e352959-20d4-4029-8865-2769dd01c6f6",
-      "name": "typal-dragon",
-      "description": "",
-      "accent": "#6b4c7c"
-    },
-    {
       "id": "95511e68-41bb-4ea2-a221-afcae4b2c07f",
       "name": "typal-dwarf",
       "description": "",
       "accent": "#4c7c5a"
-    },
-    {
-      "id": "795ba9b6-9572-4792-a140-975061483e4b",
-      "name": "typal-merfolk",
-      "description": "",
-      "accent": "#c4a35a"
     },
     {
       "id": "dc8984e5-2f08-4f92-aa9b-8f6194b2296f",
@@ -10771,6 +10766,12 @@
       "name": "typal-non-human",
       "description": "Cards that care about every creature that does not have the Human creature type. See also the Mutate keyword.",
       "accent": "#c4a35a"
+    },
+    {
+      "id": "19d9612b-36d9-4eb1-a83b-3998ca5863a6",
+      "name": "typal-pilot",
+      "description": "",
+      "accent": "#9c4c4c"
     },
     {
       "id": "de0aa7d1-7bed-4d07-81d3-e7c53dadb59f",
@@ -10791,12 +10792,6 @@
       "accent": "#4c7c9c"
     },
     {
-      "id": "dc387208-0ac0-4d71-880c-e78ffe2e42dc",
-      "name": "type addition phyrexian",
-      "description": "Gained the Phyrexian type, either after it was introduced with the big sweep at Modern Horizons 2 launch, or at a later date.",
-      "accent": "#6b4c7c"
-    },
-    {
       "id": "a48e9cf5-08eb-466f-9ace-3a66c4c6c69a",
       "name": "type errata",
       "description": "Cards that were printed with a type-line that has since been updated. For cards whose token generation has changed, see [Token Errata](token-errata).",
@@ -10807,12 +10802,6 @@
       "name": "type errata naga",
       "description": "These were Naga, now Snakes as of Modern Horizons 3.",
       "accent": "#4c7c5a"
-    },
-    {
-      "id": "60ab2105-c71c-4aaf-8038-9d444b7becb1",
-      "name": "type errata summon creature",
-      "description": "These creatures typelines at some point just read \"Summon Creature\", thanks to Portal!",
-      "accent": "#9c4c4c"
     },
     {
       "id": "efd1179a-681e-4acc-ada7-c7da4ff758fa",
@@ -10861,6 +10850,12 @@
       "name": "unique-type-exclusion",
       "description": "Cards that say \"non-type\" where no other card does that for that type.",
       "accent": "#8a6b4c"
+    },
+    {
+      "id": "2b7fc665-a914-4b35-901d-e92dec85711e",
+      "name": "universal type change",
+      "description": "Cards that turn every type A into type B. Might be just one player or all, just the battlefield or not.",
+      "accent": "#4c7c5a"
     },
     {
       "id": "aed3372a-124b-4a59-83ba-3a792b16f97a",
@@ -11303,64 +11298,64 @@
       "synergy": 4
     },
     {
-      "oracleId": "054a0193-861e-4644-ab0a-8aa33407abc8",
-      "themeId": "1906bb02-3036-4040-93b1-e60da7fb5a69",
+      "oracleId": "0659a5b0-9807-4e4c-8af3-b6e233051ad6",
+      "themeId": "1f17b570-e7c3-44d7-a215-04eaa50d7110",
       "synergy": 2
     },
     {
-      "oracleId": "054a0193-861e-4644-ab0a-8aa33407abc8",
+      "oracleId": "0659a5b0-9807-4e4c-8af3-b6e233051ad6",
+      "themeId": "2032b8a1-4dea-4742-9fce-3dd2c6e69604",
+      "synergy": 2
+    },
+    {
+      "oracleId": "0659a5b0-9807-4e4c-8af3-b6e233051ad6",
+      "themeId": "2dabdf83-e041-48a4-b0e5-08e1842f008c",
+      "synergy": 2
+    },
+    {
+      "oracleId": "0659a5b0-9807-4e4c-8af3-b6e233051ad6",
+      "themeId": "32600fa3-0c49-439d-8ff0-900829cbfebc",
+      "synergy": 2
+    },
+    {
+      "oracleId": "0659a5b0-9807-4e4c-8af3-b6e233051ad6",
       "themeId": "4d7fc833-e0af-4022-b298-6a9c99a56ac1",
       "synergy": 2
     },
     {
-      "oracleId": "054a0193-861e-4644-ab0a-8aa33407abc8",
-      "themeId": "4f7c07de-5bef-4dff-a9f8-64e9afa5add6",
+      "oracleId": "0659a5b0-9807-4e4c-8af3-b6e233051ad6",
+      "themeId": "5f6e7f05-b36f-44f5-9167-8bb939f4c28f",
       "synergy": 2
     },
     {
-      "oracleId": "054a0193-861e-4644-ab0a-8aa33407abc8",
-      "themeId": "917ab124-2cfb-46a1-9b63-b893bc9718c3",
+      "oracleId": "0659a5b0-9807-4e4c-8af3-b6e233051ad6",
+      "themeId": "8a3188e6-3173-4f4d-b157-0fa32958ec55",
       "synergy": 2
     },
     {
-      "oracleId": "054a0193-861e-4644-ab0a-8aa33407abc8",
-      "themeId": "c7756471-d290-452f-bfc6-24866c841f28",
+      "oracleId": "0659a5b0-9807-4e4c-8af3-b6e233051ad6",
+      "themeId": "a3909e64-69d4-442e-8da1-fffa309492b8",
       "synergy": 2
     },
     {
-      "oracleId": "054a0193-861e-4644-ab0a-8aa33407abc8",
-      "themeId": "type:kor",
+      "oracleId": "0659a5b0-9807-4e4c-8af3-b6e233051ad6",
+      "themeId": "d51792e0-fa67-4872-b3bb-12d91cbb2960",
+      "synergy": 2
+    },
+    {
+      "oracleId": "0659a5b0-9807-4e4c-8af3-b6e233051ad6",
+      "themeId": "da5f6718-a763-4ee8-8893-487db5a3af71",
+      "synergy": 2
+    },
+    {
+      "oracleId": "0659a5b0-9807-4e4c-8af3-b6e233051ad6",
+      "themeId": "type:moonfolk",
       "synergy": 4
     },
     {
-      "oracleId": "054a0193-861e-4644-ab0a-8aa33407abc8",
-      "themeId": "type:soldier",
+      "oracleId": "0659a5b0-9807-4e4c-8af3-b6e233051ad6",
+      "themeId": "type:pilot",
       "synergy": 4
-    },
-    {
-      "oracleId": "06ef46c6-00ba-40e6-b866-d0095ab83749",
-      "themeId": "28369f1b-1cf8-4077-99aa-e32fd59c19e1",
-      "synergy": 2
-    },
-    {
-      "oracleId": "06ef46c6-00ba-40e6-b866-d0095ab83749",
-      "themeId": "33b97ce5-f156-4332-9ecc-1e0256702f26",
-      "synergy": 2
-    },
-    {
-      "oracleId": "06ef46c6-00ba-40e6-b866-d0095ab83749",
-      "themeId": "aaba92d3-4e92-4ac7-9111-3576e1fc178c",
-      "synergy": 2
-    },
-    {
-      "oracleId": "06ef46c6-00ba-40e6-b866-d0095ab83749",
-      "themeId": "d91e421d-ff87-4aad-a4bf-5aefc51252b6",
-      "synergy": 2
-    },
-    {
-      "oracleId": "06ef46c6-00ba-40e6-b866-d0095ab83749",
-      "themeId": "f8f206b7-0fb0-44dc-88d8-6ee343bc4ad5",
-      "synergy": 2
     },
     {
       "oracleId": "081bfd50-a436-463b-9d2c-5bc8a32b387c",
@@ -12503,6 +12498,26 @@
       "synergy": 4
     },
     {
+      "oracleId": "1a4ffc1e-2f5e-446a-b1e8-32385b3c083b",
+      "themeId": "aa20ca6b-5548-48ac-92f3-8abb069273de",
+      "synergy": 2
+    },
+    {
+      "oracleId": "1a4ffc1e-2f5e-446a-b1e8-32385b3c083b",
+      "themeId": "acf78b42-a1d5-4829-bef0-69204f29e260",
+      "synergy": 2
+    },
+    {
+      "oracleId": "1a4ffc1e-2f5e-446a-b1e8-32385b3c083b",
+      "themeId": "c1100c9e-08bf-4845-9263-1a5f86b9005f",
+      "synergy": 2
+    },
+    {
+      "oracleId": "1a4ffc1e-2f5e-446a-b1e8-32385b3c083b",
+      "themeId": "type:myr",
+      "synergy": 4
+    },
+    {
       "oracleId": "1b759831-abe8-4996-a897-3c6d6d30a1c7",
       "themeId": "4d7fc833-e0af-4022-b298-6a9c99a56ac1",
       "synergy": 2
@@ -12873,31 +12888,6 @@
       "synergy": 2
     },
     {
-      "oracleId": "25794033-bd17-4056-b116-68d3acf52569",
-      "themeId": "23d9aa9d-e895-475e-a756-8ede44b7ce61",
-      "synergy": 2
-    },
-    {
-      "oracleId": "25794033-bd17-4056-b116-68d3acf52569",
-      "themeId": "d6d54848-13f0-4f5f-98af-ed7d6ffd0fca",
-      "synergy": 2
-    },
-    {
-      "oracleId": "25794033-bd17-4056-b116-68d3acf52569",
-      "themeId": "dc387208-0ac0-4d71-880c-e78ffe2e42dc",
-      "synergy": 2
-    },
-    {
-      "oracleId": "25794033-bd17-4056-b116-68d3acf52569",
-      "themeId": "type:myr",
-      "synergy": 4
-    },
-    {
-      "oracleId": "25794033-bd17-4056-b116-68d3acf52569",
-      "themeId": "type:phyrexian",
-      "synergy": 4
-    },
-    {
       "oracleId": "259ac30c-cc05-4c04-9b23-71283f84b808",
       "themeId": "0454fcef-0118-4f10-b9d7-c071845bfbd4",
       "synergy": 2
@@ -13256,6 +13246,141 @@
       "oracleId": "2bdd0bcb-6cfb-48e7-972e-355ff46621a4",
       "themeId": "ce1f9c34-7191-49e5-bdfe-f4eeae2ad0c2",
       "synergy": 2
+    },
+    {
+      "oracleId": "2eb16535-718f-4b88-92bc-96429d796327",
+      "themeId": "0500f9c8-715e-45f4-88a2-1e7f5015c3f2",
+      "synergy": 2
+    },
+    {
+      "oracleId": "2eb16535-718f-4b88-92bc-96429d796327",
+      "themeId": "32600fa3-0c49-439d-8ff0-900829cbfebc",
+      "synergy": 2
+    },
+    {
+      "oracleId": "2eb16535-718f-4b88-92bc-96429d796327",
+      "themeId": "3bcd7cdd-61ca-42dd-adc5-1a695eaec2d2",
+      "synergy": 2
+    },
+    {
+      "oracleId": "2eb16535-718f-4b88-92bc-96429d796327",
+      "themeId": "4caab3cc-1d60-44fb-a26a-cc833bc67c97",
+      "synergy": 2
+    },
+    {
+      "oracleId": "2eb16535-718f-4b88-92bc-96429d796327",
+      "themeId": "4f29f8d4-8c9b-4737-a1a5-6f1acc1622a6",
+      "synergy": 2
+    },
+    {
+      "oracleId": "2eb16535-718f-4b88-92bc-96429d796327",
+      "themeId": "56907a60-c8bc-4427-a62c-517bdc55fb79",
+      "synergy": 2
+    },
+    {
+      "oracleId": "2eb16535-718f-4b88-92bc-96429d796327",
+      "themeId": "5b1d0b6c-c422-4ee4-8f14-dfe6966ef9d0",
+      "synergy": 2
+    },
+    {
+      "oracleId": "2eb16535-718f-4b88-92bc-96429d796327",
+      "themeId": "81b21b7b-33a8-45d3-ab83-f680ed3fda27",
+      "synergy": 2
+    },
+    {
+      "oracleId": "2eb16535-718f-4b88-92bc-96429d796327",
+      "themeId": "94e75aba-dd29-40ca-bb0a-fca445742798",
+      "synergy": 2
+    },
+    {
+      "oracleId": "2eb16535-718f-4b88-92bc-96429d796327",
+      "themeId": "9a3f1038-140e-447a-ba5d-020893c49977",
+      "synergy": 2
+    },
+    {
+      "oracleId": "2eb16535-718f-4b88-92bc-96429d796327",
+      "themeId": "9c30f011-97e4-457e-ba5c-94238d346cdc",
+      "synergy": 2
+    },
+    {
+      "oracleId": "2eb16535-718f-4b88-92bc-96429d796327",
+      "themeId": "a15d873a-a610-4bcf-b480-639d3f350db2",
+      "synergy": 2
+    },
+    {
+      "oracleId": "2eb16535-718f-4b88-92bc-96429d796327",
+      "themeId": "aa20ca6b-5548-48ac-92f3-8abb069273de",
+      "synergy": 2
+    },
+    {
+      "oracleId": "2eb16535-718f-4b88-92bc-96429d796327",
+      "themeId": "acf78b42-a1d5-4829-bef0-69204f29e260",
+      "synergy": 2
+    },
+    {
+      "oracleId": "2eb16535-718f-4b88-92bc-96429d796327",
+      "themeId": "b30fe15d-4dd2-43c9-b57a-f99c4e4c5c0d",
+      "synergy": 2
+    },
+    {
+      "oracleId": "2eb16535-718f-4b88-92bc-96429d796327",
+      "themeId": "e7b5e3ad-18b8-4b90-8392-bfb87a8854be",
+      "synergy": 2
+    },
+    {
+      "oracleId": "2eb16535-718f-4b88-92bc-96429d796327",
+      "themeId": "eb4a8d84-9daa-4aee-8491-2566673a5749",
+      "synergy": 2
+    },
+    {
+      "oracleId": "2eb16535-718f-4b88-92bc-96429d796327",
+      "themeId": "type:knight",
+      "synergy": 4
+    },
+    {
+      "oracleId": "2eb8397a-ba8b-497d-b1f5-a1b09c686597",
+      "themeId": "1f104713-3ecf-4106-a315-7efb85a5aaaa",
+      "synergy": 2
+    },
+    {
+      "oracleId": "2eb8397a-ba8b-497d-b1f5-a1b09c686597",
+      "themeId": "56907a60-c8bc-4427-a62c-517bdc55fb79",
+      "synergy": 2
+    },
+    {
+      "oracleId": "2eb8397a-ba8b-497d-b1f5-a1b09c686597",
+      "themeId": "8332f391-6edc-40a8-a0aa-da80edd0bc0d",
+      "synergy": 2
+    },
+    {
+      "oracleId": "2eb8397a-ba8b-497d-b1f5-a1b09c686597",
+      "themeId": "9a3f1038-140e-447a-ba5d-020893c49977",
+      "synergy": 2
+    },
+    {
+      "oracleId": "2eb8397a-ba8b-497d-b1f5-a1b09c686597",
+      "themeId": "aa908dd5-bf9e-4835-bbbb-77579a1f0e5f",
+      "synergy": 2
+    },
+    {
+      "oracleId": "2eb8397a-ba8b-497d-b1f5-a1b09c686597",
+      "themeId": "acf78b42-a1d5-4829-bef0-69204f29e260",
+      "synergy": 2
+    },
+    {
+      "oracleId": "2eb8397a-ba8b-497d-b1f5-a1b09c686597",
+      "themeId": "eb4a8d84-9daa-4aee-8491-2566673a5749",
+      "synergy": 2
+    },
+    {
+      "oracleId": "2eb8397a-ba8b-497d-b1f5-a1b09c686597",
+      "themeId": "type:aetherborn",
+      "synergy": 4
+    },
+    {
+      "oracleId": "2eb8397a-ba8b-497d-b1f5-a1b09c686597",
+      "themeId": "type:rogue",
+      "synergy": 4
     },
     {
       "oracleId": "3001f971-c4db-4176-89b5-e7f4a8890c0f",
@@ -13765,6 +13890,51 @@
     {
       "oracleId": "345de988-4d26-4400-8202-225968db370f",
       "themeId": "932057ff-1287-4511-8fa1-237539dd26ae",
+      "synergy": 2
+    },
+    {
+      "oracleId": "352b64d2-2ae5-44ee-a64f-94932ef545d3",
+      "themeId": "1a19fbcd-ec54-417c-baa0-01c53b32388b",
+      "synergy": 2
+    },
+    {
+      "oracleId": "352b64d2-2ae5-44ee-a64f-94932ef545d3",
+      "themeId": "41001ec8-915d-4113-9f6d-e4d103cc4b5d",
+      "synergy": 2
+    },
+    {
+      "oracleId": "352b64d2-2ae5-44ee-a64f-94932ef545d3",
+      "themeId": "5882dba5-2955-4c88-a399-604f1cf58784",
+      "synergy": 2
+    },
+    {
+      "oracleId": "352b64d2-2ae5-44ee-a64f-94932ef545d3",
+      "themeId": "9e39900a-5ff6-45a2-8039-bc0f9784e82e",
+      "synergy": 2
+    },
+    {
+      "oracleId": "352b64d2-2ae5-44ee-a64f-94932ef545d3",
+      "themeId": "c05a300c-2ec4-446a-a399-b3c314497de7",
+      "synergy": 2
+    },
+    {
+      "oracleId": "352b64d2-2ae5-44ee-a64f-94932ef545d3",
+      "themeId": "d5dcbcc6-d49b-4d76-9272-35a062bcb656",
+      "synergy": 2
+    },
+    {
+      "oracleId": "352b64d2-2ae5-44ee-a64f-94932ef545d3",
+      "themeId": "d87843cd-0ae2-4c1e-a87c-c080594b295b",
+      "synergy": 2
+    },
+    {
+      "oracleId": "352b64d2-2ae5-44ee-a64f-94932ef545d3",
+      "themeId": "ddd6954d-2c5a-48a2-875f-e953214cdc13",
+      "synergy": 2
+    },
+    {
+      "oracleId": "352b64d2-2ae5-44ee-a64f-94932ef545d3",
+      "themeId": "ea10fcae-6b1c-4e55-af1f-a3d1cf1e304f",
       "synergy": 2
     },
     {
@@ -14418,6 +14588,36 @@
       "synergy": 2
     },
     {
+      "oracleId": "426fa8e8-b0f9-4b6c-b22b-04ec2073187a",
+      "themeId": "036bd820-4823-48e3-9a2a-d79bf49e41e0",
+      "synergy": 2
+    },
+    {
+      "oracleId": "426fa8e8-b0f9-4b6c-b22b-04ec2073187a",
+      "themeId": "4e94f94c-98cb-4525-98a5-500c793c2365",
+      "synergy": 2
+    },
+    {
+      "oracleId": "426fa8e8-b0f9-4b6c-b22b-04ec2073187a",
+      "themeId": "63353a72-d5ba-429d-a70d-ba706a0d74b8",
+      "synergy": 2
+    },
+    {
+      "oracleId": "426fa8e8-b0f9-4b6c-b22b-04ec2073187a",
+      "themeId": "7cd8bba0-9946-4cc8-8661-b61606ba52df",
+      "synergy": 2
+    },
+    {
+      "oracleId": "426fa8e8-b0f9-4b6c-b22b-04ec2073187a",
+      "themeId": "bcae5f6a-f68b-4217-8f6c-0b4d31abd045",
+      "synergy": 2
+    },
+    {
+      "oracleId": "426fa8e8-b0f9-4b6c-b22b-04ec2073187a",
+      "themeId": "type:zombie",
+      "synergy": 4
+    },
+    {
       "oracleId": "431d6a2b-e22c-4921-a5f1-dd672f764f78",
       "themeId": "02eba14c-f165-45ac-a1a0-f62ac5f5f9b0",
       "synergy": 2
@@ -14633,6 +14833,51 @@
       "synergy": 2
     },
     {
+      "oracleId": "45866598-4ee4-46b6-ade2-ffcdbe98e58f",
+      "themeId": "0b23af67-d270-4e79-8173-09b9c51d88aa",
+      "synergy": 2
+    },
+    {
+      "oracleId": "45866598-4ee4-46b6-ade2-ffcdbe98e58f",
+      "themeId": "1793f1ca-5551-4a85-89b5-fb39774dd22d",
+      "synergy": 2
+    },
+    {
+      "oracleId": "45866598-4ee4-46b6-ade2-ffcdbe98e58f",
+      "themeId": "4d7fc833-e0af-4022-b298-6a9c99a56ac1",
+      "synergy": 2
+    },
+    {
+      "oracleId": "45866598-4ee4-46b6-ade2-ffcdbe98e58f",
+      "themeId": "6bda5d89-d8fb-4d99-a217-9142fee8ae3f",
+      "synergy": 2
+    },
+    {
+      "oracleId": "45866598-4ee4-46b6-ade2-ffcdbe98e58f",
+      "themeId": "a35cdad8-9a43-435f-87d0-79dccf1c4a17",
+      "synergy": 2
+    },
+    {
+      "oracleId": "45866598-4ee4-46b6-ade2-ffcdbe98e58f",
+      "themeId": "cc12d27d-1d0e-4849-9551-71caead74d24",
+      "synergy": 2
+    },
+    {
+      "oracleId": "45866598-4ee4-46b6-ade2-ffcdbe98e58f",
+      "themeId": "d91e421d-ff87-4aad-a4bf-5aefc51252b6",
+      "synergy": 2
+    },
+    {
+      "oracleId": "45866598-4ee4-46b6-ade2-ffcdbe98e58f",
+      "themeId": "e181b762-73f6-4a38-91fd-2d54b6a210ec",
+      "synergy": 2
+    },
+    {
+      "oracleId": "45866598-4ee4-46b6-ade2-ffcdbe98e58f",
+      "themeId": "type:necron",
+      "synergy": 4
+    },
+    {
       "oracleId": "45ef5ea9-70a6-4999-8778-6a11cb97d28e",
       "themeId": "42313c19-8be2-47d9-9d3a-99c39725b87d",
       "synergy": 2
@@ -14808,6 +15053,81 @@
       "synergy": 2
     },
     {
+      "oracleId": "4884ad6c-2290-44fc-ab9e-6e6b75b2d69a",
+      "themeId": "00ec9467-26d6-4a76-85cd-077b1c9ad606",
+      "synergy": 2
+    },
+    {
+      "oracleId": "4884ad6c-2290-44fc-ab9e-6e6b75b2d69a",
+      "themeId": "12cc0718-e08e-485c-85ee-3331f688fd54",
+      "synergy": 2
+    },
+    {
+      "oracleId": "4884ad6c-2290-44fc-ab9e-6e6b75b2d69a",
+      "themeId": "15830293-aa64-4802-a8f9-060faaa39c96",
+      "synergy": 2
+    },
+    {
+      "oracleId": "4884ad6c-2290-44fc-ab9e-6e6b75b2d69a",
+      "themeId": "36f69cea-4d3a-4400-9784-f2a197b7cb66",
+      "synergy": 2
+    },
+    {
+      "oracleId": "4884ad6c-2290-44fc-ab9e-6e6b75b2d69a",
+      "themeId": "4d7fc833-e0af-4022-b298-6a9c99a56ac1",
+      "synergy": 2
+    },
+    {
+      "oracleId": "4884ad6c-2290-44fc-ab9e-6e6b75b2d69a",
+      "themeId": "69762641-6002-43c1-a624-c445a75fa60d",
+      "synergy": 2
+    },
+    {
+      "oracleId": "4884ad6c-2290-44fc-ab9e-6e6b75b2d69a",
+      "themeId": "7511d08e-7d7e-4ddf-8208-9568a54703aa",
+      "synergy": 2
+    },
+    {
+      "oracleId": "4884ad6c-2290-44fc-ab9e-6e6b75b2d69a",
+      "themeId": "a3909e64-69d4-442e-8da1-fffa309492b8",
+      "synergy": 2
+    },
+    {
+      "oracleId": "4884ad6c-2290-44fc-ab9e-6e6b75b2d69a",
+      "themeId": "b6351d4a-373b-4b09-a08f-66fbe4956dd0",
+      "synergy": 2
+    },
+    {
+      "oracleId": "4884ad6c-2290-44fc-ab9e-6e6b75b2d69a",
+      "themeId": "c0ee2fd9-8363-4d7f-b3d7-f883eadf02f0",
+      "synergy": 2
+    },
+    {
+      "oracleId": "4884ad6c-2290-44fc-ab9e-6e6b75b2d69a",
+      "themeId": "c3a7e971-287f-4744-a0d8-e7d6a45b4c9c",
+      "synergy": 2
+    },
+    {
+      "oracleId": "4884ad6c-2290-44fc-ab9e-6e6b75b2d69a",
+      "themeId": "d540c4fb-c2dd-49be-aecc-73883ae9edd9",
+      "synergy": 2
+    },
+    {
+      "oracleId": "4884ad6c-2290-44fc-ab9e-6e6b75b2d69a",
+      "themeId": "da5f6718-a763-4ee8-8893-487db5a3af71",
+      "synergy": 2
+    },
+    {
+      "oracleId": "4884ad6c-2290-44fc-ab9e-6e6b75b2d69a",
+      "themeId": "type:human",
+      "synergy": 4
+    },
+    {
+      "oracleId": "4884ad6c-2290-44fc-ab9e-6e6b75b2d69a",
+      "themeId": "type:pilot",
+      "synergy": 4
+    },
+    {
       "oracleId": "49136bdc-bc50-49a2-999a-1ef9c16ea130",
       "themeId": "932057ff-1287-4511-8fa1-237539dd26ae",
       "synergy": 2
@@ -14928,6 +15248,41 @@
       "synergy": 2
     },
     {
+      "oracleId": "4b033a0a-c1ae-44d7-9662-72cbbfda024b",
+      "themeId": "28369f1b-1cf8-4077-99aa-e32fd59c19e1",
+      "synergy": 2
+    },
+    {
+      "oracleId": "4b033a0a-c1ae-44d7-9662-72cbbfda024b",
+      "themeId": "45ae9f00-85ba-47ee-b07f-fa5f2e838124",
+      "synergy": 2
+    },
+    {
+      "oracleId": "4b033a0a-c1ae-44d7-9662-72cbbfda024b",
+      "themeId": "752b84cc-d6f2-4dfc-991d-915c4c083c5e",
+      "synergy": 2
+    },
+    {
+      "oracleId": "4b033a0a-c1ae-44d7-9662-72cbbfda024b",
+      "themeId": "79bb366e-c658-46f5-a3ad-41132e11005f",
+      "synergy": 2
+    },
+    {
+      "oracleId": "4b033a0a-c1ae-44d7-9662-72cbbfda024b",
+      "themeId": "acf78b42-a1d5-4829-bef0-69204f29e260",
+      "synergy": 2
+    },
+    {
+      "oracleId": "4b033a0a-c1ae-44d7-9662-72cbbfda024b",
+      "themeId": "cc12d27d-1d0e-4849-9551-71caead74d24",
+      "synergy": 2
+    },
+    {
+      "oracleId": "4b033a0a-c1ae-44d7-9662-72cbbfda024b",
+      "themeId": "d91e421d-ff87-4aad-a4bf-5aefc51252b6",
+      "synergy": 2
+    },
+    {
       "oracleId": "4b515bb0-f275-4400-8032-3173b799ab40",
       "themeId": "5a314bf9-8038-4acd-8cab-6b683caeb35f",
       "synergy": 2
@@ -15036,6 +15391,41 @@
       "oracleId": "4b8736e2-fc41-4a25-bb6c-7351afc40981",
       "themeId": "type:wizard",
       "synergy": 4
+    },
+    {
+      "oracleId": "4c9a38f8-8fcb-45f9-8b70-e54298c7b485",
+      "themeId": "36f2a0d4-b689-4011-9750-472dd786f2de",
+      "synergy": 2
+    },
+    {
+      "oracleId": "4c9a38f8-8fcb-45f9-8b70-e54298c7b485",
+      "themeId": "394a55d0-f936-4742-a71f-81eede568e63",
+      "synergy": 2
+    },
+    {
+      "oracleId": "4c9a38f8-8fcb-45f9-8b70-e54298c7b485",
+      "themeId": "a35cdad8-9a43-435f-87d0-79dccf1c4a17",
+      "synergy": 2
+    },
+    {
+      "oracleId": "4c9a38f8-8fcb-45f9-8b70-e54298c7b485",
+      "themeId": "a3909e64-69d4-442e-8da1-fffa309492b8",
+      "synergy": 2
+    },
+    {
+      "oracleId": "4c9a38f8-8fcb-45f9-8b70-e54298c7b485",
+      "themeId": "c1100c9e-08bf-4845-9263-1a5f86b9005f",
+      "synergy": 2
+    },
+    {
+      "oracleId": "4c9a38f8-8fcb-45f9-8b70-e54298c7b485",
+      "themeId": "c90eca7a-ad86-43d5-902e-05db32614b6c",
+      "synergy": 2
+    },
+    {
+      "oracleId": "4c9a38f8-8fcb-45f9-8b70-e54298c7b485",
+      "themeId": "cc12d27d-1d0e-4849-9551-71caead74d24",
+      "synergy": 2
     },
     {
       "oracleId": "4ca3306b-06f7-4a09-b904-f5540d11ddf1",
@@ -15533,88 +15923,123 @@
       "synergy": 4
     },
     {
-      "oracleId": "525d98d6-b117-44f4-b19c-3dd26e7c9fd4",
-      "themeId": "a35cdad8-9a43-435f-87d0-79dccf1c4a17",
+      "oracleId": "5268f772-5b42-4b5b-9e57-c32c662a42f3",
+      "themeId": "1ad56001-0102-45dc-bfeb-e6719d008005",
       "synergy": 2
     },
     {
-      "oracleId": "525d98d6-b117-44f4-b19c-3dd26e7c9fd4",
-      "themeId": "c90eca7a-ad86-43d5-902e-05db32614b6c",
+      "oracleId": "5268f772-5b42-4b5b-9e57-c32c662a42f3",
+      "themeId": "2c1b031c-4759-4529-92fd-9ab6e8a5be2c",
       "synergy": 2
     },
     {
-      "oracleId": "525d98d6-b117-44f4-b19c-3dd26e7c9fd4",
-      "themeId": "cc12d27d-1d0e-4849-9551-71caead74d24",
-      "synergy": 2
-    },
-    {
-      "oracleId": "525d98d6-b117-44f4-b19c-3dd26e7c9fd4",
-      "themeId": "ceff9536-392b-490b-825b-0b213930f7da",
-      "synergy": 2
-    },
-    {
-      "oracleId": "5278728e-9203-4d18-97a5-1c4f751a5acf",
-      "themeId": "0eb64cb1-4430-4b39-a2dd-d06221d21e14",
-      "synergy": 2
-    },
-    {
-      "oracleId": "5278728e-9203-4d18-97a5-1c4f751a5acf",
-      "themeId": "4d7fc833-e0af-4022-b298-6a9c99a56ac1",
-      "synergy": 2
-    },
-    {
-      "oracleId": "5278728e-9203-4d18-97a5-1c4f751a5acf",
-      "themeId": "795ba9b6-9572-4792-a140-975061483e4b",
-      "synergy": 2
-    },
-    {
-      "oracleId": "5278728e-9203-4d18-97a5-1c4f751a5acf",
-      "themeId": "7fc71046-aa54-4ca6-bb3e-7336d5d58d0f",
-      "synergy": 2
-    },
-    {
-      "oracleId": "5278728e-9203-4d18-97a5-1c4f751a5acf",
+      "oracleId": "5268f772-5b42-4b5b-9e57-c32c662a42f3",
       "themeId": "9a3f1038-140e-447a-ba5d-020893c49977",
       "synergy": 2
     },
     {
-      "oracleId": "5278728e-9203-4d18-97a5-1c4f751a5acf",
-      "themeId": "a3909e64-69d4-442e-8da1-fffa309492b8",
+      "oracleId": "5268f772-5b42-4b5b-9e57-c32c662a42f3",
+      "themeId": "9c30f011-97e4-457e-ba5c-94238d346cdc",
       "synergy": 2
     },
     {
-      "oracleId": "5278728e-9203-4d18-97a5-1c4f751a5acf",
-      "themeId": "aaba92d3-4e92-4ac7-9111-3576e1fc178c",
+      "oracleId": "5268f772-5b42-4b5b-9e57-c32c662a42f3",
+      "themeId": "9cbfd4f0-aa13-4d0e-9e57-11d1d482e8a0",
       "synergy": 2
     },
     {
-      "oracleId": "5278728e-9203-4d18-97a5-1c4f751a5acf",
-      "themeId": "acd5f9bb-d9df-4929-aea3-aa826d7c36e3",
+      "oracleId": "5268f772-5b42-4b5b-9e57-c32c662a42f3",
+      "themeId": "acf78b42-a1d5-4829-bef0-69204f29e260",
       "synergy": 2
     },
     {
-      "oracleId": "5278728e-9203-4d18-97a5-1c4f751a5acf",
-      "themeId": "c1100c9e-08bf-4845-9263-1a5f86b9005f",
+      "oracleId": "5268f772-5b42-4b5b-9e57-c32c662a42f3",
+      "themeId": "bb1ff66b-aee3-480f-b577-701bf30cb0fe",
       "synergy": 2
     },
     {
-      "oracleId": "5278728e-9203-4d18-97a5-1c4f751a5acf",
+      "oracleId": "5268f772-5b42-4b5b-9e57-c32c662a42f3",
+      "themeId": "c05c2142-d650-4713-a459-33e483b1553b",
+      "synergy": 2
+    },
+    {
+      "oracleId": "5268f772-5b42-4b5b-9e57-c32c662a42f3",
+      "themeId": "eb4a8d84-9daa-4aee-8491-2566673a5749",
+      "synergy": 2
+    },
+    {
+      "oracleId": "5268f772-5b42-4b5b-9e57-c32c662a42f3",
+      "themeId": "type:human",
+      "synergy": 4
+    },
+    {
+      "oracleId": "5268f772-5b42-4b5b-9e57-c32c662a42f3",
+      "themeId": "type:soldier",
+      "synergy": 4
+    },
+    {
+      "oracleId": "52aa5a79-db0e-4eaa-b2df-e41674c47794",
+      "themeId": "1793f1ca-5551-4a85-89b5-fb39774dd22d",
+      "synergy": 2
+    },
+    {
+      "oracleId": "52aa5a79-db0e-4eaa-b2df-e41674c47794",
+      "themeId": "2694a616-7361-41cf-8ec9-bc0e7236c664",
+      "synergy": 2
+    },
+    {
+      "oracleId": "52aa5a79-db0e-4eaa-b2df-e41674c47794",
+      "themeId": "40570ef7-e185-4f0b-ba52-edc4de748817",
+      "synergy": 2
+    },
+    {
+      "oracleId": "52aa5a79-db0e-4eaa-b2df-e41674c47794",
+      "themeId": "45ae9f00-85ba-47ee-b07f-fa5f2e838124",
+      "synergy": 2
+    },
+    {
+      "oracleId": "52aa5a79-db0e-4eaa-b2df-e41674c47794",
+      "themeId": "54de5246-7ca2-4e52-bf80-7a5c19e04441",
+      "synergy": 2
+    },
+    {
+      "oracleId": "52aa5a79-db0e-4eaa-b2df-e41674c47794",
+      "themeId": "7075fa3f-160d-4b83-b653-19c0292a6e77",
+      "synergy": 2
+    },
+    {
+      "oracleId": "52aa5a79-db0e-4eaa-b2df-e41674c47794",
+      "themeId": "776d14a9-12a6-4426-9415-e7dde7e74409",
+      "synergy": 2
+    },
+    {
+      "oracleId": "52aa5a79-db0e-4eaa-b2df-e41674c47794",
+      "themeId": "9e39900a-5ff6-45a2-8039-bc0f9784e82e",
+      "synergy": 2
+    },
+    {
+      "oracleId": "52aa5a79-db0e-4eaa-b2df-e41674c47794",
+      "themeId": "b30fe15d-4dd2-43c9-b57a-f99c4e4c5c0d",
+      "synergy": 2
+    },
+    {
+      "oracleId": "52aa5a79-db0e-4eaa-b2df-e41674c47794",
       "themeId": "c7756471-d290-452f-bfc6-24866c841f28",
       "synergy": 2
     },
     {
-      "oracleId": "5278728e-9203-4d18-97a5-1c4f751a5acf",
-      "themeId": "type:merfolk",
-      "synergy": 4
+      "oracleId": "52aa5a79-db0e-4eaa-b2df-e41674c47794",
+      "themeId": "c975bac8-a67c-4183-9b66-e223a9334c70",
+      "synergy": 2
     },
     {
-      "oracleId": "5278728e-9203-4d18-97a5-1c4f751a5acf",
-      "themeId": "type:mutant",
-      "synergy": 4
+      "oracleId": "52aa5a79-db0e-4eaa-b2df-e41674c47794",
+      "themeId": "eeb886e6-782d-4e8c-9c1b-9a12b6ae5f79",
+      "synergy": 2
     },
     {
-      "oracleId": "5278728e-9203-4d18-97a5-1c4f751a5acf",
-      "themeId": "type:villain",
+      "oracleId": "52aa5a79-db0e-4eaa-b2df-e41674c47794",
+      "themeId": "type:necron",
       "synergy": 4
     },
     {
@@ -15676,46 +16101,6 @@
       "oracleId": "54257132-c67a-4c19-bada-08e7025c2929",
       "themeId": "type:rogue",
       "synergy": 4
-    },
-    {
-      "oracleId": "5502741a-e3b9-454e-8121-4360a6db6750",
-      "themeId": "36f3801c-18c7-4cbd-828d-5cc7642edea2",
-      "synergy": 2
-    },
-    {
-      "oracleId": "5502741a-e3b9-454e-8121-4360a6db6750",
-      "themeId": "47ff9fb8-2df7-4f49-a04f-b1f31ba932ee",
-      "synergy": 2
-    },
-    {
-      "oracleId": "5502741a-e3b9-454e-8121-4360a6db6750",
-      "themeId": "5e708c4d-9992-431e-afe1-fb5af05b2ea3",
-      "synergy": 2
-    },
-    {
-      "oracleId": "5502741a-e3b9-454e-8121-4360a6db6750",
-      "themeId": "6671420c-fd48-417e-bd71-a1f3c5553866",
-      "synergy": 2
-    },
-    {
-      "oracleId": "5502741a-e3b9-454e-8121-4360a6db6750",
-      "themeId": "acf78b42-a1d5-4829-bef0-69204f29e260",
-      "synergy": 2
-    },
-    {
-      "oracleId": "5502741a-e3b9-454e-8121-4360a6db6750",
-      "themeId": "c5517762-1510-43b7-af3c-4616e3c802ca",
-      "synergy": 2
-    },
-    {
-      "oracleId": "5502741a-e3b9-454e-8121-4360a6db6750",
-      "themeId": "ce1f9c34-7191-49e5-bdfe-f4eeae2ad0c2",
-      "synergy": 2
-    },
-    {
-      "oracleId": "5502741a-e3b9-454e-8121-4360a6db6750",
-      "themeId": "ef02b1a3-a5ae-4d8a-86ca-302d6f477744",
-      "synergy": 2
     },
     {
       "oracleId": "55a519b4-61cb-448a-875b-4d6dbe00580f",
@@ -15805,36 +16190,6 @@
     {
       "oracleId": "56ba8fe5-8693-4783-8406-9ced99de0b2a",
       "themeId": "e7a2914f-af10-46c1-9cb3-0ea518ec8abd",
-      "synergy": 2
-    },
-    {
-      "oracleId": "56c78349-e4fa-48ba-ae8e-d2312ae6edc6",
-      "themeId": "1a19fbcd-ec54-417c-baa0-01c53b32388b",
-      "synergy": 2
-    },
-    {
-      "oracleId": "56c78349-e4fa-48ba-ae8e-d2312ae6edc6",
-      "themeId": "591fb358-e9d7-490e-8c15-24aecbbe697e",
-      "synergy": 2
-    },
-    {
-      "oracleId": "56c78349-e4fa-48ba-ae8e-d2312ae6edc6",
-      "themeId": "6bda5d89-d8fb-4d99-a217-9142fee8ae3f",
-      "synergy": 2
-    },
-    {
-      "oracleId": "56c78349-e4fa-48ba-ae8e-d2312ae6edc6",
-      "themeId": "cc12d27d-1d0e-4849-9551-71caead74d24",
-      "synergy": 2
-    },
-    {
-      "oracleId": "56c78349-e4fa-48ba-ae8e-d2312ae6edc6",
-      "themeId": "d91e421d-ff87-4aad-a4bf-5aefc51252b6",
-      "synergy": 2
-    },
-    {
-      "oracleId": "56c78349-e4fa-48ba-ae8e-d2312ae6edc6",
-      "themeId": "dd8b138e-0261-4f35-bac0-e2a931abd96f",
       "synergy": 2
     },
     {
@@ -16038,6 +16393,41 @@
       "synergy": 2
     },
     {
+      "oracleId": "5a5f39ab-21b4-415f-aa1f-d8fad420d372",
+      "themeId": "1f104713-3ecf-4106-a315-7efb85a5aaaa",
+      "synergy": 2
+    },
+    {
+      "oracleId": "5a5f39ab-21b4-415f-aa1f-d8fad420d372",
+      "themeId": "36f3801c-18c7-4cbd-828d-5cc7642edea2",
+      "synergy": 2
+    },
+    {
+      "oracleId": "5a5f39ab-21b4-415f-aa1f-d8fad420d372",
+      "themeId": "56907a60-c8bc-4427-a62c-517bdc55fb79",
+      "synergy": 2
+    },
+    {
+      "oracleId": "5a5f39ab-21b4-415f-aa1f-d8fad420d372",
+      "themeId": "a798d4bf-1499-4a50-931e-bfbaaf46f4df",
+      "synergy": 2
+    },
+    {
+      "oracleId": "5a5f39ab-21b4-415f-aa1f-d8fad420d372",
+      "themeId": "aa908dd5-bf9e-4835-bbbb-77579a1f0e5f",
+      "synergy": 2
+    },
+    {
+      "oracleId": "5a5f39ab-21b4-415f-aa1f-d8fad420d372",
+      "themeId": "acf78b42-a1d5-4829-bef0-69204f29e260",
+      "synergy": 2
+    },
+    {
+      "oracleId": "5a5f39ab-21b4-415f-aa1f-d8fad420d372",
+      "themeId": "b7cfc923-3a15-4168-876b-525ce37850c5",
+      "synergy": 2
+    },
+    {
       "oracleId": "5ae23752-47a6-4031-8398-b8f6c77cfaad",
       "themeId": "097bab20-06d1-4ac0-85e7-d5b9010ab7b8",
       "synergy": 2
@@ -16121,36 +16511,6 @@
       "oracleId": "5b5ef43b-13fd-4461-8d2d-18be65e9a790",
       "themeId": "53436ffa-653e-4362-a298-7bc9f8118961",
       "synergy": 2
-    },
-    {
-      "oracleId": "5bd806e7-3f9b-4bb4-9708-f87a578f531e",
-      "themeId": "01c171be-e0db-443c-830d-578873c27792",
-      "synergy": 2
-    },
-    {
-      "oracleId": "5bd806e7-3f9b-4bb4-9708-f87a578f531e",
-      "themeId": "4d7fc833-e0af-4022-b298-6a9c99a56ac1",
-      "synergy": 2
-    },
-    {
-      "oracleId": "5bd806e7-3f9b-4bb4-9708-f87a578f531e",
-      "themeId": "60ab2105-c71c-4aaf-8038-9d444b7becb1",
-      "synergy": 2
-    },
-    {
-      "oracleId": "5bd806e7-3f9b-4bb4-9708-f87a578f531e",
-      "themeId": "cc12d27d-1d0e-4849-9551-71caead74d24",
-      "synergy": 2
-    },
-    {
-      "oracleId": "5bd806e7-3f9b-4bb4-9708-f87a578f531e",
-      "themeId": "e181b762-73f6-4a38-91fd-2d54b6a210ec",
-      "synergy": 2
-    },
-    {
-      "oracleId": "5bd806e7-3f9b-4bb4-9708-f87a578f531e",
-      "themeId": "type:imp",
-      "synergy": 4
     },
     {
       "oracleId": "5c5b308c-07d5-422a-8b45-b8b19cb967ca",
@@ -16728,51 +17088,6 @@
       "synergy": 4
     },
     {
-      "oracleId": "64cf5d59-7bcd-4b0b-a160-c8468d4c0f60",
-      "themeId": "2dabdf83-e041-48a4-b0e5-08e1842f008c",
-      "synergy": 2
-    },
-    {
-      "oracleId": "64cf5d59-7bcd-4b0b-a160-c8468d4c0f60",
-      "themeId": "32600fa3-0c49-439d-8ff0-900829cbfebc",
-      "synergy": 2
-    },
-    {
-      "oracleId": "64cf5d59-7bcd-4b0b-a160-c8468d4c0f60",
-      "themeId": "537e2f15-3984-46d2-b008-3b41c7cfc66f",
-      "synergy": 2
-    },
-    {
-      "oracleId": "64cf5d59-7bcd-4b0b-a160-c8468d4c0f60",
-      "themeId": "b7c20089-a104-4fda-815e-45422c004471",
-      "synergy": 2
-    },
-    {
-      "oracleId": "64cf5d59-7bcd-4b0b-a160-c8468d4c0f60",
-      "themeId": "c7756471-d290-452f-bfc6-24866c841f28",
-      "synergy": 2
-    },
-    {
-      "oracleId": "64cf5d59-7bcd-4b0b-a160-c8468d4c0f60",
-      "themeId": "c9a63005-e834-46ec-a8ed-285fabca97eb",
-      "synergy": 2
-    },
-    {
-      "oracleId": "64cf5d59-7bcd-4b0b-a160-c8468d4c0f60",
-      "themeId": "dc387208-0ac0-4d71-880c-e78ffe2e42dc",
-      "synergy": 2
-    },
-    {
-      "oracleId": "64cf5d59-7bcd-4b0b-a160-c8468d4c0f60",
-      "themeId": "type:imp",
-      "synergy": 4
-    },
-    {
-      "oracleId": "64cf5d59-7bcd-4b0b-a160-c8468d4c0f60",
-      "themeId": "type:phyrexian",
-      "synergy": 4
-    },
-    {
       "oracleId": "64ed5c35-8185-4e68-8028-b7b632ef5828",
       "themeId": "0e87cf9c-591e-4f2a-b4fd-675021f120ae",
       "synergy": 2
@@ -16875,21 +17190,6 @@
     {
       "oracleId": "6754753d-790e-4a95-a150-76741c4a02d4",
       "themeId": "c7756471-d290-452f-bfc6-24866c841f28",
-      "synergy": 2
-    },
-    {
-      "oracleId": "681fc668-cb26-4ba4-a915-48ddfa2b9520",
-      "themeId": "2f3e4ad7-5e60-41b4-bdbc-653f16869cf6",
-      "synergy": 2
-    },
-    {
-      "oracleId": "681fc668-cb26-4ba4-a915-48ddfa2b9520",
-      "themeId": "53436ffa-653e-4362-a298-7bc9f8118961",
-      "synergy": 2
-    },
-    {
-      "oracleId": "681fc668-cb26-4ba4-a915-48ddfa2b9520",
-      "themeId": "82e2cb8b-1a53-4814-a7a2-76c1369055b4",
       "synergy": 2
     },
     {
@@ -17093,51 +17393,6 @@
       "synergy": 2
     },
     {
-      "oracleId": "6d9ac636-3c6c-40ca-90f3-1a3387836bb4",
-      "themeId": "32600fa3-0c49-439d-8ff0-900829cbfebc",
-      "synergy": 2
-    },
-    {
-      "oracleId": "6d9ac636-3c6c-40ca-90f3-1a3387836bb4",
-      "themeId": "40f6113f-c979-4eb9-9667-cefc3ffa5565",
-      "synergy": 2
-    },
-    {
-      "oracleId": "6d9ac636-3c6c-40ca-90f3-1a3387836bb4",
-      "themeId": "7224b293-7400-4a60-8a1b-6aaa35e13e3c",
-      "synergy": 2
-    },
-    {
-      "oracleId": "6d9ac636-3c6c-40ca-90f3-1a3387836bb4",
-      "themeId": "7f21c0f0-32e5-4bc2-a671-aeb12b006610",
-      "synergy": 2
-    },
-    {
-      "oracleId": "6d9ac636-3c6c-40ca-90f3-1a3387836bb4",
-      "themeId": "a15d873a-a610-4bcf-b480-639d3f350db2",
-      "synergy": 2
-    },
-    {
-      "oracleId": "6d9ac636-3c6c-40ca-90f3-1a3387836bb4",
-      "themeId": "acf78b42-a1d5-4829-bef0-69204f29e260",
-      "synergy": 2
-    },
-    {
-      "oracleId": "6d9ac636-3c6c-40ca-90f3-1a3387836bb4",
-      "themeId": "c7756471-d290-452f-bfc6-24866c841f28",
-      "synergy": 2
-    },
-    {
-      "oracleId": "6d9ac636-3c6c-40ca-90f3-1a3387836bb4",
-      "themeId": "e44c3d09-026b-4c33-827a-6c4851e7e439",
-      "synergy": 2
-    },
-    {
-      "oracleId": "6d9ac636-3c6c-40ca-90f3-1a3387836bb4",
-      "themeId": "type:demon",
-      "synergy": 4
-    },
-    {
       "oracleId": "6e51a0b2-e07f-4c9d-b055-dd1dcd2e29d4",
       "themeId": "4d7fc833-e0af-4022-b298-6a9c99a56ac1",
       "synergy": 2
@@ -17161,6 +17416,46 @@
       "oracleId": "6e51a0b2-e07f-4c9d-b055-dd1dcd2e29d4",
       "themeId": "type:human",
       "synergy": 4
+    },
+    {
+      "oracleId": "6e760cfe-45b9-4a3f-b2e2-4ca6ec2bd13a",
+      "themeId": "1a19fbcd-ec54-417c-baa0-01c53b32388b",
+      "synergy": 2
+    },
+    {
+      "oracleId": "6e760cfe-45b9-4a3f-b2e2-4ca6ec2bd13a",
+      "themeId": "2af2712e-6228-4559-836f-3cdb65db1242",
+      "synergy": 2
+    },
+    {
+      "oracleId": "6e760cfe-45b9-4a3f-b2e2-4ca6ec2bd13a",
+      "themeId": "591fb358-e9d7-490e-8c15-24aecbbe697e",
+      "synergy": 2
+    },
+    {
+      "oracleId": "6e760cfe-45b9-4a3f-b2e2-4ca6ec2bd13a",
+      "themeId": "6bda5d89-d8fb-4d99-a217-9142fee8ae3f",
+      "synergy": 2
+    },
+    {
+      "oracleId": "6e760cfe-45b9-4a3f-b2e2-4ca6ec2bd13a",
+      "themeId": "cc12d27d-1d0e-4849-9551-71caead74d24",
+      "synergy": 2
+    },
+    {
+      "oracleId": "6e760cfe-45b9-4a3f-b2e2-4ca6ec2bd13a",
+      "themeId": "d5dcbcc6-d49b-4d76-9272-35a062bcb656",
+      "synergy": 2
+    },
+    {
+      "oracleId": "6e760cfe-45b9-4a3f-b2e2-4ca6ec2bd13a",
+      "themeId": "d91e421d-ff87-4aad-a4bf-5aefc51252b6",
+      "synergy": 2
+    },
+    {
+      "oracleId": "6e760cfe-45b9-4a3f-b2e2-4ca6ec2bd13a",
+      "themeId": "e6f789a2-8d9e-4fdd-9701-9fc6779fddb1",
+      "synergy": 2
     },
     {
       "oracleId": "7060f2c8-fca0-4b7a-bddf-37682f434596",
@@ -17215,66 +17510,6 @@
     {
       "oracleId": "7060f2c8-fca0-4b7a-bddf-37682f434596",
       "themeId": "type:rogue",
-      "synergy": 4
-    },
-    {
-      "oracleId": "70dd5013-f18f-4501-882f-70590c424e20",
-      "themeId": "20af1439-9d51-47e4-9b8c-d27d131b0ad4",
-      "synergy": 2
-    },
-    {
-      "oracleId": "70dd5013-f18f-4501-882f-70590c424e20",
-      "themeId": "2f3e4ad7-5e60-41b4-bdbc-653f16869cf6",
-      "synergy": 2
-    },
-    {
-      "oracleId": "70dd5013-f18f-4501-882f-70590c424e20",
-      "themeId": "3f016b55-b431-4660-ba5e-ced1b344b3e7",
-      "synergy": 2
-    },
-    {
-      "oracleId": "70dd5013-f18f-4501-882f-70590c424e20",
-      "themeId": "42313c19-8be2-47d9-9d3a-99c39725b87d",
-      "synergy": 2
-    },
-    {
-      "oracleId": "70dd5013-f18f-4501-882f-70590c424e20",
-      "themeId": "4c4a713b-b4b3-45dc-98e1-f8aa8adeb3ca",
-      "synergy": 2
-    },
-    {
-      "oracleId": "70dd5013-f18f-4501-882f-70590c424e20",
-      "themeId": "68f9547a-5c51-4d1b-86c4-8c07e654f789",
-      "synergy": 2
-    },
-    {
-      "oracleId": "70dd5013-f18f-4501-882f-70590c424e20",
-      "themeId": "84d4490e-341b-40fe-893e-e98e80f25b89",
-      "synergy": 2
-    },
-    {
-      "oracleId": "70dd5013-f18f-4501-882f-70590c424e20",
-      "themeId": "a3909e64-69d4-442e-8da1-fffa309492b8",
-      "synergy": 2
-    },
-    {
-      "oracleId": "70dd5013-f18f-4501-882f-70590c424e20",
-      "themeId": "b4ad8849-14ec-48a9-9e69-085c85a32776",
-      "synergy": 2
-    },
-    {
-      "oracleId": "70dd5013-f18f-4501-882f-70590c424e20",
-      "themeId": "e00e2991-fd04-43c1-9b0b-b02a6e192de6",
-      "synergy": 2
-    },
-    {
-      "oracleId": "70dd5013-f18f-4501-882f-70590c424e20",
-      "themeId": "type:advisor",
-      "synergy": 4
-    },
-    {
-      "oracleId": "70dd5013-f18f-4501-882f-70590c424e20",
-      "themeId": "type:dwarf",
       "synergy": 4
     },
     {
@@ -17623,41 +17858,6 @@
       "synergy": 4
     },
     {
-      "oracleId": "76ae3779-c821-4cd3-8d0f-8c42d1206ce4",
-      "themeId": "0c584af0-6c13-4f44-8ef2-56d4dccce473",
-      "synergy": 2
-    },
-    {
-      "oracleId": "76ae3779-c821-4cd3-8d0f-8c42d1206ce4",
-      "themeId": "7ea2f9b2-41ff-4b14-94e3-fc57434937e4",
-      "synergy": 2
-    },
-    {
-      "oracleId": "76ae3779-c821-4cd3-8d0f-8c42d1206ce4",
-      "themeId": "c975bac8-a67c-4183-9b66-e223a9334c70",
-      "synergy": 2
-    },
-    {
-      "oracleId": "76ae3779-c821-4cd3-8d0f-8c42d1206ce4",
-      "themeId": "cb0787e8-49e0-440d-8737-0b2def800367",
-      "synergy": 2
-    },
-    {
-      "oracleId": "76ae3779-c821-4cd3-8d0f-8c42d1206ce4",
-      "themeId": "e181b762-73f6-4a38-91fd-2d54b6a210ec",
-      "synergy": 2
-    },
-    {
-      "oracleId": "76ae3779-c821-4cd3-8d0f-8c42d1206ce4",
-      "themeId": "type:skeleton",
-      "synergy": 4
-    },
-    {
-      "oracleId": "76ae3779-c821-4cd3-8d0f-8c42d1206ce4",
-      "themeId": "type:warrior",
-      "synergy": 4
-    },
-    {
       "oracleId": "76c97e3d-a9be-4ed7-a2ef-f97870d8f58a",
       "themeId": "0397de5e-7344-4056-bf44-7d31260af593",
       "synergy": 2
@@ -17693,118 +17893,38 @@
       "synergy": 4
     },
     {
-      "oracleId": "77248a76-373c-48fc-939f-aa378ab57f7c",
-      "themeId": "23d9aa9d-e895-475e-a756-8ede44b7ce61",
+      "oracleId": "78124cd1-2658-43f3-a339-0755d84154d2",
+      "themeId": "38f0dba1-36c0-4432-a09f-3c2b000fe1e3",
       "synergy": 2
     },
     {
-      "oracleId": "77248a76-373c-48fc-939f-aa378ab57f7c",
-      "themeId": "346ca9a4-9877-447f-953c-63a8fee974a2",
+      "oracleId": "78124cd1-2658-43f3-a339-0755d84154d2",
+      "themeId": "4f7c07de-5bef-4dff-a9f8-64e9afa5add6",
       "synergy": 2
     },
     {
-      "oracleId": "77248a76-373c-48fc-939f-aa378ab57f7c",
-      "themeId": "4d7fc833-e0af-4022-b298-6a9c99a56ac1",
-      "synergy": 2
-    },
-    {
-      "oracleId": "77248a76-373c-48fc-939f-aa378ab57f7c",
-      "themeId": "5a314bf9-8038-4acd-8cab-6b683caeb35f",
-      "synergy": 2
-    },
-    {
-      "oracleId": "77248a76-373c-48fc-939f-aa378ab57f7c",
-      "themeId": "905ad24e-3356-4a01-a70f-052da28ea751",
-      "synergy": 2
-    },
-    {
-      "oracleId": "77248a76-373c-48fc-939f-aa378ab57f7c",
-      "themeId": "a96e7ee2-d411-435f-978f-0f50e1ce7a16",
-      "synergy": 2
-    },
-    {
-      "oracleId": "77248a76-373c-48fc-939f-aa378ab57f7c",
-      "themeId": "aa908dd5-bf9e-4835-bbbb-77579a1f0e5f",
-      "synergy": 2
-    },
-    {
-      "oracleId": "77248a76-373c-48fc-939f-aa378ab57f7c",
-      "themeId": "acf78b42-a1d5-4829-bef0-69204f29e260",
-      "synergy": 2
-    },
-    {
-      "oracleId": "77248a76-373c-48fc-939f-aa378ab57f7c",
-      "themeId": "cc12d27d-1d0e-4849-9551-71caead74d24",
-      "synergy": 2
-    },
-    {
-      "oracleId": "77248a76-373c-48fc-939f-aa378ab57f7c",
-      "themeId": "cd7d50fb-4058-4892-9d2b-b395357fd5c2",
-      "synergy": 2
-    },
-    {
-      "oracleId": "77248a76-373c-48fc-939f-aa378ab57f7c",
-      "themeId": "d58bcedc-2dcd-42c3-8b52-5359457e6802",
-      "synergy": 2
-    },
-    {
-      "oracleId": "77248a76-373c-48fc-939f-aa378ab57f7c",
-      "themeId": "d5dcbcc6-d49b-4d76-9272-35a062bcb656",
-      "synergy": 2
-    },
-    {
-      "oracleId": "77248a76-373c-48fc-939f-aa378ab57f7c",
-      "themeId": "e82ed4e9-4117-42c2-9f31-2158f9b682aa",
-      "synergy": 2
-    },
-    {
-      "oracleId": "79c90a68-1c31-4e16-be53-1304132da80f",
-      "themeId": "4d7fc833-e0af-4022-b298-6a9c99a56ac1",
-      "synergy": 2
-    },
-    {
-      "oracleId": "79c90a68-1c31-4e16-be53-1304132da80f",
-      "themeId": "537e2f15-3984-46d2-b008-3b41c7cfc66f",
-      "synergy": 2
-    },
-    {
-      "oracleId": "79c90a68-1c31-4e16-be53-1304132da80f",
-      "themeId": "5f6e7f05-b36f-44f5-9167-8bb939f4c28f",
-      "synergy": 2
-    },
-    {
-      "oracleId": "79c90a68-1c31-4e16-be53-1304132da80f",
+      "oracleId": "78124cd1-2658-43f3-a339-0755d84154d2",
       "themeId": "a3909e64-69d4-442e-8da1-fffa309492b8",
       "synergy": 2
     },
     {
-      "oracleId": "79c90a68-1c31-4e16-be53-1304132da80f",
-      "themeId": "c1100c9e-08bf-4845-9263-1a5f86b9005f",
+      "oracleId": "78124cd1-2658-43f3-a339-0755d84154d2",
+      "themeId": "c7756471-d290-452f-bfc6-24866c841f28",
       "synergy": 2
     },
     {
-      "oracleId": "79c90a68-1c31-4e16-be53-1304132da80f",
-      "themeId": "type:human",
-      "synergy": 4
-    },
-    {
-      "oracleId": "79c90a68-1c31-4e16-be53-1304132da80f",
-      "themeId": "type:knight",
-      "synergy": 4
-    },
-    {
-      "oracleId": "7a51780a-fa28-4ee0-94c7-4330800ca9cb",
-      "themeId": "e181b762-73f6-4a38-91fd-2d54b6a210ec",
-      "synergy": 2
-    },
-    {
-      "oracleId": "7a51780a-fa28-4ee0-94c7-4330800ca9cb",
+      "oracleId": "78124cd1-2658-43f3-a339-0755d84154d2",
       "themeId": "eb4a8d84-9daa-4aee-8491-2566673a5749",
       "synergy": 2
     },
     {
-      "oracleId": "7a51780a-fa28-4ee0-94c7-4330800ca9cb",
-      "themeId": "type:eldrazi",
+      "oracleId": "78124cd1-2658-43f3-a339-0755d84154d2",
+      "themeId": "f278c7c7-87b1-4846-adf0-51f33f25dd13",
+      "synergy": 2
+    },
+    {
+      "oracleId": "78124cd1-2658-43f3-a339-0755d84154d2",
+      "themeId": "type:snake",
       "synergy": 4
     },
     {
@@ -18138,6 +18258,26 @@
       "synergy": 4
     },
     {
+      "oracleId": "7fd61a18-6e4f-40c5-aa00-3d101ec1ec82",
+      "themeId": "53436ffa-653e-4362-a298-7bc9f8118961",
+      "synergy": 2
+    },
+    {
+      "oracleId": "7fd61a18-6e4f-40c5-aa00-3d101ec1ec82",
+      "themeId": "a3909e64-69d4-442e-8da1-fffa309492b8",
+      "synergy": 2
+    },
+    {
+      "oracleId": "7fd61a18-6e4f-40c5-aa00-3d101ec1ec82",
+      "themeId": "bcae5f6a-f68b-4217-8f6c-0b4d31abd045",
+      "synergy": 2
+    },
+    {
+      "oracleId": "7fd61a18-6e4f-40c5-aa00-3d101ec1ec82",
+      "themeId": "type:zombie",
+      "synergy": 4
+    },
+    {
       "oracleId": "7fffbe7f-ad78-4bb6-a611-c37e495c6ee0",
       "themeId": "01f357fc-65f1-41ca-8454-0ec9a1004f3f",
       "synergy": 2
@@ -18276,6 +18416,46 @@
       "oracleId": "8315aa34-08b8-403e-a2e6-796a2d6978ad",
       "themeId": "82d71877-7d9b-4e86-95c6-fe3e15d6be2f",
       "synergy": 2
+    },
+    {
+      "oracleId": "838c4831-7d5c-4025-92b3-46eee59d6b34",
+      "themeId": "1c2215a5-d782-4f1b-a223-2bbd26c1f532",
+      "synergy": 2
+    },
+    {
+      "oracleId": "838c4831-7d5c-4025-92b3-46eee59d6b34",
+      "themeId": "4d7fc833-e0af-4022-b298-6a9c99a56ac1",
+      "synergy": 2
+    },
+    {
+      "oracleId": "838c4831-7d5c-4025-92b3-46eee59d6b34",
+      "themeId": "7fc71046-aa54-4ca6-bb3e-7336d5d58d0f",
+      "synergy": 2
+    },
+    {
+      "oracleId": "838c4831-7d5c-4025-92b3-46eee59d6b34",
+      "themeId": "a798d4bf-1499-4a50-931e-bfbaaf46f4df",
+      "synergy": 2
+    },
+    {
+      "oracleId": "838c4831-7d5c-4025-92b3-46eee59d6b34",
+      "themeId": "e181b762-73f6-4a38-91fd-2d54b6a210ec",
+      "synergy": 2
+    },
+    {
+      "oracleId": "838c4831-7d5c-4025-92b3-46eee59d6b34",
+      "themeId": "eb4a8d84-9daa-4aee-8491-2566673a5749",
+      "synergy": 2
+    },
+    {
+      "oracleId": "838c4831-7d5c-4025-92b3-46eee59d6b34",
+      "themeId": "type:human",
+      "synergy": 4
+    },
+    {
+      "oracleId": "838c4831-7d5c-4025-92b3-46eee59d6b34",
+      "themeId": "type:wizard",
+      "synergy": 4
     },
     {
       "oracleId": "83a47724-b8d1-4884-9442-b62aa1510dc3",
@@ -18688,36 +18868,6 @@
       "synergy": 2
     },
     {
-      "oracleId": "8aa1bbc9-b047-4d68-93f4-728e40dafc5e",
-      "themeId": "4d7fc833-e0af-4022-b298-6a9c99a56ac1",
-      "synergy": 2
-    },
-    {
-      "oracleId": "8aa1bbc9-b047-4d68-93f4-728e40dafc5e",
-      "themeId": "598e4be3-3039-489d-9e38-1d099ddf230e",
-      "synergy": 2
-    },
-    {
-      "oracleId": "8aa1bbc9-b047-4d68-93f4-728e40dafc5e",
-      "themeId": "c7756471-d290-452f-bfc6-24866c841f28",
-      "synergy": 2
-    },
-    {
-      "oracleId": "8aa1bbc9-b047-4d68-93f4-728e40dafc5e",
-      "themeId": "eff3a64f-6a21-41f7-a7cd-1c1057efa596",
-      "synergy": 2
-    },
-    {
-      "oracleId": "8aa1bbc9-b047-4d68-93f4-728e40dafc5e",
-      "themeId": "type:human",
-      "synergy": 4
-    },
-    {
-      "oracleId": "8aa1bbc9-b047-4d68-93f4-728e40dafc5e",
-      "themeId": "type:pirate",
-      "synergy": 4
-    },
-    {
       "oracleId": "8aab9181-c306-471a-8061-9a7a7654dab5",
       "themeId": "2402703f-62e0-4018-94ca-cd549549ab9e",
       "synergy": 2
@@ -18808,61 +18958,6 @@
       "synergy": 2
     },
     {
-      "oracleId": "8c768e86-4181-462b-a6a5-4ca0f6660380",
-      "themeId": "09f131ae-a4fd-4036-9d73-6200f91772d2",
-      "synergy": 2
-    },
-    {
-      "oracleId": "8c768e86-4181-462b-a6a5-4ca0f6660380",
-      "themeId": "11f804b6-7a51-4741-8a00-810de28ff407",
-      "synergy": 2
-    },
-    {
-      "oracleId": "8c768e86-4181-462b-a6a5-4ca0f6660380",
-      "themeId": "19fd037a-ffc8-41b8-9a76-fe0fbd131b70",
-      "synergy": 2
-    },
-    {
-      "oracleId": "8c768e86-4181-462b-a6a5-4ca0f6660380",
-      "themeId": "1a19fbcd-ec54-417c-baa0-01c53b32388b",
-      "synergy": 2
-    },
-    {
-      "oracleId": "8c768e86-4181-462b-a6a5-4ca0f6660380",
-      "themeId": "37618fe9-df33-412f-a0a0-8f63d3f05316",
-      "synergy": 2
-    },
-    {
-      "oracleId": "8c768e86-4181-462b-a6a5-4ca0f6660380",
-      "themeId": "4caab3cc-1d60-44fb-a26a-cc833bc67c97",
-      "synergy": 2
-    },
-    {
-      "oracleId": "8c768e86-4181-462b-a6a5-4ca0f6660380",
-      "themeId": "776d14a9-12a6-4426-9415-e7dde7e74409",
-      "synergy": 2
-    },
-    {
-      "oracleId": "8c768e86-4181-462b-a6a5-4ca0f6660380",
-      "themeId": "7dca665f-435d-49f2-8974-d225fa0a8a42",
-      "synergy": 2
-    },
-    {
-      "oracleId": "8c768e86-4181-462b-a6a5-4ca0f6660380",
-      "themeId": "8a3188e6-3173-4f4d-b157-0fa32958ec55",
-      "synergy": 2
-    },
-    {
-      "oracleId": "8c768e86-4181-462b-a6a5-4ca0f6660380",
-      "themeId": "a3fcc40c-732e-4e53-857c-79bd27304e77",
-      "synergy": 2
-    },
-    {
-      "oracleId": "8c768e86-4181-462b-a6a5-4ca0f6660380",
-      "themeId": "b904fc7c-24a6-43bf-9746-b1f02990c44c",
-      "synergy": 2
-    },
-    {
       "oracleId": "8cd3815d-92a6-4336-9da7-b18b1afd5460",
       "themeId": "1a19fbcd-ec54-417c-baa0-01c53b32388b",
       "synergy": 2
@@ -18918,36 +19013,6 @@
       "synergy": 2
     },
     {
-      "oracleId": "8d1a3935-8a8c-4754-b474-189611188bc5",
-      "themeId": "4d7fc833-e0af-4022-b298-6a9c99a56ac1",
-      "synergy": 2
-    },
-    {
-      "oracleId": "8d1a3935-8a8c-4754-b474-189611188bc5",
-      "themeId": "7b3120c7-23fc-43df-b159-4950e2855823",
-      "synergy": 2
-    },
-    {
-      "oracleId": "8d1a3935-8a8c-4754-b474-189611188bc5",
-      "themeId": "c13ff08f-26bd-463e-a3e7-0f1eb2b3d3bf",
-      "synergy": 2
-    },
-    {
-      "oracleId": "8d1a3935-8a8c-4754-b474-189611188bc5",
-      "themeId": "cc12d27d-1d0e-4849-9551-71caead74d24",
-      "synergy": 2
-    },
-    {
-      "oracleId": "8d1a3935-8a8c-4754-b474-189611188bc5",
-      "themeId": "d431643b-f9b0-42bb-9563-5714ad90b2cb",
-      "synergy": 2
-    },
-    {
-      "oracleId": "8d1a3935-8a8c-4754-b474-189611188bc5",
-      "themeId": "d91e421d-ff87-4aad-a4bf-5aefc51252b6",
-      "synergy": 2
-    },
-    {
       "oracleId": "8e7b079d-9ede-421c-bd2b-f9a5126a8e6f",
       "themeId": "07808167-c4ef-4a2d-bfe9-fa38a5a9d17b",
       "synergy": 2
@@ -18996,66 +19061,6 @@
       "oracleId": "8e7b079d-9ede-421c-bd2b-f9a5126a8e6f",
       "themeId": "f21a7a5b-6c7f-4aaa-aeaa-b06660647074",
       "synergy": 2
-    },
-    {
-      "oracleId": "8f3e6554-eb8a-4096-81a3-2411186d9cb4",
-      "themeId": "3c47d74b-765c-455a-98f1-437b4f1492c0",
-      "synergy": 2
-    },
-    {
-      "oracleId": "8f3e6554-eb8a-4096-81a3-2411186d9cb4",
-      "themeId": "40570ef7-e185-4f0b-ba52-edc4de748817",
-      "synergy": 2
-    },
-    {
-      "oracleId": "8f3e6554-eb8a-4096-81a3-2411186d9cb4",
-      "themeId": "63353a72-d5ba-429d-a70d-ba706a0d74b8",
-      "synergy": 2
-    },
-    {
-      "oracleId": "8f3e6554-eb8a-4096-81a3-2411186d9cb4",
-      "themeId": "7075fa3f-160d-4b83-b653-19c0292a6e77",
-      "synergy": 2
-    },
-    {
-      "oracleId": "8f3e6554-eb8a-4096-81a3-2411186d9cb4",
-      "themeId": "a35cdad8-9a43-435f-87d0-79dccf1c4a17",
-      "synergy": 2
-    },
-    {
-      "oracleId": "8f3e6554-eb8a-4096-81a3-2411186d9cb4",
-      "themeId": "a3909e64-69d4-442e-8da1-fffa309492b8",
-      "synergy": 2
-    },
-    {
-      "oracleId": "8f3e6554-eb8a-4096-81a3-2411186d9cb4",
-      "themeId": "b24bafdb-ae90-4719-829b-1d499e1bdd05",
-      "synergy": 2
-    },
-    {
-      "oracleId": "8f3e6554-eb8a-4096-81a3-2411186d9cb4",
-      "themeId": "bcae5f6a-f68b-4217-8f6c-0b4d31abd045",
-      "synergy": 2
-    },
-    {
-      "oracleId": "8f3e6554-eb8a-4096-81a3-2411186d9cb4",
-      "themeId": "c7756471-d290-452f-bfc6-24866c841f28",
-      "synergy": 2
-    },
-    {
-      "oracleId": "8f3e6554-eb8a-4096-81a3-2411186d9cb4",
-      "themeId": "d87843cd-0ae2-4c1e-a87c-c080594b295b",
-      "synergy": 2
-    },
-    {
-      "oracleId": "8f3e6554-eb8a-4096-81a3-2411186d9cb4",
-      "themeId": "type:human",
-      "synergy": 4
-    },
-    {
-      "oracleId": "8f3e6554-eb8a-4096-81a3-2411186d9cb4",
-      "themeId": "type:spirit",
-      "synergy": 4
     },
     {
       "oracleId": "8f5ffb0b-0585-4a37-8048-eda53990d1dd",
@@ -19110,126 +19115,6 @@
     {
       "oracleId": "8f5ffb0b-0585-4a37-8048-eda53990d1dd",
       "themeId": "type:peasant",
-      "synergy": 4
-    },
-    {
-      "oracleId": "910036e7-ae27-4adb-a314-d9760bce1eb0",
-      "themeId": "3b1795ac-b75d-463e-b998-aca94634b289",
-      "synergy": 2
-    },
-    {
-      "oracleId": "910036e7-ae27-4adb-a314-d9760bce1eb0",
-      "themeId": "4d7fc833-e0af-4022-b298-6a9c99a56ac1",
-      "synergy": 2
-    },
-    {
-      "oracleId": "910036e7-ae27-4adb-a314-d9760bce1eb0",
-      "themeId": "55a20ecd-06ec-476f-84d6-a35fe385e8ff",
-      "synergy": 2
-    },
-    {
-      "oracleId": "910036e7-ae27-4adb-a314-d9760bce1eb0",
-      "themeId": "8cb1bab7-38db-4f6b-bee4-15d5c26a879d",
-      "synergy": 2
-    },
-    {
-      "oracleId": "910036e7-ae27-4adb-a314-d9760bce1eb0",
-      "themeId": "9109865e-2711-48f0-a11f-f55bfd7ecae0",
-      "synergy": 2
-    },
-    {
-      "oracleId": "910036e7-ae27-4adb-a314-d9760bce1eb0",
-      "themeId": "b183e98e-2ca9-4fba-9669-17e263938c45",
-      "synergy": 4
-    },
-    {
-      "oracleId": "910036e7-ae27-4adb-a314-d9760bce1eb0",
-      "themeId": "type:human",
-      "synergy": 4
-    },
-    {
-      "oracleId": "910036e7-ae27-4adb-a314-d9760bce1eb0",
-      "themeId": "type:wizard",
-      "synergy": 4
-    },
-    {
-      "oracleId": "92045f6c-9ec2-4bf0-826c-e21ef253011c",
-      "themeId": "0c50f595-a5c0-4e71-b90c-ea45298907af",
-      "synergy": 2
-    },
-    {
-      "oracleId": "92045f6c-9ec2-4bf0-826c-e21ef253011c",
-      "themeId": "17ded9f8-ce62-4609-9fe1-54dfb4d0aa6c",
-      "synergy": 2
-    },
-    {
-      "oracleId": "92045f6c-9ec2-4bf0-826c-e21ef253011c",
-      "themeId": "acf78b42-a1d5-4829-bef0-69204f29e260",
-      "synergy": 2
-    },
-    {
-      "oracleId": "92045f6c-9ec2-4bf0-826c-e21ef253011c",
-      "themeId": "eb78924e-cf3a-4d52-9b04-4f69ca876626",
-      "synergy": 2
-    },
-    {
-      "oracleId": "92045f6c-9ec2-4bf0-826c-e21ef253011c",
-      "themeId": "ee03d192-c144-4e8c-88d3-ba7cd68c9474",
-      "synergy": 2
-    },
-    {
-      "oracleId": "92045f6c-9ec2-4bf0-826c-e21ef253011c",
-      "themeId": "eeee4e98-b0c7-40ed-8d6d-5ebb2958ac15",
-      "synergy": 2
-    },
-    {
-      "oracleId": "92045f6c-9ec2-4bf0-826c-e21ef253011c",
-      "themeId": "type:dwarf",
-      "synergy": 4
-    },
-    {
-      "oracleId": "92045f6c-9ec2-4bf0-826c-e21ef253011c",
-      "themeId": "type:scout",
-      "synergy": 4
-    },
-    {
-      "oracleId": "92dfeeb2-1117-422b-87ea-08a589f1134b",
-      "themeId": "42313c19-8be2-47d9-9d3a-99c39725b87d",
-      "synergy": 2
-    },
-    {
-      "oracleId": "92dfeeb2-1117-422b-87ea-08a589f1134b",
-      "themeId": "4caab3cc-1d60-44fb-a26a-cc833bc67c97",
-      "synergy": 2
-    },
-    {
-      "oracleId": "92dfeeb2-1117-422b-87ea-08a589f1134b",
-      "themeId": "4d7fc833-e0af-4022-b298-6a9c99a56ac1",
-      "synergy": 2
-    },
-    {
-      "oracleId": "92dfeeb2-1117-422b-87ea-08a589f1134b",
-      "themeId": "4f7c07de-5bef-4dff-a9f8-64e9afa5add6",
-      "synergy": 2
-    },
-    {
-      "oracleId": "92dfeeb2-1117-422b-87ea-08a589f1134b",
-      "themeId": "529a51de-2bc9-48c3-a2c1-334f1ee3862b",
-      "synergy": 2
-    },
-    {
-      "oracleId": "92dfeeb2-1117-422b-87ea-08a589f1134b",
-      "themeId": "c7756471-d290-452f-bfc6-24866c841f28",
-      "synergy": 2
-    },
-    {
-      "oracleId": "92dfeeb2-1117-422b-87ea-08a589f1134b",
-      "themeId": "type:human",
-      "synergy": 4
-    },
-    {
-      "oracleId": "92dfeeb2-1117-422b-87ea-08a589f1134b",
-      "themeId": "type:wizard",
       "synergy": 4
     },
     {
@@ -19503,6 +19388,116 @@
       "synergy": 2
     },
     {
+      "oracleId": "98aa9424-5912-4bd6-9300-b3972a31d8af",
+      "themeId": "acf78b42-a1d5-4829-bef0-69204f29e260",
+      "synergy": 2
+    },
+    {
+      "oracleId": "98aa9424-5912-4bd6-9300-b3972a31d8af",
+      "themeId": "bb6c0ff7-302d-48ff-aee9-5cfefd44e351",
+      "synergy": 2
+    },
+    {
+      "oracleId": "98aa9424-5912-4bd6-9300-b3972a31d8af",
+      "themeId": "d540c4fb-c2dd-49be-aecc-73883ae9edd9",
+      "synergy": 2
+    },
+    {
+      "oracleId": "98aa9424-5912-4bd6-9300-b3972a31d8af",
+      "themeId": "edaf2960-b597-48a2-abcc-a0d55e8ea10e",
+      "synergy": 2
+    },
+    {
+      "oracleId": "98aa9424-5912-4bd6-9300-b3972a31d8af",
+      "themeId": "ee03d192-c144-4e8c-88d3-ba7cd68c9474",
+      "synergy": 2
+    },
+    {
+      "oracleId": "98aa9424-5912-4bd6-9300-b3972a31d8af",
+      "themeId": "type:druid",
+      "synergy": 4
+    },
+    {
+      "oracleId": "98aa9424-5912-4bd6-9300-b3972a31d8af",
+      "themeId": "type:human",
+      "synergy": 4
+    },
+    {
+      "oracleId": "98eac0f7-3f4d-46ef-9575-680c52e967cf",
+      "themeId": "19fd037a-ffc8-41b8-9a76-fe0fbd131b70",
+      "synergy": 2
+    },
+    {
+      "oracleId": "98eac0f7-3f4d-46ef-9575-680c52e967cf",
+      "themeId": "1a19fbcd-ec54-417c-baa0-01c53b32388b",
+      "synergy": 2
+    },
+    {
+      "oracleId": "98eac0f7-3f4d-46ef-9575-680c52e967cf",
+      "themeId": "37618fe9-df33-412f-a0a0-8f63d3f05316",
+      "synergy": 2
+    },
+    {
+      "oracleId": "98eac0f7-3f4d-46ef-9575-680c52e967cf",
+      "themeId": "40570ef7-e185-4f0b-ba52-edc4de748817",
+      "synergy": 2
+    },
+    {
+      "oracleId": "98eac0f7-3f4d-46ef-9575-680c52e967cf",
+      "themeId": "6bda5d89-d8fb-4d99-a217-9142fee8ae3f",
+      "synergy": 2
+    },
+    {
+      "oracleId": "98eac0f7-3f4d-46ef-9575-680c52e967cf",
+      "themeId": "776d14a9-12a6-4426-9415-e7dde7e74409",
+      "synergy": 2
+    },
+    {
+      "oracleId": "98eac0f7-3f4d-46ef-9575-680c52e967cf",
+      "themeId": "7d4c079e-5fb5-487c-bb38-769d06ce1e2b",
+      "synergy": 2
+    },
+    {
+      "oracleId": "98eac0f7-3f4d-46ef-9575-680c52e967cf",
+      "themeId": "7dca665f-435d-49f2-8974-d225fa0a8a42",
+      "synergy": 2
+    },
+    {
+      "oracleId": "98eac0f7-3f4d-46ef-9575-680c52e967cf",
+      "themeId": "947c480e-ca29-4778-a66f-88a8c6c4d310",
+      "synergy": 2
+    },
+    {
+      "oracleId": "98eac0f7-3f4d-46ef-9575-680c52e967cf",
+      "themeId": "a35cdad8-9a43-435f-87d0-79dccf1c4a17",
+      "synergy": 2
+    },
+    {
+      "oracleId": "98eac0f7-3f4d-46ef-9575-680c52e967cf",
+      "themeId": "a3909e64-69d4-442e-8da1-fffa309492b8",
+      "synergy": 2
+    },
+    {
+      "oracleId": "98eac0f7-3f4d-46ef-9575-680c52e967cf",
+      "themeId": "be6482ed-3b31-41a3-8adc-0647f2a00dc3",
+      "synergy": 2
+    },
+    {
+      "oracleId": "98eac0f7-3f4d-46ef-9575-680c52e967cf",
+      "themeId": "cc12d27d-1d0e-4849-9551-71caead74d24",
+      "synergy": 2
+    },
+    {
+      "oracleId": "98eac0f7-3f4d-46ef-9575-680c52e967cf",
+      "themeId": "d91e421d-ff87-4aad-a4bf-5aefc51252b6",
+      "synergy": 2
+    },
+    {
+      "oracleId": "98eac0f7-3f4d-46ef-9575-680c52e967cf",
+      "themeId": "e6f789a2-8d9e-4fdd-9701-9fc6779fddb1",
+      "synergy": 2
+    },
+    {
       "oracleId": "99720c65-be96-4220-8ed4-720660bf6928",
       "themeId": "3892e350-204e-4c13-bb97-cc8fef0c9c83",
       "synergy": 2
@@ -19751,31 +19746,6 @@
       "oracleId": "9e76d56a-67b6-4bd9-8f2d-3328d18a2880",
       "themeId": "type:soldier",
       "synergy": 4
-    },
-    {
-      "oracleId": "9e7ade56-ab68-42ab-8a6f-bc38957f1563",
-      "themeId": "43d07dd1-ec75-4416-b5a0-dce4e951a4ca",
-      "synergy": 2
-    },
-    {
-      "oracleId": "9e7ade56-ab68-42ab-8a6f-bc38957f1563",
-      "themeId": "45ae9f00-85ba-47ee-b07f-fa5f2e838124",
-      "synergy": 2
-    },
-    {
-      "oracleId": "9e7ade56-ab68-42ab-8a6f-bc38957f1563",
-      "themeId": "63353a72-d5ba-429d-a70d-ba706a0d74b8",
-      "synergy": 2
-    },
-    {
-      "oracleId": "9e7ade56-ab68-42ab-8a6f-bc38957f1563",
-      "themeId": "8531c7d9-7039-4b53-89c0-6c81ceb04f19",
-      "synergy": 2
-    },
-    {
-      "oracleId": "9e7ade56-ab68-42ab-8a6f-bc38957f1563",
-      "themeId": "acf78b42-a1d5-4829-bef0-69204f29e260",
-      "synergy": 2
     },
     {
       "oracleId": "9ee0d4a0-fd8d-43c4-a2aa-c4e6af5beecc",
@@ -20283,58 +20253,63 @@
       "synergy": 2
     },
     {
-      "oracleId": "a77b5be2-f361-4135-ba25-670a74d268ac",
-      "themeId": "4caab3cc-1d60-44fb-a26a-cc833bc67c97",
+      "oracleId": "a720f3d3-c2d7-4e50-8cc6-600120380e9c",
+      "themeId": "0eb64cb1-4430-4b39-a2dd-d06221d21e14",
       "synergy": 2
     },
     {
-      "oracleId": "a77b5be2-f361-4135-ba25-670a74d268ac",
-      "themeId": "4d7fc833-e0af-4022-b298-6a9c99a56ac1",
+      "oracleId": "a720f3d3-c2d7-4e50-8cc6-600120380e9c",
+      "themeId": "36f3801c-18c7-4cbd-828d-5cc7642edea2",
       "synergy": 2
     },
     {
-      "oracleId": "a77b5be2-f361-4135-ba25-670a74d268ac",
-      "themeId": "4f7c07de-5bef-4dff-a9f8-64e9afa5add6",
+      "oracleId": "a720f3d3-c2d7-4e50-8cc6-600120380e9c",
+      "themeId": "3bcd7cdd-61ca-42dd-adc5-1a695eaec2d2",
       "synergy": 2
     },
     {
-      "oracleId": "a77b5be2-f361-4135-ba25-670a74d268ac",
-      "themeId": "6bda5d89-d8fb-4d99-a217-9142fee8ae3f",
+      "oracleId": "a720f3d3-c2d7-4e50-8cc6-600120380e9c",
+      "themeId": "68f9547a-5c51-4d1b-86c4-8c07e654f789",
       "synergy": 2
     },
     {
-      "oracleId": "a77b5be2-f361-4135-ba25-670a74d268ac",
-      "themeId": "77ac0ebf-7810-460b-8814-fe68756c0193",
+      "oracleId": "a720f3d3-c2d7-4e50-8cc6-600120380e9c",
+      "themeId": "702286e6-707d-4adb-9a98-21de8ca13519",
       "synergy": 2
     },
     {
-      "oracleId": "a77b5be2-f361-4135-ba25-670a74d268ac",
-      "themeId": "be6482ed-3b31-41a3-8adc-0647f2a00dc3",
+      "oracleId": "a720f3d3-c2d7-4e50-8cc6-600120380e9c",
+      "themeId": "7224b293-7400-4a60-8a1b-6aaa35e13e3c",
       "synergy": 2
     },
     {
-      "oracleId": "a77b5be2-f361-4135-ba25-670a74d268ac",
+      "oracleId": "a720f3d3-c2d7-4e50-8cc6-600120380e9c",
+      "themeId": "84717ea4-8706-4973-b9f2-980cadedca90",
+      "synergy": 2
+    },
+    {
+      "oracleId": "a720f3d3-c2d7-4e50-8cc6-600120380e9c",
       "themeId": "c7756471-d290-452f-bfc6-24866c841f28",
       "synergy": 2
     },
     {
-      "oracleId": "a77b5be2-f361-4135-ba25-670a74d268ac",
-      "themeId": "cc12d27d-1d0e-4849-9551-71caead74d24",
+      "oracleId": "a720f3d3-c2d7-4e50-8cc6-600120380e9c",
+      "themeId": "d84389f3-5e7f-4f9d-a4b5-61757a9b9ade",
       "synergy": 2
     },
     {
-      "oracleId": "a77b5be2-f361-4135-ba25-670a74d268ac",
-      "themeId": "d91e421d-ff87-4aad-a4bf-5aefc51252b6",
+      "oracleId": "a720f3d3-c2d7-4e50-8cc6-600120380e9c",
+      "themeId": "fc71df0d-d1be-4ff7-acd1-e6d8905dca52",
       "synergy": 2
     },
     {
-      "oracleId": "a77b5be2-f361-4135-ba25-670a74d268ac",
-      "themeId": "e8be69b7-fe68-441f-af97-bf409326a6ef",
-      "synergy": 2
+      "oracleId": "a720f3d3-c2d7-4e50-8cc6-600120380e9c",
+      "themeId": "type:vampire",
+      "synergy": 4
     },
     {
-      "oracleId": "a77b5be2-f361-4135-ba25-670a74d268ac",
-      "themeId": "type:construct",
+      "oracleId": "a720f3d3-c2d7-4e50-8cc6-600120380e9c",
+      "themeId": "type:wizard",
       "synergy": 4
     },
     {
@@ -20698,6 +20673,36 @@
       "synergy": 4
     },
     {
+      "oracleId": "ab5a9749-5c94-43e0-b9df-bd2c3601936f",
+      "themeId": "2b7fc665-a914-4b35-901d-e92dec85711e",
+      "synergy": 2
+    },
+    {
+      "oracleId": "ab5a9749-5c94-43e0-b9df-bd2c3601936f",
+      "themeId": "56907a60-c8bc-4427-a62c-517bdc55fb79",
+      "synergy": 2
+    },
+    {
+      "oracleId": "ab5a9749-5c94-43e0-b9df-bd2c3601936f",
+      "themeId": "66777b7b-50d8-40f1-b811-8d44e21aa9d3",
+      "synergy": 2
+    },
+    {
+      "oracleId": "ab5a9749-5c94-43e0-b9df-bd2c3601936f",
+      "themeId": "68f9547a-5c51-4d1b-86c4-8c07e654f789",
+      "synergy": 2
+    },
+    {
+      "oracleId": "ab5a9749-5c94-43e0-b9df-bd2c3601936f",
+      "themeId": "7f21c0f0-32e5-4bc2-a671-aeb12b006610",
+      "synergy": 2
+    },
+    {
+      "oracleId": "ab5a9749-5c94-43e0-b9df-bd2c3601936f",
+      "themeId": "fc71df0d-d1be-4ff7-acd1-e6d8905dca52",
+      "synergy": 2
+    },
+    {
       "oracleId": "ab7c0256-eea9-4e0d-932d-c25460eed836",
       "themeId": "4d7fc833-e0af-4022-b298-6a9c99a56ac1",
       "synergy": 2
@@ -20725,6 +20730,51 @@
     {
       "oracleId": "ab7c0256-eea9-4e0d-932d-c25460eed836",
       "themeId": "e181b762-73f6-4a38-91fd-2d54b6a210ec",
+      "synergy": 2
+    },
+    {
+      "oracleId": "abc04775-171d-41f3-83ea-4b4eb72723d5",
+      "themeId": "19d9612b-36d9-4eb1-a83b-3998ca5863a6",
+      "synergy": 2
+    },
+    {
+      "oracleId": "abc04775-171d-41f3-83ea-4b4eb72723d5",
+      "themeId": "34aa2571-a8dc-4c52-83d4-0dfec652ee14",
+      "synergy": 2
+    },
+    {
+      "oracleId": "abc04775-171d-41f3-83ea-4b4eb72723d5",
+      "themeId": "5e708c4d-9992-431e-afe1-fb5af05b2ea3",
+      "synergy": 2
+    },
+    {
+      "oracleId": "abc04775-171d-41f3-83ea-4b4eb72723d5",
+      "themeId": "6671420c-fd48-417e-bd71-a1f3c5553866",
+      "synergy": 2
+    },
+    {
+      "oracleId": "abc04775-171d-41f3-83ea-4b4eb72723d5",
+      "themeId": "8a3188e6-3173-4f4d-b157-0fa32958ec55",
+      "synergy": 2
+    },
+    {
+      "oracleId": "abc04775-171d-41f3-83ea-4b4eb72723d5",
+      "themeId": "a7c4d132-68ca-499f-ac60-c5edfc120346",
+      "synergy": 2
+    },
+    {
+      "oracleId": "abc04775-171d-41f3-83ea-4b4eb72723d5",
+      "themeId": "acf78b42-a1d5-4829-bef0-69204f29e260",
+      "synergy": 2
+    },
+    {
+      "oracleId": "abc04775-171d-41f3-83ea-4b4eb72723d5",
+      "themeId": "dc75cad6-0cc5-4ebc-b53f-2afbaf070edc",
+      "synergy": 2
+    },
+    {
+      "oracleId": "abc04775-171d-41f3-83ea-4b4eb72723d5",
+      "themeId": "ef02b1a3-a5ae-4d8a-86ca-302d6f477744",
       "synergy": 2
     },
     {
@@ -21198,31 +21248,6 @@
       "synergy": 4
     },
     {
-      "oracleId": "b47d37ee-2bb2-4ca8-b245-94d2cc4b6684",
-      "themeId": "4d7fc833-e0af-4022-b298-6a9c99a56ac1",
-      "synergy": 2
-    },
-    {
-      "oracleId": "b47d37ee-2bb2-4ca8-b245-94d2cc4b6684",
-      "themeId": "917ab124-2cfb-46a1-9b63-b893bc9718c3",
-      "synergy": 2
-    },
-    {
-      "oracleId": "b47d37ee-2bb2-4ca8-b245-94d2cc4b6684",
-      "themeId": "e181b762-73f6-4a38-91fd-2d54b6a210ec",
-      "synergy": 2
-    },
-    {
-      "oracleId": "b47d37ee-2bb2-4ca8-b245-94d2cc4b6684",
-      "themeId": "type:artificer",
-      "synergy": 4
-    },
-    {
-      "oracleId": "b47d37ee-2bb2-4ca8-b245-94d2cc4b6684",
-      "themeId": "type:dwarf",
-      "synergy": 4
-    },
-    {
       "oracleId": "b6be94dc-7162-4887-b959-3bda709724eb",
       "themeId": "0e87cf9c-591e-4f2a-b4fd-675021f120ae",
       "synergy": 2
@@ -21250,6 +21275,46 @@
     {
       "oracleId": "b6be94dc-7162-4887-b959-3bda709724eb",
       "themeId": "d6b35fd3-23e0-47db-9c46-dc9e1958d33e",
+      "synergy": 2
+    },
+    {
+      "oracleId": "b749e9e4-0f2a-4157-8cca-facd6b48157f",
+      "themeId": "42313c19-8be2-47d9-9d3a-99c39725b87d",
+      "synergy": 2
+    },
+    {
+      "oracleId": "b749e9e4-0f2a-4157-8cca-facd6b48157f",
+      "themeId": "68f9547a-5c51-4d1b-86c4-8c07e654f789",
+      "synergy": 2
+    },
+    {
+      "oracleId": "b749e9e4-0f2a-4157-8cca-facd6b48157f",
+      "themeId": "9a3f1038-140e-447a-ba5d-020893c49977",
+      "synergy": 2
+    },
+    {
+      "oracleId": "b749e9e4-0f2a-4157-8cca-facd6b48157f",
+      "themeId": "a798d4bf-1499-4a50-931e-bfbaaf46f4df",
+      "synergy": 2
+    },
+    {
+      "oracleId": "b749e9e4-0f2a-4157-8cca-facd6b48157f",
+      "themeId": "aed3372a-124b-4a59-83ba-3a792b16f97a",
+      "synergy": 2
+    },
+    {
+      "oracleId": "b749e9e4-0f2a-4157-8cca-facd6b48157f",
+      "themeId": "afb0c553-e747-4859-9b8b-f11791b56e31",
+      "synergy": 2
+    },
+    {
+      "oracleId": "b749e9e4-0f2a-4157-8cca-facd6b48157f",
+      "themeId": "c1100c9e-08bf-4845-9263-1a5f86b9005f",
+      "synergy": 2
+    },
+    {
+      "oracleId": "b749e9e4-0f2a-4157-8cca-facd6b48157f",
+      "themeId": "e09bd7ce-86c3-4870-87d9-f213ecae2c17",
       "synergy": 2
     },
     {
@@ -21283,34 +21348,44 @@
       "synergy": 4
     },
     {
-      "oracleId": "bbb4643a-4bc6-4860-95e5-6f69cd1aebbe",
-      "themeId": "0eb64cb1-4430-4b39-a2dd-d06221d21e14",
+      "oracleId": "ba5055ce-6809-47a4-bee6-fb97a5b60f8a",
+      "themeId": "0e87cf9c-591e-4f2a-b4fd-675021f120ae",
       "synergy": 2
     },
     {
-      "oracleId": "bbb4643a-4bc6-4860-95e5-6f69cd1aebbe",
-      "themeId": "1a19fbcd-ec54-417c-baa0-01c53b32388b",
+      "oracleId": "ba5055ce-6809-47a4-bee6-fb97a5b60f8a",
+      "themeId": "4d7fc833-e0af-4022-b298-6a9c99a56ac1",
       "synergy": 2
     },
     {
-      "oracleId": "bbb4643a-4bc6-4860-95e5-6f69cd1aebbe",
-      "themeId": "42313c19-8be2-47d9-9d3a-99c39725b87d",
+      "oracleId": "ba5055ce-6809-47a4-bee6-fb97a5b60f8a",
+      "themeId": "524845ed-ea82-4a60-8b54-8a38ab06a503",
       "synergy": 2
     },
     {
-      "oracleId": "bbb4643a-4bc6-4860-95e5-6f69cd1aebbe",
-      "themeId": "8a3188e6-3173-4f4d-b157-0fa32958ec55",
+      "oracleId": "ba5055ce-6809-47a4-bee6-fb97a5b60f8a",
+      "themeId": "7dca0cec-0c2f-4079-b945-3059c05125bd",
       "synergy": 2
     },
     {
-      "oracleId": "bbb4643a-4bc6-4860-95e5-6f69cd1aebbe",
-      "themeId": "a3909e64-69d4-442e-8da1-fffa309492b8",
+      "oracleId": "ba5055ce-6809-47a4-bee6-fb97a5b60f8a",
+      "themeId": "c7756471-d290-452f-bfc6-24866c841f28",
       "synergy": 2
     },
     {
-      "oracleId": "bbb4643a-4bc6-4860-95e5-6f69cd1aebbe",
-      "themeId": "acf8bf02-6505-4ec9-a1fb-14cd1ecb0d0b",
+      "oracleId": "ba5055ce-6809-47a4-bee6-fb97a5b60f8a",
+      "themeId": "da5f6718-a763-4ee8-8893-487db5a3af71",
       "synergy": 2
+    },
+    {
+      "oracleId": "ba5055ce-6809-47a4-bee6-fb97a5b60f8a",
+      "themeId": "type:moonfolk",
+      "synergy": 4
+    },
+    {
+      "oracleId": "ba5055ce-6809-47a4-bee6-fb97a5b60f8a",
+      "themeId": "type:wizard",
+      "synergy": 4
     },
     {
       "oracleId": "bca0c136-3845-4cb9-8d80-f504a01ad50a",
@@ -21358,6 +21433,91 @@
       "synergy": 2
     },
     {
+      "oracleId": "bdeb440d-a714-40e8-9038-f651e6ae45fb",
+      "themeId": "2c1b031c-4759-4529-92fd-9ab6e8a5be2c",
+      "synergy": 2
+    },
+    {
+      "oracleId": "bdeb440d-a714-40e8-9038-f651e6ae45fb",
+      "themeId": "523a4f29-25ee-483c-8123-a8e62b62af5a",
+      "synergy": 2
+    },
+    {
+      "oracleId": "bdeb440d-a714-40e8-9038-f651e6ae45fb",
+      "themeId": "7deb3a80-1a94-485b-b66d-ef400700a616",
+      "synergy": 2
+    },
+    {
+      "oracleId": "bdeb440d-a714-40e8-9038-f651e6ae45fb",
+      "themeId": "acf78b42-a1d5-4829-bef0-69204f29e260",
+      "synergy": 2
+    },
+    {
+      "oracleId": "bf037457-82e3-45fd-bc17-5bc25e66c15e",
+      "themeId": "0852c76d-3240-4332-ad05-d15e101a89b8",
+      "synergy": 2
+    },
+    {
+      "oracleId": "bf037457-82e3-45fd-bc17-5bc25e66c15e",
+      "themeId": "348b012c-d5db-49b7-bc8d-8821a14deb11",
+      "synergy": 2
+    },
+    {
+      "oracleId": "bf037457-82e3-45fd-bc17-5bc25e66c15e",
+      "themeId": "4635ad68-76d1-43f3-98f6-8c60c74b8fdd",
+      "synergy": 2
+    },
+    {
+      "oracleId": "bf037457-82e3-45fd-bc17-5bc25e66c15e",
+      "themeId": "4d7fc833-e0af-4022-b298-6a9c99a56ac1",
+      "synergy": 2
+    },
+    {
+      "oracleId": "bf037457-82e3-45fd-bc17-5bc25e66c15e",
+      "themeId": "5db72854-03f8-4a25-bb30-efd6e9b42404",
+      "synergy": 2
+    },
+    {
+      "oracleId": "bf037457-82e3-45fd-bc17-5bc25e66c15e",
+      "themeId": "66777b7b-50d8-40f1-b811-8d44e21aa9d3",
+      "synergy": 2
+    },
+    {
+      "oracleId": "bf037457-82e3-45fd-bc17-5bc25e66c15e",
+      "themeId": "82ae343d-7544-4b15-ac06-031c3d4a68a2",
+      "synergy": 2
+    },
+    {
+      "oracleId": "bf037457-82e3-45fd-bc17-5bc25e66c15e",
+      "themeId": "c5fa2c00-faa8-49a8-b830-ddd0ae009f01",
+      "synergy": 2
+    },
+    {
+      "oracleId": "bf037457-82e3-45fd-bc17-5bc25e66c15e",
+      "themeId": "e181b762-73f6-4a38-91fd-2d54b6a210ec",
+      "synergy": 2
+    },
+    {
+      "oracleId": "bf037457-82e3-45fd-bc17-5bc25e66c15e",
+      "themeId": "eb4a8d84-9daa-4aee-8491-2566673a5749",
+      "synergy": 2
+    },
+    {
+      "oracleId": "bf037457-82e3-45fd-bc17-5bc25e66c15e",
+      "themeId": "f73fab4f-5401-404b-b5fa-7400b2d71473",
+      "synergy": 2
+    },
+    {
+      "oracleId": "bf037457-82e3-45fd-bc17-5bc25e66c15e",
+      "themeId": "type:human",
+      "synergy": 4
+    },
+    {
+      "oracleId": "bf037457-82e3-45fd-bc17-5bc25e66c15e",
+      "themeId": "type:scout",
+      "synergy": 4
+    },
+    {
       "oracleId": "bf9421d2-54e2-44d8-8b39-2e41192a6517",
       "themeId": "01c171be-e0db-443c-830d-578873c27792",
       "synergy": 2
@@ -21401,6 +21561,31 @@
       "oracleId": "bf9421d2-54e2-44d8-8b39-2e41192a6517",
       "themeId": "f21a7a5b-6c7f-4aaa-aeaa-b06660647074",
       "synergy": 2
+    },
+    {
+      "oracleId": "bfa882ee-de18-4ef8-8957-3e04ed6e3c1e",
+      "themeId": "62d225b0-9a54-40c0-8c82-7d8a3c8ce5df",
+      "synergy": 2
+    },
+    {
+      "oracleId": "bfa882ee-de18-4ef8-8957-3e04ed6e3c1e",
+      "themeId": "81b21b7b-33a8-45d3-ab83-f680ed3fda27",
+      "synergy": 2
+    },
+    {
+      "oracleId": "bfa882ee-de18-4ef8-8957-3e04ed6e3c1e",
+      "themeId": "905ad24e-3356-4a01-a70f-052da28ea751",
+      "synergy": 2
+    },
+    {
+      "oracleId": "bfa882ee-de18-4ef8-8957-3e04ed6e3c1e",
+      "themeId": "e7b5e3ad-18b8-4b90-8392-bfb87a8854be",
+      "synergy": 2
+    },
+    {
+      "oracleId": "bfa882ee-de18-4ef8-8957-3e04ed6e3c1e",
+      "themeId": "type:zombie",
+      "synergy": 4
     },
     {
       "oracleId": "c018f072-8f6d-4835-a717-ed4ecba70d97",
@@ -21750,51 +21935,6 @@
     {
       "oracleId": "c259e16f-2a44-4552-8678-815f757a02e8",
       "themeId": "d802a4f1-1df9-4e22-84bf-8718e03e4017",
-      "synergy": 2
-    },
-    {
-      "oracleId": "c4023e1f-26e3-4225-98d0-3d33f6654616",
-      "themeId": "02eba14c-f165-45ac-a1a0-f62ac5f5f9b0",
-      "synergy": 2
-    },
-    {
-      "oracleId": "c4023e1f-26e3-4225-98d0-3d33f6654616",
-      "themeId": "1a19fbcd-ec54-417c-baa0-01c53b32388b",
-      "synergy": 2
-    },
-    {
-      "oracleId": "c4023e1f-26e3-4225-98d0-3d33f6654616",
-      "themeId": "36f2a0d4-b689-4011-9750-472dd786f2de",
-      "synergy": 2
-    },
-    {
-      "oracleId": "c4023e1f-26e3-4225-98d0-3d33f6654616",
-      "themeId": "3e352959-20d4-4029-8865-2769dd01c6f6",
-      "synergy": 2
-    },
-    {
-      "oracleId": "c4023e1f-26e3-4225-98d0-3d33f6654616",
-      "themeId": "40570ef7-e185-4f0b-ba52-edc4de748817",
-      "synergy": 2
-    },
-    {
-      "oracleId": "c4023e1f-26e3-4225-98d0-3d33f6654616",
-      "themeId": "84f32dcb-f367-41d4-ac1d-e50d08067322",
-      "synergy": 2
-    },
-    {
-      "oracleId": "c4023e1f-26e3-4225-98d0-3d33f6654616",
-      "themeId": "cc12d27d-1d0e-4849-9551-71caead74d24",
-      "synergy": 2
-    },
-    {
-      "oracleId": "c4023e1f-26e3-4225-98d0-3d33f6654616",
-      "themeId": "dc75cad6-0cc5-4ebc-b53f-2afbaf070edc",
-      "synergy": 2
-    },
-    {
-      "oracleId": "c4023e1f-26e3-4225-98d0-3d33f6654616",
-      "themeId": "e6f789a2-8d9e-4fdd-9701-9fc6779fddb1",
       "synergy": 2
     },
     {
@@ -22853,46 +22993,6 @@
       "synergy": 4
     },
     {
-      "oracleId": "d38646dc-d1ea-473c-aaf1-df8ba327459f",
-      "themeId": "4d7fc833-e0af-4022-b298-6a9c99a56ac1",
-      "synergy": 2
-    },
-    {
-      "oracleId": "d38646dc-d1ea-473c-aaf1-df8ba327459f",
-      "themeId": "4e4187e0-9fdc-4ea2-9811-a31aaf6bc0f1",
-      "synergy": 2
-    },
-    {
-      "oracleId": "d38646dc-d1ea-473c-aaf1-df8ba327459f",
-      "themeId": "8cb1bab7-38db-4f6b-bee4-15d5c26a879d",
-      "synergy": 2
-    },
-    {
-      "oracleId": "d38646dc-d1ea-473c-aaf1-df8ba327459f",
-      "themeId": "9a474dd4-a64c-4819-bd15-63ea874780ff",
-      "synergy": 2
-    },
-    {
-      "oracleId": "d38646dc-d1ea-473c-aaf1-df8ba327459f",
-      "themeId": "acf78b42-a1d5-4829-bef0-69204f29e260",
-      "synergy": 2
-    },
-    {
-      "oracleId": "d38646dc-d1ea-473c-aaf1-df8ba327459f",
-      "themeId": "bb6c0ff7-302d-48ff-aee9-5cfefd44e351",
-      "synergy": 2
-    },
-    {
-      "oracleId": "d38646dc-d1ea-473c-aaf1-df8ba327459f",
-      "themeId": "type:raccoon",
-      "synergy": 4
-    },
-    {
-      "oracleId": "d38646dc-d1ea-473c-aaf1-df8ba327459f",
-      "themeId": "type:scout",
-      "synergy": 4
-    },
-    {
       "oracleId": "d3b2d8a2-d3bc-448c-9cf6-6bead6010c28",
       "themeId": "49e102d4-7074-4942-bdf6-cff4a032e1b1",
       "synergy": 2
@@ -23036,21 +23136,6 @@
       "oracleId": "d4e4c8a5-e97b-4295-a403-d17834f73502",
       "themeId": "dc8984e5-2f08-4f92-aa9b-8f6194b2296f",
       "synergy": 2
-    },
-    {
-      "oracleId": "d50b1d2e-1825-432a-ab73-068fdc356f50",
-      "themeId": "537e2f15-3984-46d2-b008-3b41c7cfc66f",
-      "synergy": 2
-    },
-    {
-      "oracleId": "d50b1d2e-1825-432a-ab73-068fdc356f50",
-      "themeId": "9ed3d104-27cd-48d8-be36-85bcd4d5e026",
-      "synergy": 2
-    },
-    {
-      "oracleId": "d50b1d2e-1825-432a-ab73-068fdc356f50",
-      "themeId": "type:shapeshifter",
-      "synergy": 4
     },
     {
       "oracleId": "d5ad26cc-2bdb-46b7-b8bf-dd099d5fa09b",
@@ -23513,6 +23598,111 @@
       "synergy": 4
     },
     {
+      "oracleId": "dbc9ea19-cf68-41d3-88a8-b5ab8df75c5a",
+      "themeId": "1c3fd051-4c17-4458-ba48-6171b1c968c2",
+      "synergy": 2
+    },
+    {
+      "oracleId": "dbc9ea19-cf68-41d3-88a8-b5ab8df75c5a",
+      "themeId": "1f104713-3ecf-4106-a315-7efb85a5aaaa",
+      "synergy": 2
+    },
+    {
+      "oracleId": "dbc9ea19-cf68-41d3-88a8-b5ab8df75c5a",
+      "themeId": "2ac7b430-999c-44f0-9971-f81f5dd84e79",
+      "synergy": 2
+    },
+    {
+      "oracleId": "dbc9ea19-cf68-41d3-88a8-b5ab8df75c5a",
+      "themeId": "2bcab7f4-d89b-4f8a-979f-f2f6c3c02346",
+      "synergy": 2
+    },
+    {
+      "oracleId": "dbc9ea19-cf68-41d3-88a8-b5ab8df75c5a",
+      "themeId": "56907a60-c8bc-4427-a62c-517bdc55fb79",
+      "synergy": 2
+    },
+    {
+      "oracleId": "dbc9ea19-cf68-41d3-88a8-b5ab8df75c5a",
+      "themeId": "7a0d5fcf-1f73-4c45-ac27-679c93bbe9bf",
+      "synergy": 2
+    },
+    {
+      "oracleId": "dbc9ea19-cf68-41d3-88a8-b5ab8df75c5a",
+      "themeId": "8a1ac1b1-f943-42cf-af4b-ae9dce07496a",
+      "synergy": 2
+    },
+    {
+      "oracleId": "dbc9ea19-cf68-41d3-88a8-b5ab8df75c5a",
+      "themeId": "aa908dd5-bf9e-4835-bbbb-77579a1f0e5f",
+      "synergy": 2
+    },
+    {
+      "oracleId": "dbc9ea19-cf68-41d3-88a8-b5ab8df75c5a",
+      "themeId": "acf78b42-a1d5-4829-bef0-69204f29e260",
+      "synergy": 2
+    },
+    {
+      "oracleId": "dbc9ea19-cf68-41d3-88a8-b5ab8df75c5a",
+      "themeId": "f5148059-a7ca-4ffd-9936-b6094af9308c",
+      "synergy": 2
+    },
+    {
+      "oracleId": "dbc9ea19-cf68-41d3-88a8-b5ab8df75c5a",
+      "themeId": "type:artificer",
+      "synergy": 4
+    },
+    {
+      "oracleId": "dbc9ea19-cf68-41d3-88a8-b5ab8df75c5a",
+      "themeId": "type:gnome",
+      "synergy": 4
+    },
+    {
+      "oracleId": "dd645241-2992-4c4e-a6a8-c2215d2340ae",
+      "themeId": "1f104713-3ecf-4106-a315-7efb85a5aaaa",
+      "synergy": 2
+    },
+    {
+      "oracleId": "dd645241-2992-4c4e-a6a8-c2215d2340ae",
+      "themeId": "47ff9fb8-2df7-4f49-a04f-b1f31ba932ee",
+      "synergy": 2
+    },
+    {
+      "oracleId": "dd645241-2992-4c4e-a6a8-c2215d2340ae",
+      "themeId": "4d7fc833-e0af-4022-b298-6a9c99a56ac1",
+      "synergy": 2
+    },
+    {
+      "oracleId": "dd645241-2992-4c4e-a6a8-c2215d2340ae",
+      "themeId": "56907a60-c8bc-4427-a62c-517bdc55fb79",
+      "synergy": 2
+    },
+    {
+      "oracleId": "dd645241-2992-4c4e-a6a8-c2215d2340ae",
+      "themeId": "a3909e64-69d4-442e-8da1-fffa309492b8",
+      "synergy": 2
+    },
+    {
+      "oracleId": "dd645241-2992-4c4e-a6a8-c2215d2340ae",
+      "themeId": "aa908dd5-bf9e-4835-bbbb-77579a1f0e5f",
+      "synergy": 2
+    },
+    {
+      "oracleId": "dd645241-2992-4c4e-a6a8-c2215d2340ae",
+      "themeId": "ce1f9c34-7191-49e5-bdfe-f4eeae2ad0c2",
+      "synergy": 2
+    },
+    {
+      "oracleId": "dd645241-2992-4c4e-a6a8-c2215d2340ae",
+      "themeId": "type:artificer",
+      "synergy": 4
+    },
+    {
+      "oracleId": "dd645241-2992-4c4e-a6a8-c2215d2340ae",
+      "themeId": "type:goblin",
+      "synergy": 4
+    },
+    {
       "oracleId": "dde55256-5259-44e7-a267-fca45a7f0d04",
       "themeId": "36f3801c-18c7-4cbd-828d-5cc7642edea2",
       "synergy": 2
@@ -23795,46 +23985,6 @@
     {
       "oracleId": "e54ad5a1-e79d-42db-a3e9-5caecae62c9f",
       "themeId": "type:insect",
-      "synergy": 4
-    },
-    {
-      "oracleId": "e5762815-5fc3-4ae7-abee-69f27c5e4e90",
-      "themeId": "0c584af0-6c13-4f44-8ef2-56d4dccce473",
-      "synergy": 2
-    },
-    {
-      "oracleId": "e5762815-5fc3-4ae7-abee-69f27c5e4e90",
-      "themeId": "7075fa3f-160d-4b83-b653-19c0292a6e77",
-      "synergy": 2
-    },
-    {
-      "oracleId": "e5762815-5fc3-4ae7-abee-69f27c5e4e90",
-      "themeId": "a3909e64-69d4-442e-8da1-fffa309492b8",
-      "synergy": 2
-    },
-    {
-      "oracleId": "e5762815-5fc3-4ae7-abee-69f27c5e4e90",
-      "themeId": "b9441da3-6efc-4dbe-88d1-8ceae09a0e8c",
-      "synergy": 2
-    },
-    {
-      "oracleId": "e5762815-5fc3-4ae7-abee-69f27c5e4e90",
-      "themeId": "c975bac8-a67c-4183-9b66-e223a9334c70",
-      "synergy": 2
-    },
-    {
-      "oracleId": "e5762815-5fc3-4ae7-abee-69f27c5e4e90",
-      "themeId": "d137110a-311d-4031-9312-6c7c8d3b1efc",
-      "synergy": 2
-    },
-    {
-      "oracleId": "e5762815-5fc3-4ae7-abee-69f27c5e4e90",
-      "themeId": "type:skeleton",
-      "synergy": 4
-    },
-    {
-      "oracleId": "e5762815-5fc3-4ae7-abee-69f27c5e4e90",
-      "themeId": "type:warrior",
       "synergy": 4
     },
     {
@@ -24333,6 +24483,46 @@
       "synergy": 4
     },
     {
+      "oracleId": "f460ff80-8175-43f7-9810-540cf3817085",
+      "themeId": "2f3e4ad7-5e60-41b4-bdbc-653f16869cf6",
+      "synergy": 2
+    },
+    {
+      "oracleId": "f460ff80-8175-43f7-9810-540cf3817085",
+      "themeId": "3f016b55-b431-4660-ba5e-ced1b344b3e7",
+      "synergy": 2
+    },
+    {
+      "oracleId": "f460ff80-8175-43f7-9810-540cf3817085",
+      "themeId": "43d07dd1-ec75-4416-b5a0-dce4e951a4ca",
+      "synergy": 2
+    },
+    {
+      "oracleId": "f460ff80-8175-43f7-9810-540cf3817085",
+      "themeId": "8d696d27-115e-4978-8151-5224c14e78bb",
+      "synergy": 2
+    },
+    {
+      "oracleId": "f460ff80-8175-43f7-9810-540cf3817085",
+      "themeId": "acd5f9bb-d9df-4929-aea3-aa826d7c36e3",
+      "synergy": 2
+    },
+    {
+      "oracleId": "f460ff80-8175-43f7-9810-540cf3817085",
+      "themeId": "acf78b42-a1d5-4829-bef0-69204f29e260",
+      "synergy": 2
+    },
+    {
+      "oracleId": "f460ff80-8175-43f7-9810-540cf3817085",
+      "themeId": "bc044c90-5bc9-41cb-829d-e36b0f80f14e",
+      "synergy": 2
+    },
+    {
+      "oracleId": "f460ff80-8175-43f7-9810-540cf3817085",
+      "themeId": "c929d5b0-0385-4e48-b8db-5bb9db17120f",
+      "synergy": 2
+    },
+    {
       "oracleId": "f46c72b8-e2e8-42e6-a2e7-ffa5810a9bf3",
       "themeId": "3b2b0b5b-077e-426b-ad75-00b9653d114d",
       "synergy": 2
@@ -24531,6 +24721,61 @@
       "oracleId": "f89f7c7d-6eb3-4335-b9df-0ccaa9c50558",
       "themeId": "f21a7a5b-6c7f-4aaa-aeaa-b06660647074",
       "synergy": 2
+    },
+    {
+      "oracleId": "f8c2a972-e38f-47e5-a355-6f30ad09b1ae",
+      "themeId": "0e87cf9c-591e-4f2a-b4fd-675021f120ae",
+      "synergy": 2
+    },
+    {
+      "oracleId": "f8c2a972-e38f-47e5-a355-6f30ad09b1ae",
+      "themeId": "3dadc330-1d86-409a-8ce6-d93d1df90f15",
+      "synergy": 2
+    },
+    {
+      "oracleId": "f8c2a972-e38f-47e5-a355-6f30ad09b1ae",
+      "themeId": "4d7fc833-e0af-4022-b298-6a9c99a56ac1",
+      "synergy": 2
+    },
+    {
+      "oracleId": "f8c2a972-e38f-47e5-a355-6f30ad09b1ae",
+      "themeId": "524845ed-ea82-4a60-8b54-8a38ab06a503",
+      "synergy": 2
+    },
+    {
+      "oracleId": "f8c2a972-e38f-47e5-a355-6f30ad09b1ae",
+      "themeId": "9f7167ec-2421-4ddc-bc47-f41f2e3ce3cc",
+      "synergy": 2
+    },
+    {
+      "oracleId": "f8c2a972-e38f-47e5-a355-6f30ad09b1ae",
+      "themeId": "b5cd6a37-78cc-4c88-9c99-1d359dccc39f",
+      "synergy": 2
+    },
+    {
+      "oracleId": "f8c2a972-e38f-47e5-a355-6f30ad09b1ae",
+      "themeId": "d3fa5b24-0131-4ac2-ab25-39cda9efe9b2",
+      "synergy": 2
+    },
+    {
+      "oracleId": "f8c2a972-e38f-47e5-a355-6f30ad09b1ae",
+      "themeId": "d540c4fb-c2dd-49be-aecc-73883ae9edd9",
+      "synergy": 2
+    },
+    {
+      "oracleId": "f8c2a972-e38f-47e5-a355-6f30ad09b1ae",
+      "themeId": "da5f6718-a763-4ee8-8893-487db5a3af71",
+      "synergy": 2
+    },
+    {
+      "oracleId": "f8c2a972-e38f-47e5-a355-6f30ad09b1ae",
+      "themeId": "type:artificer",
+      "synergy": 4
+    },
+    {
+      "oracleId": "f8c2a972-e38f-47e5-a355-6f30ad09b1ae",
+      "themeId": "type:elephant",
+      "synergy": 4
     },
     {
       "oracleId": "f9db72dc-9a5b-48a4-a86e-7464d9a2166a",
