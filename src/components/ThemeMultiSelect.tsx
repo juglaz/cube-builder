@@ -8,6 +8,7 @@ type Props = {
   onChange: (ids: string[]) => void
   placeholder?: string
   preserveOrder?: boolean
+  cardCounts?: Map<string, number>
 }
 
 export function ThemeMultiSelect({
@@ -16,25 +17,30 @@ export function ThemeMultiSelect({
   onChange,
   placeholder = 'Search tags and add them',
   preserveOrder = false,
+  cardCounts,
 }: Props) {
   const [query, setQuery] = useState('')
+  const [open, setOpen] = useState(false)
   const selected = preserveOrder
     ? selectedIds.map((id) => themes.find((t) => t.id === id)).filter((t): t is Theme => Boolean(t))
     : sortThemesByCardCount(
         selectedIds.map((id) => themes.find((t) => t.id === id)).filter((t): t is Theme => Boolean(t)),
+        cardCounts,
       )
 
   const matches = useMemo(() => {
+    if (!open) return []
     const q = query.trim().toLowerCase()
-    if (q.length < 1) return []
     return sortThemesByCardCount(
       themes.filter((theme) => {
         if (selectedIds.includes(theme.id)) return false
+        if (cardCounts && (cardCounts.get(theme.id) ?? 0) === 0) return false
         const hay = `${theme.name} ${theme.slug ?? ''} ${(theme.aliases ?? []).join(' ')}`.toLowerCase()
-        return hay.includes(q)
+        return q.length === 0 || hay.includes(q)
       }),
+      cardCounts,
     ).slice(0, 30)
-  }, [query, selectedIds, themes])
+  }, [cardCounts, open, query, selectedIds, themes])
 
   function add(id: string) {
     if (selectedIds.includes(id)) return
@@ -47,7 +53,12 @@ export function ThemeMultiSelect({
   }
 
   return (
-    <div className="space-y-3">
+    <div
+      className="space-y-3"
+      onBlur={(event) => {
+        if (!event.currentTarget.contains(event.relatedTarget)) setOpen(false)
+      }}
+    >
       {selected.length > 0 && (
         <div className="flex flex-wrap gap-2">
           {selected.map((theme) => (
@@ -70,6 +81,8 @@ export function ThemeMultiSelect({
       <input
         value={query}
         onChange={(e) => setQuery(e.target.value)}
+        onFocus={() => setOpen(true)}
+        onClick={() => setOpen(true)}
         placeholder={placeholder}
         className="w-full rounded-xl border border-white/10 bg-black/30 px-3 py-2 outline-none focus:border-amber-200/40"
       />
@@ -86,14 +99,18 @@ export function ThemeMultiSelect({
                 <span>{theme.name}</span>
                 <span className="text-xs text-stone-500">
                   {theme.slug}
-                  {theme.taggingCount ? ` · ${theme.taggingCount.toLocaleString()} cards` : ''}
+                  {cardCounts
+                    ? ` · ${(cardCounts.get(theme.id) ?? 0).toLocaleString()} cards`
+                    : theme.taggingCount
+                      ? ` · ${theme.taggingCount.toLocaleString()} cards`
+                      : ''}
                 </span>
               </button>
             </li>
           ))}
         </ul>
       )}
-      {query.trim() && matches.length === 0 && (
+      {open && query.trim() && matches.length === 0 && (
         <p className="text-sm text-stone-500">No matching tags.</p>
       )}
       <p className="text-xs text-stone-500">

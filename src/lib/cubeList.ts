@@ -96,12 +96,10 @@ function themeIdsOnCard(card: LibraryCard, tagsByCard: Map<string, CardTheme[]>)
   return ids
 }
 
-export function densestThemeIds(
+export function themeCountsForCards(
   cards: LibraryCard[],
-  themes: Theme[],
   tags: CardTheme[],
-  limit = 20,
-): string[] {
+): Map<string, number> {
   const tagsByCard = tagsByOracle(tags)
   const counts = new Map<string, number>()
   for (const card of cards) {
@@ -109,6 +107,16 @@ export function densestThemeIds(
       counts.set(themeId, (counts.get(themeId) ?? 0) + 1)
     }
   }
+  return counts
+}
+
+export function densestThemeIds(
+  cards: LibraryCard[],
+  themes: Theme[],
+  tags: CardTheme[],
+  limit = 20,
+): string[] {
+  const counts = themeCountsForCards(cards, tags)
   const byId = new Map(themes.map((theme) => [theme.id, theme]))
   for (const id of counts.keys()) {
     if (byId.has(id)) continue

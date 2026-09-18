@@ -1,5 +1,6 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
+import { toPng } from 'html-to-image'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { AnalysisPanel } from '../components/AnalysisPanel'
 import { CardPanel } from '../components/CardPanel'
@@ -22,7 +23,7 @@ import {
   primaryThemeIdsForCube,
   themeNamesForIds,
 } from '../lib/cubeInfo'
-import { densestThemeIds, type GroupAxis } from '../lib/cubeList'
+import { densestThemeIds, themeCountsForCards, type GroupAxis } from '../lib/cubeList'
 import { creatureTypesFromCard, typeThemeId, typeThemesFromIds } from '../lib/creatureTypes'
 import { addCardsToCube, removeCardFromCube, removeCardTheme, setCardTheme, updateCube } from '../lib/repo'
 import { applySettingsToGenerationDraft } from '../lib/generationDraft'
@@ -48,6 +49,8 @@ export function CubePage() {
   const [fillPage, setFillPage] = useState(false)
   const [infoOpen, setInfoOpen] = useState(false)
   const [infoDraft, setInfoDraft] = useState('')
+  const [infoImageState, setInfoImageState] = useState<'idle' | 'saving' | 'error'>('idle')
+  const infoCardExportRef = useRef<HTMLDivElement>(null)
   const [copiedList, setCopiedList] = useState(false)
   const [pasteOpen, setPasteOpen] = useState(false)
   const [docsPublishState, setDocsPublishState] = useState<{
@@ -148,6 +151,10 @@ export function CubePage() {
     () => tags.filter((tag) => cubeIds.has(tag.oracleId)),
     [tags, cubeIds],
   )
+  const cubeThemeCounts = useMemo(
+    () => themeCountsForCards(cubeList, cubeTags),
+    [cubeList, cubeTags],
+  )
   const columnThemeIds = useMemo(
     () =>
       focusThemeIds.length > 0
@@ -158,8 +165,17 @@ export function CubePage() {
   const usingSeeds = seedThemeIds.length > 0
   const isDefaultFocus = !usingSeeds || focusThemeIds.join('|') === seedThemeIds.join('|')
   const infoThemeIds = useMemo(
-    () => (cube ? primaryThemeIdsForCube(cube, cubeList, pickerThemes, cubeTags) : []),
-    [cube, cubeList, pickerThemes, cubeTags],
+    () => {
+      if (!cube) return []
+      const ids = primaryThemeIdsForCube(cube, cubeList, pickerThemes, cubeTags)
+      const names = new Map(pickerThemes.map((theme) => [theme.id, theme.name]))
+      return [...ids].sort((a, b) => {
+        const countDiff = (cubeThemeCounts.get(b) ?? 0) - (cubeThemeCounts.get(a) ?? 0)
+        if (countDiff !== 0) return countDiff
+        return (names.get(a) ?? a).localeCompare(names.get(b) ?? b)
+      })
+    },
+    [cube, cubeList, pickerThemes, cubeTags, cubeThemeCounts],
   )
   const infoThemeNames = useMemo(
     () => themeNamesForIds(infoThemeIds, [...catalog, ...pickerThemes]),
@@ -247,6 +263,48 @@ export function CubePage() {
     }
     window.addEventListener('afterprint', done)
     window.print()
+  }
+
+  async function saveInfoCardImage() {
+    const node = infoCardExportRef.current?.querySelector<HTMLElement>('.cube-info-card')
+    if (!node || infoImageState === 'saving') return
+    const cubeName = cube?.name ?? 'cube'
+    setInfoImageState('saving')
+    try {
+      await document.fonts.ready
+      await Promise.all(
+        [...node.querySelectorAll('img')].map(
+          (image) =>
+            new Promise<void>((resolve) => {
+              if (image.complete) {
+                resolve()
+                return
+              }
+              image.addEventListener('load', () => resolve(), { once: true })
+              image.addEventListener('error', () => resolve(), { once: true })
+            }),
+        ),
+      )
+      const dataUrl = await toPng(node, {
+        backgroundColor: '#0b0b0c',
+        cacheBust: true,
+        pixelRatio: 2,
+      })
+      const filename =
+        cubeName
+          .normalize('NFKD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, '-')
+          .replace(/^-+|-+$/g, '') || 'cube'
+      const link = document.createElement('a')
+      link.download = `${filename}-info-card.png`
+      link.href = dataUrl
+      link.click()
+      setInfoImageState('idle')
+    } catch {
+      setInfoImageState('error')
+    }
   }
 
   async function openInGenerate() {
@@ -641,9 +699,14 @@ export function CubePage() {
         </>
       )}
       {createPortal(
-        <div className="cube-info-print-root" aria-hidden>
-          {infoCardEl}
-        </div>,
+        <>
+          <div className="cube-info-print-root" aria-hidden>
+            {infoCardEl}
+          </div>
+          <div ref={infoCardExportRef} className="cube-info-export-root" aria-hidden>
+            {infoCardEl}
+          </div>
+        </>,
         document.body,
       )}
       {infoOpen &&
@@ -682,6 +745,7 @@ export function CubePage() {
                   onChange={saveInfoPrimaryThemes}
                   preserveOrder
                   placeholder={`Search tags (${infoThemeIds.length}/${PRIMARY_THEME_LIMIT})`}
+                  cardCounts={cubeThemeCounts}
                 />
               </div>
               <div className="flex flex-wrap items-center justify-center gap-2">
@@ -721,12 +785,25 @@ export function CubePage() {
                 </button>
                 <button
                   type="button"
+                  disabled={infoImageState === 'saving'}
+                  onClick={() => void saveInfoCardImage()}
+                  className="rounded-full bg-amber-200/20 px-4 py-1.5 text-sm text-amber-50 disabled:cursor-wait disabled:opacity-60"
+                >
+                  {infoImageState === 'saving' ? 'Saving…' : 'Save PNG'}
+                </button>
+                <button
+                  type="button"
                   onClick={() => setInfoOpen(false)}
                   className="rounded-full bg-white/10 px-4 py-1.5 text-sm text-stone-200"
                 >
                   Close
                 </button>
               </div>
+              {infoImageState === 'error' ? (
+                <p className="text-xs text-red-300" role="alert">
+                  Could not save the image. Try again after the card art finishes loading.
+                </p>
+              ) : null}
             </div>
           </div>,
           document.body,

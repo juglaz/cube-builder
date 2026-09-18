@@ -77,6 +77,21 @@ textarea {
   display: none;
 }
 
+.cube-info-export-root {
+  position: fixed;
+  top: 0;
+  left: -10000px;
+  width: 750px;
+  height: 1050px;
+  pointer-events: none;
+}
+
+.cube-info-export-root .cube-info-card {
+  width: 750px !important;
+  height: 1050px !important;
+  aspect-ratio: auto;
+}
+
 @media print {
   @page {
     size: 2.5in 3.5in;
